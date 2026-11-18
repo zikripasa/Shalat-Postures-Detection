@@ -1,0 +1,2687 @@
+{
+"job_id": "fixture-demo",
+"status": "done",
+"progress": {
+"stage": "done",
+"fraction": 1.0
+},
+"error": null,
+"created": 0,
+"finished": 1,
+"annotated_video_available": false,
+"result": {
+"video": {
+"duration_seconds": 42.92,
+"width": 1280,
+"height": 720,
+"source_fps": 25.0,
+"sample_fps": 5.0
+},
+"decoder": "hmm_local",
+"segments": [
+{
+"index": 0,
+"phase": "berdiri",
+"label": "Berdiri (Qiyam)",
+"visual_class": "qiyam",
+"evidence": "visual + context",
+"start": 0.0,
+"end": 5.0,
+"duration": 5.0,
+"n_frames": 25,
+"confidence": 0.7301,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Berdiri (Qiyam)",
+"state": "berdiri"
+},
+{
+"index": 1,
+"phase": "rukuk",
+"label": "Rukuk",
+"visual_class": "ruku",
+"evidence": "visual",
+"start": 5.0,
+"end": 8.2,
+"duration": 3.2,
+"n_frames": 16,
+"confidence": 0.6886,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Rukuk",
+"state": "rukuk"
+},
+{
+"index": 2,
+"phase": "iktidal",
+"label": "Iktidal",
+"visual_class": "qiyam",
+"evidence": "visual + context",
+"start": 8.2,
+"end": 10.6,
+"duration": 2.4,
+"n_frames": 12,
+"confidence": 0.8544,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Iktidal",
+"state": "iktidal"
+},
+{
+"index": 3,
+"phase": "sujud",
+"label": "Sujud",
+"visual_class": "sujud",
+"evidence": "visual",
+"start": 10.6,
+"end": 13.6,
+"duration": 3.0,
+"n_frames": 15,
+"confidence": 0.8505,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Sujud",
+"state": "sujud_1"
+},
+{
+"index": 4,
+"phase": "duduk_antara_sujud",
+"label": "Duduk di Antara Dua Sujud",
+"visual_class": "julus",
+"evidence": "visual + context",
+"start": 13.6,
+"end": 16.2,
+"duration": 2.6,
+"n_frames": 13,
+"confidence": 0.8486,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Duduk di Antara Dua Sujud",
+"state": "duduk_antara_sujud"
+},
+{
+"index": 5,
+"phase": "sujud",
+"label": "Sujud",
+"visual_class": "sujud",
+"evidence": "visual",
+"start": 16.2,
+"end": 19.2,
+"duration": 3.0,
+"n_frames": 15,
+"confidence": 0.9526,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Sujud",
+"state": "sujud_2"
+},
+{
+"index": 6,
+"phase": "berdiri",
+"label": "Berdiri (Qiyam)",
+"visual_class": "qiyam",
+"evidence": "visual + context",
+"start": 19.2,
+"end": 23.2,
+"duration": 4.0,
+"n_frames": 20,
+"confidence": 0.813,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Berdiri (Qiyam)",
+"state": "berdiri"
+},
+{
+"index": 7,
+"phase": "rukuk",
+"label": "Rukuk",
+"visual_class": "ruku",
+"evidence": "visual",
+"start": 23.2,
+"end": 26.2,
+"duration": 3.0,
+"n_frames": 15,
+"confidence": 0.7727,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Rukuk",
+"state": "rukuk"
+},
+{
+"index": 8,
+"phase": "iktidal",
+"label": "Iktidal",
+"visual_class": "qiyam",
+"evidence": "visual + context",
+"start": 26.2,
+"end": 28.6,
+"duration": 2.4,
+"n_frames": 12,
+"confidence": 0.4436,
+"frames_without_person": 0.0,
+"uncertain": true,
+"display_label": "Tidak Pasti",
+"state": "iktidal"
+},
+{
+"index": 9,
+"phase": "sujud",
+"label": "Sujud",
+"visual_class": "sujud",
+"evidence": "visual",
+"start": 28.6,
+"end": 31.6,
+"duration": 3.0,
+"n_frames": 15,
+"confidence": 0.96,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Sujud",
+"state": "sujud_1"
+},
+{
+"index": 10,
+"phase": "duduk_antara_sujud",
+"label": "Duduk di Antara Dua Sujud",
+"visual_class": "julus",
+"evidence": "visual + context",
+"start": 31.6,
+"end": 34.2,
+"duration": 2.6,
+"n_frames": 13,
+"confidence": 0.9042,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Duduk di Antara Dua Sujud",
+"state": "duduk_antara_sujud"
+},
+{
+"index": 11,
+"phase": "sujud",
+"label": "Sujud",
+"visual_class": "sujud",
+"evidence": "visual",
+"start": 34.2,
+"end": 37.2,
+"duration": 3.0,
+"n_frames": 15,
+"confidence": 0.9435,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Sujud",
+"state": "sujud_2"
+},
+{
+"index": 12,
+"phase": "tasyahud",
+"label": "Tasyahud",
+"visual_class": "julus",
+"evidence": "visual + context",
+"start": 37.2,
+"end": 42.92,
+"duration": 5.72,
+"n_frames": 29,
+"confidence": 0.4234,
+"frames_without_person": 0.0,
+"uncertain": true,
+"display_label": "Tidak Pasti",
+"state": "tasyahud"
+}
+],
+"raw_segments": [
+{
+"index": 0,
+"phase": "berdiri",
+"label": "Berdiri (Qiyam)",
+"visual_class": "qiyam",
+"evidence": "visual + context",
+"start": 0.0,
+"end": 5.0,
+"duration": 5.0,
+"n_frames": 25,
+"confidence": 0.7301,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Berdiri (Qiyam)",
+"state": null
+},
+{
+"index": 1,
+"phase": "sujud",
+"label": "Sujud",
+"visual_class": "sujud",
+"evidence": "visual",
+"start": 5.0,
+"end": 5.2,
+"duration": 0.2,
+"n_frames": 1,
+"confidence": 0.4229,
+"frames_without_person": 0.0,
+"uncertain": true,
+"display_label": "Tidak Pasti",
+"state": null
+},
+{
+"index": 2,
+"phase": "rukuk",
+"label": "Rukuk",
+"visual_class": "ruku",
+"evidence": "visual",
+"start": 5.2,
+"end": 8.2,
+"duration": 3.0,
+"n_frames": 15,
+"confidence": 0.7169,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Rukuk",
+"state": null
+},
+{
+"index": 3,
+"phase": "iktidal",
+"label": "Iktidal",
+"visual_class": "qiyam",
+"evidence": "visual + context",
+"start": 8.2,
+"end": 10.6,
+"duration": 2.4,
+"n_frames": 12,
+"confidence": 0.8544,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Iktidal",
+"state": null
+},
+{
+"index": 4,
+"phase": "tasyahud",
+"label": "Tasyahud",
+"visual_class": "julus",
+"evidence": "visual + context",
+"start": 10.6,
+"end": 10.8,
+"duration": 0.2,
+"n_frames": 1,
+"confidence": 0.6056,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Tasyahud",
+"state": null
+},
+{
+"index": 5,
+"phase": "sujud",
+"label": "Sujud",
+"visual_class": "sujud",
+"evidence": "visual",
+"start": 10.8,
+"end": 13.6,
+"duration": 2.8,
+"n_frames": 14,
+"confidence": 0.8971,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Sujud",
+"state": null
+},
+{
+"index": 6,
+"phase": "duduk_antara_sujud",
+"label": "Duduk di Antara Dua Sujud",
+"visual_class": "julus",
+"evidence": "visual + context",
+"start": 13.6,
+"end": 16.2,
+"duration": 2.6,
+"n_frames": 13,
+"confidence": 0.8486,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Duduk di Antara Dua Sujud",
+"state": null
+},
+{
+"index": 7,
+"phase": "sujud",
+"label": "Sujud",
+"visual_class": "sujud",
+"evidence": "visual",
+"start": 16.2,
+"end": 19.2,
+"duration": 3.0,
+"n_frames": 15,
+"confidence": 0.9526,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Sujud",
+"state": null
+},
+{
+"index": 8,
+"phase": "berdiri",
+"label": "Berdiri (Qiyam)",
+"visual_class": "qiyam",
+"evidence": "visual + context",
+"start": 19.2,
+"end": 23.2,
+"duration": 4.0,
+"n_frames": 20,
+"confidence": 0.813,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Berdiri (Qiyam)",
+"state": null
+},
+{
+"index": 9,
+"phase": "rukuk",
+"label": "Rukuk",
+"visual_class": "ruku",
+"evidence": "visual",
+"start": 23.2,
+"end": 24.2,
+"duration": 1.0,
+"n_frames": 5,
+"confidence": 0.7985,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Rukuk",
+"state": null
+},
+{
+"index": 10,
+"phase": "sujud",
+"label": "Sujud",
+"visual_class": "sujud",
+"evidence": "visual",
+"start": 24.2,
+"end": 24.4,
+"duration": 0.2,
+"n_frames": 1,
+"confidence": 0.5043,
+"frames_without_person": 0.0,
+"uncertain": true,
+"display_label": "Tidak Pasti",
+"state": null
+},
+{
+"index": 11,
+"phase": "rukuk",
+"label": "Rukuk",
+"visual_class": "ruku",
+"evidence": "visual",
+"start": 24.4,
+"end": 26.0,
+"duration": 1.6,
+"n_frames": 8,
+"confidence": 0.851,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Rukuk",
+"state": null
+},
+{
+"index": 12,
+"phase": "sujud",
+"label": "Sujud",
+"visual_class": "sujud",
+"evidence": "visual",
+"start": 26.0,
+"end": 26.2,
+"duration": 0.2,
+"n_frames": 1,
+"confidence": 0.3785,
+"frames_without_person": 0.0,
+"uncertain": true,
+"display_label": "Tidak Pasti",
+"state": null
+},
+{
+"index": 13,
+"phase": "berdiri",
+"label": "Berdiri (Qiyam)",
+"visual_class": "qiyam",
+"evidence": "visual + context",
+"start": 26.2,
+"end": 26.6,
+"duration": 0.4,
+"n_frames": 2,
+"confidence": 0.7723,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Berdiri (Qiyam)",
+"state": null
+},
+{
+"index": 14,
+"phase": "tasyahud",
+"label": "Tasyahud",
+"visual_class": "julus",
+"evidence": "visual + context",
+"start": 26.6,
+"end": 26.8,
+"duration": 0.2,
+"n_frames": 1,
+"confidence": 0.5596,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Tasyahud",
+"state": null
+},
+{
+"index": 15,
+"phase": "berdiri",
+"label": "Berdiri (Qiyam)",
+"visual_class": "qiyam",
+"evidence": "visual + context",
+"start": 26.8,
+"end": 27.2,
+"duration": 0.4,
+"n_frames": 2,
+"confidence": 0.7288,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Berdiri (Qiyam)",
+"state": null
+},
+{
+"index": 16,
+"phase": "tasyahud",
+"label": "Tasyahud",
+"visual_class": "julus",
+"evidence": "visual + context",
+"start": 27.2,
+"end": 28.4,
+"duration": 1.2,
+"n_frames": 6,
+"confidence": 0.5536,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Tasyahud",
+"state": null
+},
+{
+"index": 17,
+"phase": "berdiri",
+"label": "Berdiri (Qiyam)",
+"visual_class": "qiyam",
+"evidence": "visual + context",
+"start": 28.4,
+"end": 28.6,
+"duration": 0.2,
+"n_frames": 1,
+"confidence": 0.8456,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Berdiri (Qiyam)",
+"state": null
+},
+{
+"index": 18,
+"phase": "sujud",
+"label": "Sujud",
+"visual_class": "sujud",
+"evidence": "visual",
+"start": 28.6,
+"end": 31.6,
+"duration": 3.0,
+"n_frames": 15,
+"confidence": 0.96,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Sujud",
+"state": null
+},
+{
+"index": 19,
+"phase": "duduk_antara_sujud",
+"label": "Duduk di Antara Dua Sujud",
+"visual_class": "julus",
+"evidence": "visual + context",
+"start": 31.6,
+"end": 34.2,
+"duration": 2.6,
+"n_frames": 13,
+"confidence": 0.9042,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Duduk di Antara Dua Sujud",
+"state": null
+},
+{
+"index": 20,
+"phase": "sujud",
+"label": "Sujud",
+"visual_class": "sujud",
+"evidence": "visual",
+"start": 34.2,
+"end": 37.2,
+"duration": 3.0,
+"n_frames": 15,
+"confidence": 0.9435,
+"frames_without_person": 0.0,
+"uncertain": false,
+"display_label": "Sujud",
+"state": null
+},
+{
+"index": 21,
+"phase": "duduk_antara_sujud",
+"label": "Duduk di Antara Dua Sujud",
+"visual_class": "julus",
+"evidence": "visual + context",
+"start": 37.2,
+"end": 40.0,
+"duration": 2.8,
+"n_frames": 14,
+"confidence": 0.5414,
+"frames_without_person": 0.0,
+"uncertain": true,
+"display_label": "Tidak Pasti",
+"state": null
+},
+{
+"index": 22,
+"phase": "sujud",
+"label": "Sujud",
+"visual_class": "sujud",
+"evidence": "visual",
+"start": 40.0,
+"end": 40.2,
+"duration": 0.2,
+"n_frames": 1,
+"confidence": 0.3568,
+"frames_without_person": 0.0,
+"uncertain": true,
+"display_label": "Tidak Pasti",
+"state": null
+},
+{
+"index": 23,
+"phase": "rukuk",
+"label": "Rukuk",
+"visual_class": "ruku",
+"evidence": "visual",
+"start": 40.2,
+"end": 43.0,
+"duration": 2.8,
+"n_frames": 14,
+"confidence": 0.409,
+"frames_without_person": 0.0,
+"uncertain": true,
+"display_label": "Tidak Pasti",
+"state": null
+}
+],
+"summary": {
+"phase_seconds": {
+"berdiri": 9.0,
+"rukuk": 6.2,
+"iktidal": 4.8,
+"sujud": 12.0,
+"duduk_antara_sujud": 5.2,
+"tasyahud": 5.72
+},
+"phase_share": {
+"berdiri": 0.2097,
+"rukuk": 0.1445,
+"iktidal": 0.1118,
+"sujud": 0.2796,
+"duduk_antara_sujud": 0.1212,
+"tasyahud": 0.1333
+},
+"n_segments": 13,
+"n_uncertain_segments": 2,
+"uncertain_seconds": 8.12,
+"sequence": [
+"berdiri",
+"rukuk",
+"iktidal",
+"sujud",
+"duduk_antara_sujud",
+"sujud",
+"berdiri",
+"rukuk",
+"iktidal",
+"sujud",
+"duduk_antara_sujud",
+"sujud",
+"tasyahud"
+],
+"rukuk_count": 2,
+"sujud_count": 4,
+"cycles_observed": 2,
+"uncertain_label": "tidak_pasti"
+},
+"frames": [
+{
+"t": 0.0,
+"visual_class": "qiyam",
+"label": "Berdiri",
+"confidence": 0.7091,
+"probabilities": {
+"qiyam": 0.7091,
+"ruku": 0.093,
+"sujud": 0.1659,
+"julus": 0.0321
+},
+"probabilities_pose_model": {
+"qiyam": 0.9948,
+"ruku": 0.0,
+"sujud": 0.0,
+"julus": 0.0052
+},
+"probabilities_image_model": {
+"qiyam": 0.4234,
+"ruku": 0.1859,
+"sujud": 0.3317,
+"julus": 0.059
+},
+"localization": "detector",
+"person_box": [
+0.4016,
+0.0639,
+0.6133,
+0.8625
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 57.36,
+"pose": 56.89,
+"pose_classifier": 13.29,
+"image_model": 11.18,
+"total": 138.85
+},
+"phase": "berdiri",
+"raw_visual_class": "qiyam",
+"smoothed_probabilities": {
+"qiyam": 0.995,
+"ruku": 0.0001,
+"sujud": 0.0037,
+"julus": 0.0012
+}
+},
+{
+"t": 1.0,
+"visual_class": "qiyam",
+"label": "Berdiri",
+"confidence": 0.7337,
+"probabilities": {
+"qiyam": 0.7337,
+"ruku": 0.0878,
+"sujud": 0.1419,
+"julus": 0.0366
+},
+"probabilities_pose_model": {
+"qiyam": 0.9814,
+"ruku": 0.0001,
+"sujud": 0.0,
+"julus": 0.0185
+},
+"probabilities_image_model": {
+"qiyam": 0.4861,
+"ruku": 0.1755,
+"sujud": 0.2838,
+"julus": 0.0547
+},
+"localization": "detector",
+"person_box": [
+0.4023,
+0.0653,
+0.6141,
+0.8639
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 39.81,
+"pose": 32.42,
+"pose_classifier": 1.18,
+"image_model": 8.16,
+"total": 81.64
+},
+"phase": "berdiri",
+"raw_visual_class": "qiyam",
+"smoothed_probabilities": {
+"qiyam": 0.9999,
+"ruku": 0.0001,
+"sujud": 0.0,
+"julus": 0.0
+}
+},
+{
+"t": 2.0,
+"visual_class": "qiyam",
+"label": "Berdiri",
+"confidence": 0.7398,
+"probabilities": {
+"qiyam": 0.7398,
+"ruku": 0.0878,
+"sujud": 0.1416,
+"julus": 0.0309
+},
+"probabilities_pose_model": {
+"qiyam": 0.9934,
+"ruku": 0.0001,
+"sujud": 0.0,
+"julus": 0.0065
+},
+"probabilities_image_model": {
+"qiyam": 0.4861,
+"ruku": 0.1755,
+"sujud": 0.2831,
+"julus": 0.0553
+},
+"localization": "detector",
+"person_box": [
+0.4023,
+0.0653,
+0.6141,
+0.8639
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 40.09,
+"pose": 41.83,
+"pose_classifier": 1.74,
+"image_model": 8.68,
+"total": 92.42
+},
+"phase": "berdiri",
+"raw_visual_class": "qiyam",
+"smoothed_probabilities": {
+"qiyam": 0.9999,
+"ruku": 0.0,
+"sujud": 0.0,
+"julus": 0.0
+}
+},
+{
+"t": 3.0,
+"visual_class": "qiyam",
+"label": "Berdiri",
+"confidence": 0.7337,
+"probabilities": {
+"qiyam": 0.7337,
+"ruku": 0.0879,
+"sujud": 0.1419,
+"julus": 0.0366
+},
+"probabilities_pose_model": {
+"qiyam": 0.9815,
+"ruku": 0.0001,
+"sujud": 0.0,
+"julus": 0.0184
+},
+"probabilities_image_model": {
+"qiyam": 0.486,
+"ruku": 0.1756,
+"sujud": 0.2837,
+"julus": 0.0547
+},
+"localization": "detector",
+"person_box": [
+0.4023,
+0.0653,
+0.6141,
+0.8639
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 35.05,
+"pose": 32.74,
+"pose_classifier": 1.43,
+"image_model": 8.36,
+"total": 77.66
+},
+"phase": "berdiri",
+"raw_visual_class": "qiyam",
+"smoothed_probabilities": {
+"qiyam": 0.9999,
+"ruku": 0.0,
+"sujud": 0.0,
+"julus": 0.0
+}
+},
+{
+"t": 4.0,
+"visual_class": "qiyam",
+"label": "Berdiri",
+"confidence": 0.7345,
+"probabilities": {
+"qiyam": 0.7345,
+"ruku": 0.0923,
+"sujud": 0.1455,
+"julus": 0.0277
+},
+"probabilities_pose_model": {
+"qiyam": 0.9948,
+"ruku": 0.0,
+"sujud": 0.0,
+"julus": 0.0051
+},
+"probabilities_image_model": {
+"qiyam": 0.4741,
+"ruku": 0.1846,
+"sujud": 0.291,
+"julus": 0.0503
+},
+"localization": "detector",
+"person_box": [
+0.4023,
+0.0653,
+0.6141,
+0.8625
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 34.21,
+"pose": 37.17,
+"pose_classifier": 1.27,
+"image_model": 7.49,
+"total": 80.2
+},
+"phase": "berdiri",
+"raw_visual_class": "qiyam",
+"smoothed_probabilities": {
+"qiyam": 0.9999,
+"ruku": 0.0001,
+"sujud": 0.0,
+"julus": 0.0
+}
+},
+{
+"t": 5.0,
+"visual_class": "sujud",
+"label": "Sujud",
+"confidence": 0.4229,
+"probabilities": {
+"qiyam": 0.2605,
+"ruku": 0.2632,
+"sujud": 0.4229,
+"julus": 0.0534
+},
+"probabilities_pose_model": null,
+"probabilities_image_model": {
+"qiyam": 0.2605,
+"ruku": 0.2632,
+"sujud": 0.4229,
+"julus": 0.0534
+},
+"localization": "detector",
+"person_box": [
+0.4023,
+0.0667,
+0.6188,
+0.8542
+],
+"pose_detected": false,
+"timings_ms": {
+"localize": 52.64,
+"pose": 46.47,
+"pose_classifier": 0.0,
+"image_model": 10.18,
+"total": 109.34
+},
+"phase": "rukuk",
+"raw_visual_class": "sujud",
+"smoothed_probabilities": {
+"qiyam": 0.4859,
+"ruku": 0.5137,
+"sujud": 0.0003,
+"julus": 0.0
+}
+},
+{
+"t": 6.0,
+"visual_class": "ruku",
+"label": "Rukuk",
+"confidence": 0.7209,
+"probabilities": {
+"qiyam": 0.1025,
+"ruku": 0.7209,
+"sujud": 0.0709,
+"julus": 0.1057
+},
+"probabilities_pose_model": {
+"qiyam": 0.0005,
+"ruku": 0.9967,
+"sujud": 0.0023,
+"julus": 0.0005
+},
+"probabilities_image_model": {
+"qiyam": 0.2044,
+"ruku": 0.445,
+"sujud": 0.1396,
+"julus": 0.2109
+},
+"localization": "detector",
+"person_box": [
+0.4016,
+0.3639,
+0.5789,
+0.8764
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 44.67,
+"pose": 39.35,
+"pose_classifier": 1.38,
+"image_model": 7.51,
+"total": 92.98
+},
+"phase": "rukuk",
+"raw_visual_class": "ruku",
+"smoothed_probabilities": {
+"qiyam": 0.0001,
+"ruku": 0.9999,
+"sujud": 0.0,
+"julus": 0.0
+}
+},
+{
+"t": 7.0,
+"visual_class": "ruku",
+"label": "Rukuk",
+"confidence": 0.7169,
+"probabilities": {
+"qiyam": 0.1042,
+"ruku": 0.7169,
+"sujud": 0.0714,
+"julus": 0.1076
+},
+"probabilities_pose_model": {
+"qiyam": 0.0006,
+"ruku": 0.9943,
+"sujud": 0.0039,
+"julus": 0.0012
+},
+"probabilities_image_model": {
+"qiyam": 0.2077,
+"ruku": 0.4394,
+"sujud": 0.1389,
+"julus": 0.2139
+},
+"localization": "detector",
+"person_box": [
+0.4016,
+0.3639,
+0.5789,
+0.8764
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 38.43,
+"pose": 35.47,
+"pose_classifier": 1.32,
+"image_model": 7.38,
+"total": 82.67
+},
+"phase": "rukuk",
+"raw_visual_class": "ruku",
+"smoothed_probabilities": {
+"qiyam": 0.0,
+"ruku": 1.0,
+"sujud": 0.0,
+"julus": 0.0
+}
+},
+{
+"t": 8.0,
+"visual_class": "ruku",
+"label": "Rukuk",
+"confidence": 0.6636,
+"probabilities": {
+"qiyam": 0.098,
+"ruku": 0.6636,
+"sujud": 0.081,
+"julus": 0.1573
+},
+"probabilities_pose_model": {
+"qiyam": 0.033,
+"ruku": 0.8964,
+"sujud": 0.0,
+"julus": 0.0706
+},
+"probabilities_image_model": {
+"qiyam": 0.163,
+"ruku": 0.4309,
+"sujud": 0.1619,
+"julus": 0.2441
+},
+"localization": "detector",
+"person_box": [
+0.4266,
+0.0944,
+0.7203,
+0.8917
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 40.27,
+"pose": 35.5,
+"pose_classifier": 2.01,
+"image_model": 10.24,
+"total": 88.1
+},
+"phase": "rukuk",
+"raw_visual_class": "ruku",
+"smoothed_probabilities": {
+"qiyam": 0.1287,
+"ruku": 0.8713,
+"sujud": 0.0,
+"julus": 0.0
+}
+},
+{
+"t": 9.0,
+"visual_class": "qiyam",
+"label": "Berdiri",
+"confidence": 0.8693,
+"probabilities": {
+"qiyam": 0.8693,
+"ruku": 0.0266,
+"sujud": 0.028,
+"julus": 0.076
+},
+"probabilities_pose_model": {
+"qiyam": 0.939,
+"ruku": 0.0001,
+"sujud": 0.0,
+"julus": 0.0608
+},
+"probabilities_image_model": {
+"qiyam": 0.7997,
+"ruku": 0.0532,
+"sujud": 0.056,
+"julus": 0.0912
+},
+"localization": "detector",
+"person_box": [
+0.4305,
+0.0653,
+0.7328,
+0.9653
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 38.69,
+"pose": 35.72,
+"pose_classifier": 1.32,
+"image_model": 8.11,
+"total": 83.92
+},
+"phase": "iktidal",
+"raw_visual_class": "qiyam",
+"smoothed_probabilities": {
+"qiyam": 1.0,
+"ruku": 0.0,
+"sujud": 0.0,
+"julus": 0.0
+}
+},
+{
+"t": 10.0,
+"visual_class": "qiyam",
+"label": "Berdiri",
+"confidence": 0.8679,
+"probabilities": {
+"qiyam": 0.8679,
+"ruku": 0.0264,
+"sujud": 0.0269,
+"julus": 0.0788
+},
+"probabilities_pose_model": {
+"qiyam": 0.9359,
+"ruku": 0.0001,
+"sujud": 0.0,
+"julus": 0.064
+},
+"probabilities_image_model": {
+"qiyam": 0.8,
+"ruku": 0.0527,
+"sujud": 0.0537,
+"julus": 0.0936
+},
+"localization": "detector",
+"person_box": [
+0.4305,
+0.0653,
+0.7336,
+0.9653
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 36.52,
+"pose": 35.82,
+"pose_classifier": 1.97,
+"image_model": 9.83,
+"total": 84.2
+},
+"phase": "iktidal",
+"raw_visual_class": "qiyam",
+"smoothed_probabilities": {
+"qiyam": 1.0,
+"ruku": 0.0,
+"sujud": 0.0,
+"julus": 0.0
+}
+},
+{
+"t": 11.0,
+"visual_class": "sujud",
+"label": "Sujud",
+"confidence": 0.889,
+"probabilities": {
+"qiyam": 0.0553,
+"ruku": 0.0288,
+"sujud": 0.889,
+"julus": 0.0269
+},
+"probabilities_pose_model": {
+"qiyam": 0.0,
+"ruku": 0.0124,
+"sujud": 0.9861,
+"julus": 0.0014
+},
+"probabilities_image_model": {
+"qiyam": 0.1107,
+"ruku": 0.0451,
+"sujud": 0.7918,
+"julus": 0.0524
+},
+"localization": "detector",
+"person_box": [
+0.193,
+0.3819,
+0.6648,
+0.8722
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 35.12,
+"pose": 34.49,
+"pose_classifier": 1.55,
+"image_model": 8.06,
+"total": 79.27
+},
+"phase": "sujud",
+"raw_visual_class": "sujud",
+"smoothed_probabilities": {
+"qiyam": 0.0017,
+"ruku": 0.0,
+"sujud": 0.9983,
+"julus": 0.0
+}
+},
+{
+"t": 12.0,
+"visual_class": "sujud",
+"label": "Sujud",
+"confidence": 0.9049,
+"probabilities": {
+"qiyam": 0.0476,
+"ruku": 0.0239,
+"sujud": 0.9049,
+"julus": 0.0235
+},
+"probabilities_pose_model": {
+"qiyam": 0.0,
+"ruku": 0.0109,
+"sujud": 0.9877,
+"julus": 0.0015
+},
+"probabilities_image_model": {
+"qiyam": 0.0953,
+"ruku": 0.037,
+"sujud": 0.8222,
+"julus": 0.0455
+},
+"localization": "detector",
+"person_box": [
+0.1914,
+0.3819,
+0.6648,
+0.8708
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 35.64,
+"pose": 34.76,
+"pose_classifier": 1.26,
+"image_model": 7.85,
+"total": 79.57
+},
+"phase": "sujud",
+"raw_visual_class": "sujud",
+"smoothed_probabilities": {
+"qiyam": 0.0,
+"ruku": 0.0,
+"sujud": 1.0,
+"julus": 0.0
+}
+},
+{
+"t": 13.0,
+"visual_class": "sujud",
+"label": "Sujud",
+"confidence": 0.8966,
+"probabilities": {
+"qiyam": 0.0536,
+"ruku": 0.0262,
+"sujud": 0.8966,
+"julus": 0.0236
+},
+"probabilities_pose_model": {
+"qiyam": 0.0,
+"ruku": 0.013,
+"sujud": 0.9856,
+"julus": 0.0014
+},
+"probabilities_image_model": {
+"qiyam": 0.1072,
+"ruku": 0.0394,
+"sujud": 0.8076,
+"julus": 0.0458
+},
+"localization": "detector",
+"person_box": [
+0.1922,
+0.3819,
+0.6648,
+0.8708
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 44.42,
+"pose": 40.04,
+"pose_classifier": 1.83,
+"image_model": 10.11,
+"total": 96.46
+},
+"phase": "sujud",
+"raw_visual_class": "sujud",
+"smoothed_probabilities": {
+"qiyam": 0.0,
+"ruku": 0.0,
+"sujud": 1.0,
+"julus": 0.0
+}
+},
+{
+"t": 14.0,
+"visual_class": "julus",
+"label": "Duduk",
+"confidence": 0.9408,
+"probabilities": {
+"qiyam": 0.0136,
+"ruku": 0.0159,
+"sujud": 0.0297,
+"julus": 0.9408
+},
+"probabilities_pose_model": {
+"qiyam": 0.0007,
+"ruku": 0.0,
+"sujud": 0.0001,
+"julus": 0.9992
+},
+"probabilities_image_model": {
+"qiyam": 0.0265,
+"ruku": 0.0317,
+"sujud": 0.0593,
+"julus": 0.8824
+},
+"localization": "detector",
+"person_box": [
+0.4344,
+0.2486,
+0.657,
+0.7181
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 38.4,
+"pose": 34.18,
+"pose_classifier": 1.36,
+"image_model": 7.53,
+"total": 81.52
+},
+"phase": "duduk_antara_sujud",
+"raw_visual_class": "julus",
+"smoothed_probabilities": {
+"qiyam": 0.0,
+"ruku": 0.0,
+"sujud": 0.0003,
+"julus": 0.9997
+}
+},
+{
+"t": 15.0,
+"visual_class": "julus",
+"label": "Duduk",
+"confidence": 0.9516,
+"probabilities": {
+"qiyam": 0.0109,
+"ruku": 0.0137,
+"sujud": 0.0238,
+"julus": 0.9516
+},
+"probabilities_pose_model": {
+"qiyam": 0.0008,
+"ruku": 0.0,
+"sujud": 0.0001,
+"julus": 0.9991
+},
+"probabilities_image_model": {
+"qiyam": 0.021,
+"ruku": 0.0273,
+"sujud": 0.0476,
+"julus": 0.904
+},
+"localization": "detector",
+"person_box": [
+0.4352,
+0.2486,
+0.6578,
+0.7181
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 42.07,
+"pose": 38.6,
+"pose_classifier": 1.81,
+"image_model": 9.78,
+"total": 92.35
+},
+"phase": "duduk_antara_sujud",
+"raw_visual_class": "julus",
+"smoothed_probabilities": {
+"qiyam": 0.0,
+"ruku": 0.0,
+"sujud": 0.0,
+"julus": 1.0
+}
+},
+{
+"t": 16.0,
+"visual_class": "julus",
+"label": "Duduk",
+"confidence": 0.3727,
+"probabilities": {
+"qiyam": 0.026,
+"ruku": 0.3384,
+"sujud": 0.2629,
+"julus": 0.3727
+},
+"probabilities_pose_model": null,
+"probabilities_image_model": {
+"qiyam": 0.026,
+"ruku": 0.3384,
+"sujud": 0.2629,
+"julus": 0.3727
+},
+"localization": "detector",
+"person_box": [
+0.4336,
+0.2375,
+0.668,
+0.7139
+],
+"pose_detected": false,
+"timings_ms": {
+"localize": 36.24,
+"pose": 12.39,
+"pose_classifier": 0.0,
+"image_model": 7.66,
+"total": 56.33
+},
+"phase": "duduk_antara_sujud",
+"raw_visual_class": "julus",
+"smoothed_probabilities": {
+"qiyam": 0.0,
+"ruku": 0.0,
+"sujud": 0.4199,
+"julus": 0.5801
+}
+},
+{
+"t": 17.0,
+"visual_class": "sujud",
+"label": "Sujud",
+"confidence": 0.9725,
+"probabilities": {
+"qiyam": 0.0023,
+"ruku": 0.0098,
+"sujud": 0.9725,
+"julus": 0.0155
+},
+"probabilities_pose_model": {
+"qiyam": 0.0,
+"ruku": 0.0018,
+"sujud": 0.997,
+"julus": 0.0012
+},
+"probabilities_image_model": {
+"qiyam": 0.0045,
+"ruku": 0.0178,
+"sujud": 0.948,
+"julus": 0.0297
+},
+"localization": "pose",
+"person_box": [
+0.4143,
+0.2836,
+0.6949,
+0.679
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 70.03,
+"pose": 31.53,
+"pose_classifier": 1.32,
+"image_model": 7.58,
+"total": 110.53
+},
+"phase": "sujud",
+"raw_visual_class": "sujud",
+"smoothed_probabilities": {
+"qiyam": 0.0,
+"ruku": 0.0,
+"sujud": 1.0,
+"julus": 0.0
+}
+},
+{
+"t": 18.0,
+"visual_class": "sujud",
+"label": "Sujud",
+"confidence": 0.97,
+"probabilities": {
+"qiyam": 0.001,
+"ruku": 0.0117,
+"sujud": 0.97,
+"julus": 0.0173
+},
+"probabilities_pose_model": {
+"qiyam": 0.0,
+"ruku": 0.0011,
+"sujud": 0.9981,
+"julus": 0.0008
+},
+"probabilities_image_model": {
+"qiyam": 0.002,
+"ruku": 0.0223,
+"sujud": 0.9419,
+"julus": 0.0338
+},
+"localization": "pose",
+"person_box": [
+0.4039,
+0.2735,
+0.6937,
+0.708
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 70.96,
+"pose": 30.23,
+"pose_classifier": 1.24,
+"image_model": 7.79,
+"total": 110.31
+},
+"phase": "sujud",
+"raw_visual_class": "sujud",
+"smoothed_probabilities": {
+"qiyam": 0.0,
+"ruku": 0.0,
+"sujud": 1.0,
+"julus": 0.0
+}
+},
+{
+"t": 19.0,
+"visual_class": "sujud",
+"label": "Sujud",
+"confidence": 0.8584,
+"probabilities": {
+"qiyam": 0.0296,
+"ruku": 0.0543,
+"sujud": 0.8584,
+"julus": 0.0577
+},
+"probabilities_pose_model": {
+"qiyam": 0.0,
+"ruku": 0.0049,
+"sujud": 0.9652,
+"julus": 0.0298
+},
+"probabilities_image_model": {
+"qiyam": 0.0592,
+"ruku": 0.1037,
+"sujud": 0.7515,
+"julus": 0.0855
+},
+"localization": "pose",
+"person_box": [
+0.3774,
+0.2631,
+0.7248,
+0.6976
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 70.6,
+"pose": 33.7,
+"pose_classifier": 1.39,
+"image_model": 7.81,
+"total": 113.57
+},
+"phase": "sujud",
+"raw_visual_class": "sujud",
+"smoothed_probabilities": {
+"qiyam": 0.03,
+"ruku": 0.0,
+"sujud": 0.9617,
+"julus": 0.0082
+}
+},
+{
+"t": 20.0,
+"visual_class": "qiyam",
+"label": "Berdiri",
+"confidence": 0.8074,
+"probabilities": {
+"qiyam": 0.8074,
+"ruku": 0.0109,
+"sujud": 0.0262,
+"julus": 0.1555
+},
+"probabilities_pose_model": {
+"qiyam": 0.7141,
+"ruku": 0.0003,
+"sujud": 0.0011,
+"julus": 0.2845
+},
+"probabilities_image_model": {
+"qiyam": 0.9007,
+"ruku": 0.0216,
+"sujud": 0.0512,
+"julus": 0.0264
+},
+"localization": "detector",
+"person_box": [
+0.4273,
+0.0889,
+0.6219,
+0.9292
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 47.66,
+"pose": 47.52,
+"pose_classifier": 1.61,
+"image_model": 10.27,
+"total": 107.16
+},
+"phase": "berdiri",
+"raw_visual_class": "qiyam",
+"smoothed_probabilities": {
+"qiyam": 0.9999,
+"ruku": 0.0,
+"sujud": 0.0,
+"julus": 0.0001
+}
+},
+{
+"t": 21.0,
+"visual_class": "qiyam",
+"label": "Berdiri",
+"confidence": 0.8357,
+"probabilities": {
+"qiyam": 0.8357,
+"ruku": 0.0105,
+"sujud": 0.0233,
+"julus": 0.1305
+},
+"probabilities_pose_model": {
+"qiyam": 0.7606,
+"ruku": 0.0008,
+"sujud": 0.0018,
+"julus": 0.2368
+},
+"probabilities_image_model": {
+"qiyam": 0.9109,
+"ruku": 0.0201,
+"sujud": 0.0448,
+"julus": 0.0243
+},
+"localization": "detector",
+"person_box": [
+0.4281,
+0.0889,
+0.6227,
+0.9292
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 39.71,
+"pose": 37.97,
+"pose_classifier": 1.53,
+"image_model": 7.31,
+"total": 86.57
+},
+"phase": "berdiri",
+"raw_visual_class": "qiyam",
+"smoothed_probabilities": {
+"qiyam": 1.0,
+"ruku": 0.0,
+"sujud": 0.0,
+"julus": 0.0
+}
+},
+{
+"t": 22.0,
+"visual_class": "qiyam",
+"label": "Berdiri",
+"confidence": 0.8364,
+"probabilities": {
+"qiyam": 0.8364,
+"ruku": 0.0105,
+"sujud": 0.0234,
+"julus": 0.1298
+},
+"probabilities_pose_model": {
+"qiyam": 0.7621,
+"ruku": 0.0008,
+"sujud": 0.0018,
+"julus": 0.2353
+},
+"probabilities_image_model": {
+"qiyam": 0.9107,
+"ruku": 0.0201,
+"sujud": 0.0449,
+"julus": 0.0243
+},
+"localization": "detector",
+"person_box": [
+0.4281,
+0.0889,
+0.6227,
+0.9292
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 32.7,
+"pose": 34.14,
+"pose_classifier": 1.5,
+"image_model": 8.44,
+"total": 76.85
+},
+"phase": "berdiri",
+"raw_visual_class": "qiyam",
+"smoothed_probabilities": {
+"qiyam": 1.0,
+"ruku": 0.0,
+"sujud": 0.0,
+"julus": 0.0
+}
+},
+{
+"t": 23.0,
+"visual_class": "qiyam",
+"label": "Berdiri",
+"confidence": 0.5715,
+"probabilities": {
+"qiyam": 0.5715,
+"ruku": 0.0418,
+"sujud": 0.04,
+"julus": 0.3467
+},
+"probabilities_pose_model": {
+"qiyam": 0.428,
+"ruku": 0.0017,
+"sujud": 0.005,
+"julus": 0.5652
+},
+"probabilities_image_model": {
+"qiyam": 0.715,
+"ruku": 0.082,
+"sujud": 0.0749,
+"julus": 0.1282
+},
+"localization": "detector",
+"person_box": [
+0.4219,
+0.0986,
+0.7008,
+0.9542
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 39.88,
+"pose": 35.71,
+"pose_classifier": 1.61,
+"image_model": 9.21,
+"total": 86.49
+},
+"phase": "berdiri",
+"raw_visual_class": "qiyam",
+"smoothed_probabilities": {
+"qiyam": 0.9512,
+"ruku": 0.0488,
+"sujud": 0.0,
+"julus": 0.0
+}
+},
+{
+"t": 24.0,
+"visual_class": "ruku",
+"label": "Rukuk",
+"confidence": 0.8838,
+"probabilities": {
+"qiyam": 0.0383,
+"ruku": 0.8838,
+"sujud": 0.0542,
+"julus": 0.0237
+},
+"probabilities_pose_model": null,
+"probabilities_image_model": {
+"qiyam": 0.0383,
+"ruku": 0.8838,
+"sujud": 0.0542,
+"julus": 0.0237
+},
+"localization": "pose",
+"person_box": [
+0.3581,
+0.4042,
+0.744,
+1.0
+],
+"pose_detected": false,
+"timings_ms": {
+"localize": 73.98,
+"pose": 35.29,
+"pose_classifier": 0.0,
+"image_model": 15.55,
+"total": 124.85
+},
+"phase": "rukuk",
+"raw_visual_class": "ruku",
+"smoothed_probabilities": {
+"qiyam": 0.0,
+"ruku": 1.0,
+"sujud": 0.0,
+"julus": 0.0
+}
+},
+{
+"t": 25.0,
+"visual_class": "ruku",
+"label": "Rukuk",
+"confidence": 0.8651,
+"probabilities": {
+"qiyam": 0.0469,
+"ruku": 0.8651,
+"sujud": 0.0554,
+"julus": 0.0326
+},
+"probabilities_pose_model": null,
+"probabilities_image_model": {
+"qiyam": 0.0469,
+"ruku": 0.8651,
+"sujud": 0.0554,
+"julus": 0.0326
+},
+"localization": "pose",
+"person_box": [
+0.3573,
+0.4015,
+0.7507,
+0.9983
+],
+"pose_detected": false,
+"timings_ms": {
+"localize": 64.88,
+"pose": 28.05,
+"pose_classifier": 0.0,
+"image_model": 7.09,
+"total": 100.05
+},
+"phase": "rukuk",
+"raw_visual_class": "ruku",
+"smoothed_probabilities": {
+"qiyam": 0.0,
+"ruku": 1.0,
+"sujud": 0.0,
+"julus": 0.0
+}
+},
+{
+"t": 26.0,
+"visual_class": "sujud",
+"label": "Sujud",
+"confidence": 0.3785,
+"probabilities": {
+"qiyam": 0.1798,
+"ruku": 0.3503,
+"sujud": 0.3785,
+"julus": 0.0914
+},
+"probabilities_pose_model": null,
+"probabilities_image_model": {
+"qiyam": 0.1798,
+"ruku": 0.3503,
+"sujud": 0.3785,
+"julus": 0.0914
+},
+"localization": "full_image",
+"person_box": [
+0.0,
+0.0,
+1.0,
+1.0
+],
+"pose_detected": false,
+"timings_ms": {
+"localize": 71.39,
+"pose": 36.72,
+"pose_classifier": 0.0,
+"image_model": 11.4,
+"total": 119.56
+},
+"phase": "rukuk",
+"raw_visual_class": "sujud",
+"smoothed_probabilities": {
+"qiyam": 0.3192,
+"ruku": 0.6808,
+"sujud": 0.0,
+"julus": 0.0
+}
+},
+{
+"t": 27.0,
+"visual_class": "qiyam",
+"label": "Berdiri",
+"confidence": 0.7311,
+"probabilities": {
+"qiyam": 0.7311,
+"ruku": 0.0374,
+"sujud": 0.1373,
+"julus": 0.0942
+},
+"probabilities_pose_model": {
+"qiyam": 0.9506,
+"ruku": 0.0,
+"sujud": 0.0,
+"julus": 0.0494
+},
+"probabilities_image_model": {
+"qiyam": 0.5116,
+"ruku": 0.0749,
+"sujud": 0.2745,
+"julus": 0.139
+},
+"localization": "detector",
+"person_box": [
+0.3,
+0.1014,
+0.3516,
+0.2931
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 36.26,
+"pose": 35.77,
+"pose_classifier": 1.23,
+"image_model": 7.03,
+"total": 80.34
+},
+"phase": "iktidal",
+"raw_visual_class": "qiyam",
+"smoothed_probabilities": {
+"qiyam": 0.9863,
+"ruku": 0.0,
+"sujud": 0.0116,
+"julus": 0.002
+}
+},
+{
+"t": 28.0,
+"visual_class": "julus",
+"label": "Duduk",
+"confidence": 0.5558,
+"probabilities": {
+"qiyam": 0.2098,
+"ruku": 0.0351,
+"sujud": 0.1992,
+"julus": 0.5558
+},
+"probabilities_pose_model": {
+"qiyam": 0.0226,
+"ruku": 0.0,
+"sujud": 0.0,
+"julus": 0.9773
+},
+"probabilities_image_model": {
+"qiyam": 0.397,
+"ruku": 0.0701,
+"sujud": 0.3985,
+"julus": 0.1344
+},
+"localization": "detector",
+"person_box": [
+0.3,
+0.1014,
+0.3516,
+0.2944
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 39.05,
+"pose": 36.7,
+"pose_classifier": 1.23,
+"image_model": 6.61,
+"total": 83.66
+},
+"phase": "iktidal",
+"raw_visual_class": "julus",
+"smoothed_probabilities": {
+"qiyam": 0.8544,
+"ruku": 0.0001,
+"sujud": 0.1214,
+"julus": 0.0241
+}
+},
+{
+"t": 29.0,
+"visual_class": "sujud",
+"label": "Sujud",
+"confidence": 0.9765,
+"probabilities": {
+"qiyam": 0.0039,
+"ruku": 0.0056,
+"sujud": 0.9765,
+"julus": 0.0141
+},
+"probabilities_pose_model": {
+"qiyam": 0.0,
+"ruku": 0.0004,
+"sujud": 0.9994,
+"julus": 0.0002
+},
+"probabilities_image_model": {
+"qiyam": 0.0077,
+"ruku": 0.0108,
+"sujud": 0.9535,
+"julus": 0.0279
+},
+"localization": "detector",
+"person_box": [
+0.2406,
+0.2708,
+0.7977,
+0.9417
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 37.02,
+"pose": 48.56,
+"pose_classifier": 1.35,
+"image_model": 9.08,
+"total": 96.08
+},
+"phase": "sujud",
+"raw_visual_class": "sujud",
+"smoothed_probabilities": {
+"qiyam": 0.0,
+"ruku": 0.0,
+"sujud": 1.0,
+"julus": 0.0
+}
+},
+{
+"t": 30.0,
+"visual_class": "sujud",
+"label": "Sujud",
+"confidence": 0.9742,
+"probabilities": {
+"qiyam": 0.0056,
+"ruku": 0.0062,
+"sujud": 0.9742,
+"julus": 0.014
+},
+"probabilities_pose_model": {
+"qiyam": 0.0,
+"ruku": 0.0004,
+"sujud": 0.9994,
+"julus": 0.0002
+},
+"probabilities_image_model": {
+"qiyam": 0.0112,
+"ruku": 0.0119,
+"sujud": 0.9489,
+"julus": 0.0279
+},
+"localization": "detector",
+"person_box": [
+0.2391,
+0.2681,
+0.7812,
+0.9431
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 31.48,
+"pose": 35.72,
+"pose_classifier": 1.31,
+"image_model": 8.25,
+"total": 76.82
+},
+"phase": "sujud",
+"raw_visual_class": "sujud",
+"smoothed_probabilities": {
+"qiyam": 0.0,
+"ruku": 0.0,
+"sujud": 1.0,
+"julus": 0.0
+}
+},
+{
+"t": 31.0,
+"visual_class": "sujud",
+"label": "Sujud",
+"confidence": 0.9737,
+"probabilities": {
+"qiyam": 0.0058,
+"ruku": 0.0065,
+"sujud": 0.9737,
+"julus": 0.0141
+},
+"probabilities_pose_model": {
+"qiyam": 0.0,
+"ruku": 0.0004,
+"sujud": 0.9994,
+"julus": 0.0002
+},
+"probabilities_image_model": {
+"qiyam": 0.0116,
+"ruku": 0.0126,
+"sujud": 0.9479,
+"julus": 0.028
+},
+"localization": "detector",
+"person_box": [
+0.2391,
+0.2667,
+0.7805,
+0.9417
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 38.49,
+"pose": 43.28,
+"pose_classifier": 1.64,
+"image_model": 10.08,
+"total": 93.57
+},
+"phase": "sujud",
+"raw_visual_class": "sujud",
+"smoothed_probabilities": {
+"qiyam": 0.0,
+"ruku": 0.0,
+"sujud": 1.0,
+"julus": 0.0
+}
+},
+{
+"t": 32.0,
+"visual_class": "julus",
+"label": "Duduk",
+"confidence": 0.9281,
+"probabilities": {
+"qiyam": 0.0208,
+"ruku": 0.0322,
+"sujud": 0.0188,
+"julus": 0.9281
+},
+"probabilities_pose_model": {
+"qiyam": 0.0,
+"ruku": 0.0021,
+"sujud": 0.0003,
+"julus": 0.9976
+},
+"probabilities_image_model": {
+"qiyam": 0.0416,
+"ruku": 0.0623,
+"sujud": 0.0374,
+"julus": 0.8587
+},
+"localization": "detector",
+"person_box": [
+0.1883,
+0.3736,
+0.7672,
+0.9569
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 37.18,
+"pose": 37.85,
+"pose_classifier": 1.37,
+"image_model": 8.59,
+"total": 85.05
+},
+"phase": "duduk_antara_sujud",
+"raw_visual_class": "julus",
+"smoothed_probabilities": {
+"qiyam": 0.0,
+"ruku": 0.0,
+"sujud": 0.0,
+"julus": 1.0
+}
+},
+{
+"t": 33.0,
+"visual_class": "julus",
+"label": "Duduk",
+"confidence": 0.9294,
+"probabilities": {
+"qiyam": 0.0203,
+"ruku": 0.0281,
+"sujud": 0.0223,
+"julus": 0.9294
+},
+"probabilities_pose_model": {
+"qiyam": 0.0,
+"ruku": 0.0026,
+"sujud": 0.0003,
+"julus": 0.9971
+},
+"probabilities_image_model": {
+"qiyam": 0.0405,
+"ruku": 0.0536,
+"sujud": 0.0443,
+"julus": 0.8616
+},
+"localization": "detector",
+"person_box": [
+0.1883,
+0.375,
+0.7656,
+0.9569
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 37.53,
+"pose": 35.79,
+"pose_classifier": 1.34,
+"image_model": 10.45,
+"total": 85.19
+},
+"phase": "duduk_antara_sujud",
+"raw_visual_class": "julus",
+"smoothed_probabilities": {
+"qiyam": 0.0,
+"ruku": 0.0,
+"sujud": 0.0,
+"julus": 1.0
+}
+},
+{
+"t": 34.0,
+"visual_class": "julus",
+"label": "Duduk",
+"confidence": 0.7385,
+"probabilities": {
+"qiyam": 0.0612,
+"ruku": 0.0969,
+"sujud": 0.1033,
+"julus": 0.7385
+},
+"probabilities_pose_model": {
+"qiyam": 0.0001,
+"ruku": 0.0017,
+"sujud": 0.0028,
+"julus": 0.9954
+},
+"probabilities_image_model": {
+"qiyam": 0.1223,
+"ruku": 0.1922,
+"sujud": 0.2038,
+"julus": 0.4816
+},
+"localization": "detector",
+"person_box": [
+0.1875,
+0.4778,
+0.7703,
+0.9667
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 39.94,
+"pose": 41.69,
+"pose_classifier": 1.83,
+"image_model": 10.31,
+"total": 93.86
+},
+"phase": "duduk_antara_sujud",
+"raw_visual_class": "julus",
+"smoothed_probabilities": {
+"qiyam": 0.0001,
+"ruku": 0.0,
+"sujud": 0.1224,
+"julus": 0.8775
+}
+},
+{
+"t": 35.0,
+"visual_class": "sujud",
+"label": "Sujud",
+"confidence": 0.9411,
+"probabilities": {
+"qiyam": 0.0075,
+"ruku": 0.0227,
+"sujud": 0.9411,
+"julus": 0.0287
+},
+"probabilities_pose_model": {
+"qiyam": 0.0,
+"ruku": 0.0126,
+"sujud": 0.9862,
+"julus": 0.0012
+},
+"probabilities_image_model": {
+"qiyam": 0.015,
+"ruku": 0.0328,
+"sujud": 0.8959,
+"julus": 0.0562
+},
+"localization": "detector",
+"person_box": [
+0.1875,
+0.1181,
+0.7305,
+0.6778
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 38.56,
+"pose": 38.8,
+"pose_classifier": 2.13,
+"image_model": 8.33,
+"total": 87.93
+},
+"phase": "sujud",
+"raw_visual_class": "sujud",
+"smoothed_probabilities": {
+"qiyam": 0.0,
+"ruku": 0.0,
+"sujud": 1.0,
+"julus": 0.0
+}
+},
+{
+"t": 36.0,
+"visual_class": "sujud",
+"label": "Sujud",
+"confidence": 0.9649,
+"probabilities": {
+"qiyam": 0.0045,
+"ruku": 0.0184,
+"sujud": 0.9649,
+"julus": 0.0123
+},
+"probabilities_pose_model": {
+"qiyam": 0.0,
+"ruku": 0.0117,
+"sujud": 0.9872,
+"julus": 0.0011
+},
+"probabilities_image_model": {
+"qiyam": 0.0089,
+"ruku": 0.025,
+"sujud": 0.9426,
+"julus": 0.0234
+},
+"localization": "detector",
+"person_box": [
+0.1875,
+0.1194,
+0.7305,
+0.6764
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 39.93,
+"pose": 38.12,
+"pose_classifier": 1.27,
+"image_model": 8.8,
+"total": 88.19
+},
+"phase": "sujud",
+"raw_visual_class": "sujud",
+"smoothed_probabilities": {
+"qiyam": 0.0,
+"ruku": 0.0,
+"sujud": 1.0,
+"julus": 0.0
+}
+},
+{
+"t": 37.0,
+"visual_class": "sujud",
+"label": "Sujud",
+"confidence": 0.8756,
+"probabilities": {
+"qiyam": 0.0033,
+"ruku": 0.0667,
+"sujud": 0.8756,
+"julus": 0.0544
+},
+"probabilities_pose_model": {
+"qiyam": 0.0,
+"ruku": 0.0357,
+"sujud": 0.9635,
+"julus": 0.0008
+},
+"probabilities_image_model": {
+"qiyam": 0.0066,
+"ruku": 0.0977,
+"sujud": 0.7876,
+"julus": 0.1081
+},
+"localization": "pose",
+"person_box": [
+0.2184,
+0.2077,
+0.8047,
+0.7885
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 75.02,
+"pose": 37.34,
+"pose_classifier": 1.74,
+"image_model": 10.92,
+"total": 125.09
+},
+"phase": "sujud",
+"raw_visual_class": "sujud",
+"smoothed_probabilities": {
+"qiyam": 0.0,
+"ruku": 0.0,
+"sujud": 0.9599,
+"julus": 0.0401
+}
+},
+{
+"t": 38.0,
+"visual_class": "julus",
+"label": "Duduk",
+"confidence": 0.542,
+"probabilities": {
+"qiyam": 0.2414,
+"ruku": 0.0955,
+"sujud": 0.1211,
+"julus": 0.542
+},
+"probabilities_pose_model": null,
+"probabilities_image_model": {
+"qiyam": 0.2414,
+"ruku": 0.0955,
+"sujud": 0.1211,
+"julus": 0.542
+},
+"localization": "pose",
+"person_box": [
+0.2502,
+0.1028,
+0.5349,
+0.9323
+],
+"pose_detected": false,
+"timings_ms": {
+"localize": 72.64,
+"pose": 13.87,
+"pose_classifier": 0.0,
+"image_model": 8.05,
+"total": 94.58
+},
+"phase": "tasyahud",
+"raw_visual_class": "julus",
+"smoothed_probabilities": {
+"qiyam": 0.0004,
+"ruku": 0.0,
+"sujud": 0.001,
+"julus": 0.9986
+}
+},
+{
+"t": 39.0,
+"visual_class": "julus",
+"label": "Duduk",
+"confidence": 0.5469,
+"probabilities": {
+"qiyam": 0.2351,
+"ruku": 0.0958,
+"sujud": 0.1221,
+"julus": 0.5469
+},
+"probabilities_pose_model": null,
+"probabilities_image_model": {
+"qiyam": 0.2351,
+"ruku": 0.0958,
+"sujud": 0.1221,
+"julus": 0.5469
+},
+"localization": "pose",
+"person_box": [
+0.2497,
+0.1035,
+0.5355,
+0.9286
+],
+"pose_detected": false,
+"timings_ms": {
+"localize": 72.73,
+"pose": 20.25,
+"pose_classifier": 0.0,
+"image_model": 10.39,
+"total": 103.4
+},
+"phase": "tasyahud",
+"raw_visual_class": "julus",
+"smoothed_probabilities": {
+"qiyam": 0.0077,
+"ruku": 0.0,
+"sujud": 0.0002,
+"julus": 0.9921
+}
+},
+{
+"t": 40.0,
+"visual_class": "sujud",
+"label": "Sujud",
+"confidence": 0.3568,
+"probabilities": {
+"qiyam": 0.0993,
+"ruku": 0.2187,
+"sujud": 0.3568,
+"julus": 0.3252
+},
+"probabilities_pose_model": {
+"qiyam": 0.0,
+"ruku": 0.3747,
+"sujud": 0.5734,
+"julus": 0.0519
+},
+"probabilities_image_model": {
+"qiyam": 0.1986,
+"ruku": 0.0626,
+"sujud": 0.1403,
+"julus": 0.5985
+},
+"localization": "detector",
+"person_box": [
+0.2484,
+0.1431,
+0.5477,
+0.8125
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 36.3,
+"pose": 34.09,
+"pose_classifier": 1.4,
+"image_model": 7.81,
+"total": 79.67
+},
+"phase": "tasyahud",
+"raw_visual_class": "sujud",
+"smoothed_probabilities": {
+"qiyam": 0.1213,
+"ruku": 0.1181,
+"sujud": 0.0023,
+"julus": 0.7583
+}
+},
+{
+"t": 41.0,
+"visual_class": "ruku",
+"label": "Rukuk",
+"confidence": 0.4225,
+"probabilities": {
+"qiyam": 0.1057,
+"ruku": 0.4225,
+"sujud": 0.1581,
+"julus": 0.3137
+},
+"probabilities_pose_model": {
+"qiyam": 0.0,
+"ruku": 0.7776,
+"sujud": 0.1744,
+"julus": 0.048
+},
+"probabilities_image_model": {
+"qiyam": 0.2114,
+"ruku": 0.0673,
+"sujud": 0.1419,
+"julus": 0.5794
+},
+"localization": "detector",
+"person_box": [
+0.2484,
+0.1444,
+0.5477,
+0.8125
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 35.56,
+"pose": 35.06,
+"pose_classifier": 1.25,
+"image_model": 7.47,
+"total": 79.39
+},
+"phase": "tasyahud",
+"raw_visual_class": "ruku",
+"smoothed_probabilities": {
+"qiyam": 0.0287,
+"ruku": 0.4437,
+"sujud": 0.0009,
+"julus": 0.5266
+}
+},
+{
+"t": 42.0,
+"visual_class": "ruku",
+"label": "Rukuk",
+"confidence": 0.4879,
+"probabilities": {
+"qiyam": 0.1052,
+"ruku": 0.4879,
+"sujud": 0.099,
+"julus": 0.3079
+},
+"probabilities_pose_model": {
+"qiyam": 0.0,
+"ruku": 0.9087,
+"sujud": 0.0567,
+"julus": 0.0346
+},
+"probabilities_image_model": {
+"qiyam": 0.2103,
+"ruku": 0.0671,
+"sujud": 0.1414,
+"julus": 0.5812
+},
+"localization": "detector",
+"person_box": [
+0.2484,
+0.1444,
+0.5477,
+0.8125
+],
+"pose_detected": true,
+"timings_ms": {
+"localize": 36.36,
+"pose": 34.24,
+"pose_classifier": 1.35,
+"image_model": 8.37,
+"total": 80.4
+},
+"phase": "tasyahud",
+"raw_visual_class": "ruku",
+"smoothed_probabilities": {
+"qiyam": 0.0074,
+"ruku": 0.5228,
+"sujud": 0.001,
+"julus": 0.4689
+}
+}
+],
+"performance": {
+"frames_analyzed": 215,
+"analysis_seconds": 20.517,
+"analysis_fps": 10.48,
+"realtime_factor": 2.09,
+"mean_ms_per_frame": {
+"localize": 47.06,
+"pose": 35.41,
+"pose_classifier": 1.35,
+"image_model": 8.85,
+"total": 92.73
+},
+"p95_ms_per_frame": {
+"localize": 78.6,
+"pose": 46.38,
+"pose_classifier": 1.97,
+"image_model": 11.11,
+"total": 124.92
+},
+"annotation_seconds": 2.764
+},
+"phase_labels": {
+"berdiri": "Berdiri (Qiyam)",
+"rukuk": "Rukuk",
+"iktidal": "Iktidal",
+"sujud": "Sujud",
+"duduk_antara_sujud": "Duduk di Antara Dua Sujud",
+"tasyahud": "Tasyahud"
+},
+"phases": [
+"berdiri",
+"rukuk",
+"iktidal",
+"sujud",
+"duduk_antara_sujud",
+"tasyahud"
+],
+"notes": [
+"Postures are recognised visually (4 classes); Iktidal, Duduk di antara dua sujud and Tasyahud are inferred from the order of postures, not seen directly.",
+"Scores are model confidence values, not calibrated probabilities or a religious judgement."
+]
+}
+}

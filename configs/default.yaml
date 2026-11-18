@@ -83,7 +83,9 @@ inference:
 temporal:
   # Grammar-constrained HMM (Viterbi) over 7 hidden states / 6 prayer phases.
   # Per-frame switch probability = 1 - exp(-dt / mean_phase_seconds).
-  mean_phase_seconds: 3.0
+  # mean_phase_seconds / off_grammar_per_second / decoder were selected on a validation
+  # seed of the semi-synthetic benchmark (scripts/benchmark_temporal.py --select).
+  mean_phase_seconds: 2.0
   # Probability mass per second for jumps that break the prayer order (robustness).
   off_grammar_per_second: 0.02
   # Exponent applied to frame probabilities before decoding (<1 = softer).
@@ -91,7 +93,8 @@ temporal:
   # Baselines only: moving-average window and minimum segment duration.
   smoothing_seconds: 1.0
   min_segment_seconds: 0.6
-  decoder: hmm
+  # hmm_local = HMM segmentation + local context rules for phase names (most robust).
+  decoder: hmm_local
 
 api:
   max_image_mb: 10

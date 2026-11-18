@@ -50,7 +50,7 @@ export function PosturePictogram({ phase, size = 96, title }: { phase: Phase; si
   return (
     <svg width={size} height={size} viewBox="0 0 120 120" role={title ? "img" : undefined} aria-label={title} aria-hidden={title ? undefined : true}>
       <line x1="14" y1="110" x2="106" y2="110" stroke="#c9ccd1" strokeWidth="1.5" strokeLinecap="round" />
-      <g stroke="currentColor" strokeWidth="4.5" strokeLinecap="round" strokeLinejoin="round" fill="none">
+      <g stroke="currentColor" strokeWidth="5.5" strokeLinecap="round" strokeLinejoin="round" fill="none">
         {f.bones.map(([a, b], i) => (
           <line key={i} x1={a[0]} y1={a[1]} x2={b[0]} y2={b[1]} />
         ))}
@@ -59,8 +59,9 @@ export function PosturePictogram({ phase, size = 96, title }: { phase: Phase; si
         ))}
         <circle cx={f.head[0]} cy={f.head[1]} r="8.5" />
       </g>
-      {f.joints.map(([x, y], i) => (
-        <circle key={i} cx={x} cy={y} r="4.2" fill={color} stroke="#fcfcfb" strokeWidth="2" />
+      {/* only hip and knee joints: the two angles the model actually relies on */}
+      {f.joints.slice(1, 3).map(([x, y], i) => (
+        <circle key={i} cx={x} cy={y} r="5" fill={color} stroke="#fcfcfb" strokeWidth="2.5" />
       ))}
     </svg>
   );

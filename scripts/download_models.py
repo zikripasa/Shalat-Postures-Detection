@@ -3,6 +3,7 @@
 
 * MediaPipe Pose Landmarker (lite / full / heavy) — Apache-2.0
 * MediaPipe Object Detector EfficientDet-Lite0 (COCO, used for the 'person' class) — Apache-2.0
+* MediaPipe BlazeFace (short range) — Apache-2.0, used only to blur faces in generated artefacts
 * torchvision ImageNet weights for MobileNetV3-Large and ResNet18 — BSD-3-Clause
   (stored under ``models/pretrained/torch`` via ``TORCH_HOME``)
 
@@ -28,6 +29,8 @@ MEDIAPIPE_MODELS = {
     "pose_landmarker_full.task": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/latest/pose_landmarker_full.task",
     "pose_landmarker_heavy.task": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_heavy/float16/latest/pose_landmarker_heavy.task",
     "efficientdet_lite0.tflite": "https://storage.googleapis.com/mediapipe-models/object_detector/efficientdet_lite0/float32/latest/efficientdet_lite0.tflite",
+    # only used to blur faces in generated figures / demo video (privacy), not for recognition
+    "blaze_face_short_range.tflite": "https://storage.googleapis.com/mediapipe-models/face_detector/blaze_face_short_range/float16/latest/blaze_face_short_range.tflite",
 }
 
 

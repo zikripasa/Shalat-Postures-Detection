@@ -7,6 +7,7 @@ Frames are resampled to ``sample_fps`` by FFmpeg itself, so timestamps are exact
 
 from __future__ import annotations
 
+import logging
 import math
 import time
 from pathlib import Path
@@ -20,6 +21,8 @@ from salat_vision.inference.temporal import DECODERS, TemporalConfig, summarize_
 from salat_vision.labels import PHASE_LABELS_ID, PHASES, VISUAL_CLASSES
 
 MAX_ANALYSIS_SIDE = 1280
+# imageio-ffmpeg logs a warning whenever we deliberately rescale frames; it is expected here.
+logging.getLogger("imageio_ffmpeg").setLevel(logging.ERROR)
 
 
 class VideoError(ValueError):
@@ -140,9 +143,9 @@ def analyze_video(path: str | Path, predictor, cfg: Config | None = None, *, sam
         "phase_labels": PHASE_LABELS_ID,
         "phases": PHASES,
         "notes": [
-            "Postures are recognised visually (4 classes); Iktidal, Duduk di antara dua sujud and Tasyahud are "
-            "inferred from the order of postures, not seen directly.",
-            "Scores are model confidence values, not calibrated probabilities or a religious judgement.",
+            "Postur dikenali secara visual dalam empat kelas. Iktidal, Duduk di antara dua sujud, dan Tasyahud "
+            "disimpulkan dari urutan postur, bukan dilihat langsung.",
+            "Skor adalah keyakinan model, bukan probabilitas terkalibrasi, dan bukan penilaian sah atau tidaknya shalat.",
         ],
     }
     if annotate_path:

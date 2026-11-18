@@ -11,6 +11,8 @@ off-grammar jumps, so videos that start mid-prayer or contain recognition errors
 decode. Emissions are the classifier's frame probabilities for each state's visual class;
 frames without a detected person are uninformative (uniform emission).
 
+``decode_hmm_local`` (the default) keeps the HMM's segmentation but names phases with local
+context rules, which proved more robust when a whole segment is misrecognised.
 ``decode_smoothing`` (moving average + minimum duration + rule-based context labels) and
 ``decode_raw`` (per-frame argmax + the same context rules) are simpler baselines.
 """
@@ -45,7 +47,7 @@ _VIS = np.array([VISUAL_CLASSES.index(STATE_VISUAL[s]) for s in STATES])
 
 @dataclass
 class TemporalConfig:
-    mean_phase_seconds: float = 3.0      # sets the per-frame switch probability
+    mean_phase_seconds: float = 2.0      # sets the per-frame switch probability
     off_grammar_per_second: float = 0.02  # total probability mass per second for off-grammar jumps
     emission_power: float = 1.0          # <1 softens over-confident frame probabilities
     min_prob: float = 1e-3               # floor on emissions (keeps decoding robust to 0/1 outputs)
@@ -58,7 +60,7 @@ class TemporalConfig:
         t = cfg["temporal"] if cfg is not None else {}
         inf = cfg["inference"] if cfg is not None else {}
         return cls(
-            mean_phase_seconds=float(t.get("mean_phase_seconds", 3.0)),
+            mean_phase_seconds=float(t.get("mean_phase_seconds", 2.0)),
             off_grammar_per_second=float(t.get("off_grammar_per_second", 0.02)),
             emission_power=float(t.get("emission_power", 1.0)),
             uncertainty_threshold=float(inf.get("uncertainty_threshold", 0.55)),
@@ -284,7 +286,23 @@ def decode_hmm(P: np.ndarray, times: np.ndarray, tc: TemporalConfig) -> dict:
             "segments": _segment_records(phases, P, times, _frame_dt(times), tc, states)}
 
 
-DECODERS = {"raw": decode_raw, "smoothing": decode_smoothing, "hmm": decode_hmm}
+def decode_hmm_local(P: np.ndarray, times: np.ndarray, tc: TemporalConfig) -> dict:
+    """Hybrid: HMM Viterbi for *segmentation* (sticky, grammar-aware visual path), then the
+    local context rules for phase names. A misrecognised segment only affects the names of
+    its neighbours instead of desynchronising the global grammar for the rest of the video."""
+    path = viterbi(P, times, tc)
+    visual = [STATE_VISUAL[STATES[i]] for i in path]
+    phases = _context_phases(visual)
+    post = forward_backward(P, times, tc) if len(P) else np.zeros((0, S))
+    smoothed = np.zeros((len(P), len(VISUAL_CLASSES)))
+    for si in range(S):
+        smoothed[:, _VIS[si]] += post[:, si]
+    states = [STATES[i] for i in path]
+    return {"method": "hmm_local", "phase_per_frame": phases, "state_per_frame": states, "smoothed": smoothed,
+            "segments": _segment_records(phases, P, times, _frame_dt(times), tc, states)}
+
+
+DECODERS = {"raw": decode_raw, "smoothing": decode_smoothing, "hmm": decode_hmm, "hmm_local": decode_hmm_local}
 
 
 def summarize_segments(segments: list[dict], *, video_seconds: float) -> dict:
@@ -293,18 +311,19 @@ def summarize_segments(segments: list[dict], *, video_seconds: float) -> dict:
     for s in segments:
         dur[s["phase"]] += s["duration"]
     uncertain = [s for s in segments if s["uncertain"]]
-    states = [s.get("state") for s in segments]
+    seq = [s["phase"] for s in segments]
+    # a cycle (rakaat) is counted at each second prostration: sujud right after duduk-antara-sujud
+    cycles = sum(1 for i in range(1, len(seq)) if seq[i] == "sujud" and seq[i - 1] == "duduk_antara_sujud")
     return {
         "phase_seconds": {p: round(v, 3) for p, v in dur.items()},
         "phase_share": {p: round(v / video_seconds, 4) if video_seconds > 0 else 0.0 for p, v in dur.items()},
         "n_segments": len(segments),
         "n_uncertain_segments": len(uncertain),
         "uncertain_seconds": round(sum(s["duration"] for s in uncertain), 3),
-        "sequence": [s["phase"] for s in segments],
+        "sequence": seq,
         "rukuk_count": sum(1 for s in segments if s["phase"] == "rukuk"),
         "sujud_count": sum(1 for s in segments if s["phase"] == "sujud"),
-        # every completed cycle passes through the second prostration exactly once
-        "cycles_observed": sum(1 for st in states if st == "sujud_2") if any(states) else None,
+        "cycles_observed": cycles,
         "uncertain_label": UNCERTAIN,
     }
 

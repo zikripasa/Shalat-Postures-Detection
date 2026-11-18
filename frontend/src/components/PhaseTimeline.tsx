@@ -12,6 +12,7 @@ interface Props {
   activeIndex?: number | null;
   onSeek?: (t: number, segment: Segment) => void;
   height?: number;
+  ariaLabel?: string;
 }
 
 /**
@@ -19,14 +20,14 @@ interface Props {
  * (keyboard reachable) that seeks the video to the segment start. Uncertain segments
  * are neutral grey with their phase still named in the label and tooltip.
  */
-export function PhaseTimeline({ segments, duration, phaseLabels, currentTime, activeIndex, onSeek, height = 56 }: Props) {
+export function PhaseTimeline({ segments, duration, phaseLabels, currentTime, activeIndex, onSeek, height = 56, ariaLabel = "Linimasa fase shalat" }: Props) {
   const total = Math.max(duration, segments.length ? segments[segments.length - 1].end : 0, 1e-6);
   const usedPhases = PHASE_ORDER.filter((p) => segments.some((s) => s.phase === p));
   const hasUncertain = segments.some((s) => s.uncertain);
   return (
     <div>
       <div className="relative" style={{ height }}>
-        <ol className="absolute inset-0 flex" aria-label="Linimasa fase shalat">
+        <ol className="absolute inset-0 flex" aria-label={ariaLabel}>
           {segments.map((s) => {
             const fill = s.uncertain ? UNCERTAIN_COLOR : PHASE_COLORS[s.phase];
             const widthPct = ((s.end - s.start) / total) * 100;
@@ -62,7 +63,7 @@ export function PhaseTimeline({ segments, duration, phaseLabels, currentTime, ac
         <span>{formatTime(total / 2, 0)}</span>
         <span>{formatTime(total, 0)}</span>
       </div>
-      <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-[13px] text-slate" aria-label="Keterangan warna">
+      <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-[13px] text-slate" aria-label={`Keterangan warna: ${ariaLabel}`}>
         {usedPhases.map((p) => (
           <li key={p} className="flex items-center gap-2">
             <span className="h-3 w-3 rounded-[3px]" style={{ background: PHASE_COLORS[p] }} aria-hidden="true" />

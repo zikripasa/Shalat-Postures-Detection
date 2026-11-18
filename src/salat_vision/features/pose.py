@@ -59,6 +59,7 @@ class PoseResult:
         x0, y0 = pts.min(axis=0)
         x1, y1 = pts.max(axis=0)
         w, h = self.image_size
+        x0, y0, x1, y1 = float(x0), float(y0), float(x1), float(y1)
         dx, dy = (x1 - x0) * pad, (y1 - y0) * pad
         return (max(0.0, x0 - dx), max(0.0, y0 - dy), min(float(w), x1 + dx), min(float(h), y1 + dy))
 

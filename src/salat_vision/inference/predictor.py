@@ -68,10 +68,10 @@ class FramePrediction:
             "probabilities_pose_model": None if self.probs_pose is None else {c: round(float(p), 4) for c, p in zip(VISUAL_CLASSES, self.probs_pose)},
             "probabilities_image_model": None if self.probs_image is None else {c: round(float(p), 4) for c, p in zip(VISUAL_CLASSES, self.probs_image)},
             "localization": self.loc_source,
-            "person_box": None if self.box is None else [round(self.box[0] / W, 4), round(self.box[1] / H, 4),
-                                                          round(self.box[2] / W, 4), round(self.box[3] / H, 4)],
+            "person_box": None if self.box is None else [round(float(self.box[0]) / W, 4), round(float(self.box[1]) / H, 4),
+                                                          round(float(self.box[2]) / W, 4), round(float(self.box[3]) / H, 4)],
             "pose_detected": bool(self.pose is not None and self.pose.detected),
-            "timings_ms": {k: round(v, 2) for k, v in self.timings_ms.items()},
+            "timings_ms": {k: round(float(v), 2) for k, v in self.timings_ms.items()},
         }
         if include_landmarks:
             lm = self.landmarks_image_norm()

@@ -1,0 +1,231 @@
+{
+  "criterion": "mean of frame phase accuracy and F1@50 on segment-consistent sequences",
+  "validation_seed": 1000,
+  "n_sequences": 120,
+  "best": {
+    "decoder": "hmm_local",
+    "mean_phase_seconds": 2.0,
+    "off_grammar_per_second": 0.02,
+    "phase_acc": 0.773,
+    "f1_50": 0.7128,
+    "score": 0.7429
+  },
+  "grid": [
+    {
+      "decoder": "hmm_local",
+      "mean_phase_seconds": 2.0,
+      "off_grammar_per_second": 0.02,
+      "phase_acc": 0.773,
+      "f1_50": 0.7128,
+      "score": 0.7429
+    },
+    {
+      "decoder": "hmm_local",
+      "mean_phase_seconds": 3.0,
+      "off_grammar_per_second": 0.02,
+      "phase_acc": 0.7672,
+      "f1_50": 0.6921,
+      "score": 0.7297
+    },
+    {
+      "decoder": "hmm_local",
+      "mean_phase_seconds": 2.0,
+      "off_grammar_per_second": 0.1,
+      "phase_acc": 0.7633,
+      "f1_50": 0.6711,
+      "score": 0.7172
+    },
+    {
+      "decoder": "smoothing",
+      "mean_phase_seconds": 2.0,
+      "off_grammar_per_second": 0.02,
+      "phase_acc": 0.743,
+      "f1_50": 0.673,
+      "score": 0.708
+    },
+    {
+      "decoder": "smoothing",
+      "mean_phase_seconds": 2.0,
+      "off_grammar_per_second": 0.1,
+      "phase_acc": 0.743,
+      "f1_50": 0.673,
+      "score": 0.708
+    },
+    {
+      "decoder": "smoothing",
+      "mean_phase_seconds": 2.0,
+      "off_grammar_per_second": 0.3,
+      "phase_acc": 0.743,
+      "f1_50": 0.673,
+      "score": 0.708
+    },
+    {
+      "decoder": "smoothing",
+      "mean_phase_seconds": 3.0,
+      "off_grammar_per_second": 0.02,
+      "phase_acc": 0.743,
+      "f1_50": 0.673,
+      "score": 0.708
+    },
+    {
+      "decoder": "smoothing",
+      "mean_phase_seconds": 3.0,
+      "off_grammar_per_second": 0.1,
+      "phase_acc": 0.743,
+      "f1_50": 0.673,
+      "score": 0.708
+    },
+    {
+      "decoder": "smoothing",
+      "mean_phase_seconds": 3.0,
+      "off_grammar_per_second": 0.3,
+      "phase_acc": 0.743,
+      "f1_50": 0.673,
+      "score": 0.708
+    },
+    {
+      "decoder": "smoothing",
+      "mean_phase_seconds": 5.0,
+      "off_grammar_per_second": 0.02,
+      "phase_acc": 0.743,
+      "f1_50": 0.673,
+      "score": 0.708
+    },
+    {
+      "decoder": "smoothing",
+      "mean_phase_seconds": 5.0,
+      "off_grammar_per_second": 0.1,
+      "phase_acc": 0.743,
+      "f1_50": 0.673,
+      "score": 0.708
+    },
+    {
+      "decoder": "smoothing",
+      "mean_phase_seconds": 5.0,
+      "off_grammar_per_second": 0.3,
+      "phase_acc": 0.743,
+      "f1_50": 0.673,
+      "score": 0.708
+    },
+    {
+      "decoder": "hmm_local",
+      "mean_phase_seconds": 5.0,
+      "off_grammar_per_second": 0.02,
+      "phase_acc": 0.7533,
+      "f1_50": 0.639,
+      "score": 0.6961
+    },
+    {
+      "decoder": "hmm_local",
+      "mean_phase_seconds": 3.0,
+      "off_grammar_per_second": 0.1,
+      "phase_acc": 0.7462,
+      "f1_50": 0.6226,
+      "score": 0.6844
+    },
+    {
+      "decoder": "hmm_local",
+      "mean_phase_seconds": 2.0,
+      "off_grammar_per_second": 0.3,
+      "phase_acc": 0.7434,
+      "f1_50": 0.6153,
+      "score": 0.6793
+    },
+    {
+      "decoder": "hmm",
+      "mean_phase_seconds": 2.0,
+      "off_grammar_per_second": 0.02,
+      "phase_acc": 0.6752,
+      "f1_50": 0.6794,
+      "score": 0.6773
+    },
+    {
+      "decoder": "hmm_local",
+      "mean_phase_seconds": 3.0,
+      "off_grammar_per_second": 0.3,
+      "phase_acc": 0.7357,
+      "f1_50": 0.5895,
+      "score": 0.6626
+    },
+    {
+      "decoder": "hmm",
+      "mean_phase_seconds": 3.0,
+      "off_grammar_per_second": 0.02,
+      "phase_acc": 0.6666,
+      "f1_50": 0.6552,
+      "score": 0.6609
+    },
+    {
+      "decoder": "hmm_local",
+      "mean_phase_seconds": 5.0,
+      "off_grammar_per_second": 0.1,
+      "phase_acc": 0.7297,
+      "f1_50": 0.5677,
+      "score": 0.6487
+    },
+    {
+      "decoder": "hmm_local",
+      "mean_phase_seconds": 5.0,
+      "off_grammar_per_second": 0.3,
+      "phase_acc": 0.7297,
+      "f1_50": 0.5677,
+      "score": 0.6487
+    },
+    {
+      "decoder": "hmm",
+      "mean_phase_seconds": 2.0,
+      "off_grammar_per_second": 0.1,
+      "phase_acc": 0.6551,
+      "f1_50": 0.631,
+      "score": 0.643
+    },
+    {
+      "decoder": "hmm",
+      "mean_phase_seconds": 5.0,
+      "off_grammar_per_second": 0.02,
+      "phase_acc": 0.6368,
+      "f1_50": 0.5906,
+      "score": 0.6137
+    },
+    {
+      "decoder": "hmm",
+      "mean_phase_seconds": 3.0,
+      "off_grammar_per_second": 0.1,
+      "phase_acc": 0.6281,
+      "f1_50": 0.5766,
+      "score": 0.6023
+    },
+    {
+      "decoder": "hmm",
+      "mean_phase_seconds": 2.0,
+      "off_grammar_per_second": 0.3,
+      "phase_acc": 0.6236,
+      "f1_50": 0.5708,
+      "score": 0.5972
+    },
+    {
+      "decoder": "hmm",
+      "mean_phase_seconds": 3.0,
+      "off_grammar_per_second": 0.3,
+      "phase_acc": 0.6012,
+      "f1_50": 0.5333,
+      "score": 0.5672
+    },
+    {
+      "decoder": "hmm",
+      "mean_phase_seconds": 5.0,
+      "off_grammar_per_second": 0.1,
+      "phase_acc": 0.5857,
+      "f1_50": 0.505,
+      "score": 0.5454
+    },
+    {
+      "decoder": "hmm",
+      "mean_phase_seconds": 5.0,
+      "off_grammar_per_second": 0.3,
+      "phase_acc": 0.5857,
+      "f1_50": 0.505,
+      "score": 0.5454
+    }
+  ]
+}
