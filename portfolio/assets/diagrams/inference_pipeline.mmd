@@ -1,0 +1,13 @@
+%% Salat Vision — inference pipeline (editable Mermaid source; rendered version: inference_pipeline.svg/png)
+flowchart LR
+  V[Video frame<br/>decoded at 5 fps] --> L[Find the person<br/>EfficientDet-Lite0, fallback pose box / full frame]
+  L --> C[Crop + 15% padding]
+  C --> P1[MediaPipe Pose<br/>33 landmarks] --> P2[19 pose features] --> P3[Logistic regression]
+  C --> I1[MobileNetV3-Large<br/>frozen, ONNX] --> I2[960-d embedding] --> I3[Logistic regression]
+  P3 --> F[Late fusion<br/>mean; image only if no pose]
+  I3 --> F
+  F --> T[Posture scores over time]
+  T --> H[HMM Viterbi<br/>7 states, prayer grammar]
+  H --> R[Local context naming<br/>Iktidal / Duduk antara sujud / Tasyahud]
+  R --> SEG[Segments + uncertainty flags]
+  SEG --> O[Timeline, durations, annotated video, JSON/CSV]

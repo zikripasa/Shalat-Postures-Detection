@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="360.340862pt" height="260.120219pt" viewBox="0 0 360.340862 260.120219" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="360.691253pt" height="261.952pt" viewBox="0 0 360.691253 261.952" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-18T16:08:15.003506</dc:date>
+    <dc:date>2026-11-18T16:57:11.690754</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -21,775 +21,930 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 260.120219 
-L 360.340862 260.120219 
-L 360.340862 0 
+   <path d="M 0 261.952 
+L 360.691253 261.952 
+L 360.691253 0 
 L 0 0 
 z
 " style="fill: #fcfcfb"/>
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 60.799609 219.321 
-L 350.959609 219.321 
-L 350.959609 30.825 
-L 60.799609 30.825 
+    <path d="M 61.2 220.152 
+L 351.36 220.152 
+L 351.36 31.656 
+L 61.2 31.656 
 z
 " style="fill: #fcfcfb"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
-      <path d="M 218.844944 219.321 
-L 218.844944 30.825 
-" clip-path="url(#p36d643674d)" style="fill: none; stroke: #e1e0d9; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 219.245334 220.152 
+L 219.245334 31.656 
+" clip-path="url(#p5fc6c9d07a)" style="fill: none; stroke: #e1e0d9; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="line2d_2"/>
      <g id="text_1">
       <!-- $\mathdefault{10^{3}}$ -->
-      <g style="fill: #52514e" transform="translate(211.294944 232.5085) scale(0.1 -0.1)">
+      <g style="fill: #52514e" transform="translate(211.395334 234.032) scale(0.1 -0.1)">
        <defs>
-        <path id="Inter-Regular-540" d="M 2041 4656 
-L 1313 4656 
-L 300 3909 
-L 300 3272 
-L 1425 4106 
-L 1456 4106 
-L 1456 0 
-L 2041 0 
-L 2041 4656 
+        <path id="PlusJakartaSans-Regular-81" d="M 1158 0 
+L 1158 4320 
+L 262 4320 
+L 262 4768 
+L 1670 4768 
+L 1670 0 
+L 1158 0 
 z
 " transform="scale(0.015625)"/>
-        <path id="Inter-Regular-53f" d="M 2019 -63 
-C 3059 -63 3656 809 3656 2325 
-C 3656 3834 3050 4719 2019 4719 
-C 988 4719 381 3834 381 2325 
-C 381 806 981 -63 2019 -63 
+        <path id="PlusJakartaSans-Regular-80" d="M 2349 -77 
+Q 1786 -77 1360 233 
+Q 934 544 697 1097 
+Q 461 1651 461 2387 
+Q 461 3123 697 3676 
+Q 934 4230 1356 4537 
+Q 1779 4845 2342 4845 
+Q 2906 4845 3328 4537 
+Q 3750 4230 3987 3676 
+Q 4224 3123 4224 2387 
+Q 4224 1651 3990 1094 
+Q 3757 538 3334 230 
+Q 2912 -77 2349 -77 
 z
-M 2019 456 
-C 1338 456 953 1144 953 2325 
-C 953 3509 1338 4203 2019 4203 
-C 2700 4203 3084 3513 3084 2325 
-C 3084 1144 2700 456 2019 456 
+M 2349 403 
+Q 2758 403 3065 652 
+Q 3373 902 3545 1347 
+Q 3718 1792 3718 2387 
+Q 3718 2982 3545 3427 
+Q 3373 3872 3065 4118 
+Q 2758 4365 2342 4365 
+Q 1933 4365 1625 4118 
+Q 1318 3872 1145 3427 
+Q 973 2982 973 2387 
+Q 973 1798 1145 1350 
+Q 1318 902 1628 652 
+Q 1939 403 2349 403 
 z
 " transform="scale(0.015625)"/>
-        <path id="Inter-Regular-543" d="M 1984 -63 
-C 2897 -63 3572 503 3572 1266 
-C 3572 1853 3225 2284 2631 2381 
-L 2631 2419 
-C 3106 2559 3403 2944 3403 3469 
-C 3403 4131 2872 4719 2003 4719 
-C 1184 4719 516 4216 491 3484 
-L 1063 3484 
-C 1081 3938 1516 4203 1991 4203 
-C 2497 4203 2822 3900 2822 3438 
-C 2822 2956 2447 2644 1903 2644 
-L 1525 2644 
-L 1525 2128 
-L 1903 2128 
-C 2594 2128 2984 1775 2984 1272 
-C 2984 788 2559 459 1975 459 
-C 1444 459 1025 731 991 1175 
-L 391 1175 
-C 422 438 1072 -63 1984 -63 
+        <path id="PlusJakartaSans-Regular-83" d="M 1882 -77 
+Q 1510 -77 1196 51 
+Q 883 179 649 416 
+Q 416 653 294 979 
+L 704 1171 
+Q 851 800 1164 585 
+Q 1478 371 1882 371 
+Q 2202 371 2451 496 
+Q 2701 621 2841 857 
+Q 2982 1094 2982 1434 
+Q 2982 1773 2838 2009 
+Q 2694 2246 2444 2368 
+Q 2195 2490 1875 2490 
+Q 1792 2490 1693 2483 
+Q 1594 2477 1530 2464 
+L 1427 2688 
+L 2714 4320 
+L 518 4320 
+L 518 4768 
+L 3290 4768 
+L 3290 4320 
+L 2086 2803 
+L 2022 2886 
+Q 2451 2874 2784 2685 
+Q 3117 2496 3305 2176 
+Q 3494 1856 3494 1434 
+Q 3494 1011 3289 668 
+Q 3085 326 2720 124 
+Q 2355 -77 1882 -77 
 z
 " transform="scale(0.015625)"/>
        </defs>
-       <use xlink:href="#Inter-Regular-540" transform="translate(0 0.085938)"/>
-       <use xlink:href="#Inter-Regular-53f" transform="translate(40.673828 0.085938)"/>
-       <use xlink:href="#Inter-Regular-543" transform="translate(104.716797 41.385937) scale(0.7)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-81" transform="translate(0 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-80" transform="translate(37.09996 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-83" transform="translate(111.256927 41.85) scale(0.7)"/>
       </g>
      </g>
     </g>
     <g id="xtick_2">
      <g id="line2d_3">
       <defs>
-       <path id="mbcd735c28b" d="M 0 0 
+       <path id="m5113f36445" d="M 0 0 
 L 0 2 
 " style="stroke: #898781; stroke-width: 0.6"/>
       </defs>
       <g>
-       <use xlink:href="#mbcd735c28b" x="81.565683" y="219.321" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m5113f36445" x="81.966074" y="220.152" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
      <g id="text_2">
       <!-- $\mathdefault{2\times10^{2}}$ -->
-      <g style="fill: #52514e" transform="translate(65.715683 234.4085) scale(0.1 -0.1)">
+      <g style="fill: #52514e" transform="translate(66.166074 235.932) scale(0.1 -0.1)">
        <defs>
-        <path id="Inter-Regular-541" d="M 481 0 
-L 3447 0 
-L 3447 522 
-L 1300 522 
-L 1300 559 
-L 2319 1644 
-C 3141 2519 3369 2916 3369 3419 
-C 3369 4147 2778 4719 1947 4719 
-C 1119 4719 494 4159 494 3334 
-L 1063 3334 
-C 1063 3859 1400 4203 1931 4203 
-C 2428 4203 2806 3900 2806 3413 
-C 2806 2984 2544 2666 2028 2106 
-L 481 428 
-L 481 0 
+        <path id="PlusJakartaSans-Regular-82" d="M 371 0 
+L 371 320 
+L 1702 1786 
+Q 2093 2214 2339 2496 
+Q 2586 2778 2707 3008 
+Q 2829 3238 2829 3507 
+Q 2829 3936 2579 4166 
+Q 2330 4397 1914 4397 
+Q 1485 4397 1193 4153 
+Q 902 3910 800 3475 
+L 333 3578 
+Q 416 3968 633 4249 
+Q 851 4531 1177 4688 
+Q 1504 4845 1907 4845 
+Q 2336 4845 2656 4672 
+Q 2976 4499 3158 4198 
+Q 3341 3898 3341 3507 
+Q 3341 3238 3229 2988 
+Q 3117 2739 2893 2451 
+Q 2669 2163 2317 1779 
+L 1107 448 
+L 3469 448 
+L 3469 0 
+L 371 0 
 z
 " transform="scale(0.015625)"/>
-        <path id="Inter-Regular-5f6" d="M 3231 350 
-L 3594 713 
-L 2488 1819 
-L 3594 2925 
-L 3231 3294 
-L 2125 2184 
-L 1019 3294 
-L 656 2925 
-L 1763 1819 
-L 656 713 
-L 1019 350 
-L 2125 1456 
-L 3231 350 
+        <path id="PlusJakartaSans-Regular-f3" d="M 883 0 
+L 544 339 
+L 1600 1395 
+L 550 2445 
+L 890 2784 
+L 1939 1734 
+L 2989 2784 
+L 3328 2445 
+L 2278 1395 
+L 3334 339 
+L 2995 0 
+L 1939 1056 
+L 883 0 
 z
 " transform="scale(0.015625)"/>
        </defs>
-       <use xlink:href="#Inter-Regular-541" transform="translate(0 0.085938)"/>
-       <use xlink:href="#Inter-Regular-5f6" transform="translate(80.46875 0.085938)"/>
-       <use xlink:href="#Inter-Regular-540" transform="translate(166.113281 0.085938)"/>
-       <use xlink:href="#Inter-Regular-53f" transform="translate(206.787109 0.085938)"/>
-       <use xlink:href="#Inter-Regular-541" transform="translate(270.830078 41.385937) scale(0.7)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-82" transform="translate(0 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-f3" transform="translate(79.482361 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-81" transform="translate(159.564728 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-80" transform="translate(196.664688 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-82" transform="translate(270.821655 42.007812) scale(0.7)"/>
       </g>
      </g>
     </g>
     <g id="xtick_3">
      <g id="line2d_4">
       <g>
-       <use xlink:href="#mbcd735c28b" x="116.150397" y="219.321" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m5113f36445" x="116.550788" y="220.152" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
      <g id="text_3">
       <!-- $\mathdefault{3\times10^{2}}$ -->
-      <g style="fill: #52514e" transform="translate(100.250397 234.4085) scale(0.1 -0.1)">
-       <use xlink:href="#Inter-Regular-543" transform="translate(0 0.085938)"/>
-       <use xlink:href="#Inter-Regular-5f6" transform="translate(81.25 0.085938)"/>
-       <use xlink:href="#Inter-Regular-540" transform="translate(166.894531 0.085938)"/>
-       <use xlink:href="#Inter-Regular-53f" transform="translate(207.568359 0.085938)"/>
-       <use xlink:href="#Inter-Regular-541" transform="translate(271.611328 41.385937) scale(0.7)"/>
+      <g style="fill: #52514e" transform="translate(100.700788 235.932) scale(0.1 -0.1)">
+       <use xlink:href="#PlusJakartaSans-Regular-83" transform="translate(0 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-f3" transform="translate(80.38237 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-81" transform="translate(160.464737 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-80" transform="translate(197.564697 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-82" transform="translate(271.721664 42.007812) scale(0.7)"/>
       </g>
      </g>
     </g>
     <g id="xtick_4">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#mbcd735c28b" x="140.688642" y="219.321" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m5113f36445" x="141.089033" y="220.152" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
      <g id="text_4">
       <!-- $\mathdefault{4\times10^{2}}$ -->
-      <g style="fill: #52514e" transform="translate(124.688642 234.4085) scale(0.1 -0.1)">
+      <g style="fill: #52514e" transform="translate(125.139033 235.932) scale(0.1 -0.1)">
        <defs>
-        <path id="Inter-Regular-544" d="M 375 947 
-L 2566 947 
-L 2566 0 
-L 3134 0 
-L 3134 947 
-L 3766 947 
-L 3766 1469 
-L 3134 1469 
-L 3134 4656 
-L 2413 4656 
-L 375 1431 
-L 375 947 
+        <path id="PlusJakartaSans-Regular-84" d="M 2720 0 
+L 2720 1126 
+L 294 1126 
+L 294 1542 
+L 2720 4768 
+L 3168 4768 
+L 3168 1542 
+L 3750 1542 
+L 3750 1126 
+L 3168 1126 
+L 3168 0 
+L 2720 0 
 z
-M 2569 1469 
-L 1009 1469 
-L 1009 1506 
-L 2531 3913 
-L 2569 3913 
-L 2569 1469 
+M 685 1357 
+L 627 1542 
+L 2720 1542 
+L 2720 4326 
+L 2880 4282 
+L 685 1357 
 z
 " transform="scale(0.015625)"/>
        </defs>
-       <use xlink:href="#Inter-Regular-544" transform="translate(0 0.085938)"/>
-       <use xlink:href="#Inter-Regular-5f6" transform="translate(84.082031 0.085938)"/>
-       <use xlink:href="#Inter-Regular-540" transform="translate(169.726562 0.085938)"/>
-       <use xlink:href="#Inter-Regular-53f" transform="translate(210.400391 0.085938)"/>
-       <use xlink:href="#Inter-Regular-541" transform="translate(274.443359 41.385937) scale(0.7)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-84" transform="translate(0 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-f3" transform="translate(82.482361 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-81" transform="translate(162.564728 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-80" transform="translate(199.664688 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-82" transform="translate(273.821655 42.007812) scale(0.7)"/>
       </g>
      </g>
     </g>
     <g id="xtick_5">
      <g id="line2d_6">
       <g>
-       <use xlink:href="#mbcd735c28b" x="159.721984" y="219.321" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m5113f36445" x="160.122375" y="220.152" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="xtick_6">
      <g id="line2d_7">
       <g>
-       <use xlink:href="#mbcd735c28b" x="175.273357" y="219.321" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m5113f36445" x="175.673747" y="220.152" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
      <g id="text_5">
       <!-- $\mathdefault{6\times10^{2}}$ -->
-      <g style="fill: #52514e" transform="translate(159.373357 234.4085) scale(0.1 -0.1)">
+      <g style="fill: #52514e" transform="translate(159.873747 235.932) scale(0.1 -0.1)">
        <defs>
-        <path id="Inter-Regular-547" d="M 2019 -63 
-C 2969 -63 3588 634 3588 1503 
-C 3588 2403 2925 3044 2128 3044 
-C 1644 3044 1231 2813 981 2425 
-L 944 2425 
-C 944 3544 1375 4194 2091 4194 
-C 2575 4194 2866 3888 2969 3484 
-L 3550 3484 
-C 3438 4216 2872 4719 2091 4719 
-C 1034 4719 381 3788 381 2150 
-C 381 434 1241 -63 2019 -63 
+        <path id="PlusJakartaSans-Regular-86" d="M 1920 -77 
+Q 1472 -77 1126 124 
+Q 781 326 582 681 
+Q 384 1037 384 1498 
+Q 384 1754 445 2003 
+Q 506 2253 630 2496 
+Q 755 2739 934 2982 
+L 2278 4768 
+L 2893 4768 
+L 1235 2598 
+L 1139 2541 
+Q 1235 2701 1363 2787 
+Q 1491 2874 1648 2912 
+Q 1805 2950 1984 2950 
+Q 2400 2950 2733 2755 
+Q 3066 2560 3261 2221 
+Q 3456 1882 3456 1434 
+Q 3456 1005 3254 662 
+Q 3053 320 2707 121 
+Q 2362 -77 1920 -77 
 z
-M 2019 459 
-C 1447 459 1028 947 1028 1497 
-C 1028 2041 1469 2528 2034 2528 
-C 2597 2528 3013 2072 3013 1503 
-C 3013 922 2578 459 2019 459 
+M 1920 371 
+Q 2214 371 2444 508 
+Q 2675 646 2809 889 
+Q 2944 1133 2944 1434 
+Q 2944 1741 2813 1977 
+Q 2682 2214 2451 2352 
+Q 2221 2490 1920 2490 
+Q 1626 2490 1392 2352 
+Q 1158 2214 1027 1977 
+Q 896 1741 896 1434 
+Q 896 1133 1030 889 
+Q 1165 646 1395 508 
+Q 1626 371 1920 371 
 z
 " transform="scale(0.015625)"/>
        </defs>
-       <use xlink:href="#Inter-Regular-547" transform="translate(0 0.085938)"/>
-       <use xlink:href="#Inter-Regular-5f6" transform="translate(81.494141 0.085938)"/>
-       <use xlink:href="#Inter-Regular-540" transform="translate(167.138672 0.085938)"/>
-       <use xlink:href="#Inter-Regular-53f" transform="translate(207.8125 0.085938)"/>
-       <use xlink:href="#Inter-Regular-541" transform="translate(271.855469 41.385937) scale(0.7)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-86" transform="translate(0 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-f3" transform="translate(79.182358 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-81" transform="translate(159.264725 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-80" transform="translate(196.364685 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-82" transform="translate(270.521652 42.007812) scale(0.7)"/>
       </g>
      </g>
     </g>
     <g id="xtick_7">
      <g id="line2d_8">
       <g>
-       <use xlink:href="#mbcd735c28b" x="188.421855" y="219.321" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m5113f36445" x="188.822245" y="220.152" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="xtick_8">
      <g id="line2d_9">
       <g>
-       <use xlink:href="#mbcd735c28b" x="199.811602" y="219.321" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m5113f36445" x="200.211992" y="220.152" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="xtick_9">
      <g id="line2d_10">
       <g>
-       <use xlink:href="#mbcd735c28b" x="209.858071" y="219.321" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m5113f36445" x="210.258461" y="220.152" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="xtick_10">
      <g id="line2d_11">
       <g>
-       <use xlink:href="#mbcd735c28b" x="277.967903" y="219.321" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m5113f36445" x="278.368294" y="220.152" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
      <g id="text_6">
       <!-- $\mathdefault{2\times10^{3}}$ -->
-      <g style="fill: #52514e" transform="translate(262.117903 234.4085) scale(0.1 -0.1)">
-       <use xlink:href="#Inter-Regular-541" transform="translate(0 0.085938)"/>
-       <use xlink:href="#Inter-Regular-5f6" transform="translate(80.46875 0.085938)"/>
-       <use xlink:href="#Inter-Regular-540" transform="translate(166.113281 0.085938)"/>
-       <use xlink:href="#Inter-Regular-53f" transform="translate(206.787109 0.085938)"/>
-       <use xlink:href="#Inter-Regular-543" transform="translate(270.830078 41.385937) scale(0.7)"/>
+      <g style="fill: #52514e" transform="translate(262.518294 235.932) scale(0.1 -0.1)">
+       <use xlink:href="#PlusJakartaSans-Regular-82" transform="translate(0 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-f3" transform="translate(79.482361 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-81" transform="translate(159.564728 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-80" transform="translate(196.664688 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-83" transform="translate(270.821655 41.85) scale(0.7)"/>
       </g>
      </g>
     </g>
     <g id="xtick_11">
      <g id="line2d_12">
       <g>
-       <use xlink:href="#mbcd735c28b" x="312.552617" y="219.321" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m5113f36445" x="312.953008" y="220.152" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
      <g id="text_7">
       <!-- $\mathdefault{3\times10^{3}}$ -->
-      <g style="fill: #52514e" transform="translate(296.652617 234.4085) scale(0.1 -0.1)">
-       <use xlink:href="#Inter-Regular-543" transform="translate(0 0.085938)"/>
-       <use xlink:href="#Inter-Regular-5f6" transform="translate(81.25 0.085938)"/>
-       <use xlink:href="#Inter-Regular-540" transform="translate(166.894531 0.085938)"/>
-       <use xlink:href="#Inter-Regular-53f" transform="translate(207.568359 0.085938)"/>
-       <use xlink:href="#Inter-Regular-543" transform="translate(271.611328 41.385937) scale(0.7)"/>
+      <g style="fill: #52514e" transform="translate(297.053008 235.932) scale(0.1 -0.1)">
+       <use xlink:href="#PlusJakartaSans-Regular-83" transform="translate(0 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-f3" transform="translate(80.38237 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-81" transform="translate(160.464737 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-80" transform="translate(197.564697 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-83" transform="translate(271.721664 41.85) scale(0.7)"/>
       </g>
      </g>
     </g>
     <g id="xtick_12">
      <g id="line2d_13">
       <g>
-       <use xlink:href="#mbcd735c28b" x="337.090862" y="219.321" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m5113f36445" x="337.491253" y="220.152" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
      <g id="text_8">
       <!-- $\mathdefault{4\times10^{3}}$ -->
-      <g style="fill: #52514e" transform="translate(321.040862 234.4085) scale(0.1 -0.1)">
-       <use xlink:href="#Inter-Regular-544" transform="translate(0 0.085938)"/>
-       <use xlink:href="#Inter-Regular-5f6" transform="translate(84.082031 0.085938)"/>
-       <use xlink:href="#Inter-Regular-540" transform="translate(169.726562 0.085938)"/>
-       <use xlink:href="#Inter-Regular-53f" transform="translate(210.400391 0.085938)"/>
-       <use xlink:href="#Inter-Regular-543" transform="translate(274.443359 41.385937) scale(0.7)"/>
+      <g style="fill: #52514e" transform="translate(321.491253 235.932) scale(0.1 -0.1)">
+       <use xlink:href="#PlusJakartaSans-Regular-84" transform="translate(0 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-f3" transform="translate(82.482361 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-81" transform="translate(162.564728 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-80" transform="translate(199.664688 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-83" transform="translate(273.821655 41.85) scale(0.7)"/>
       </g>
      </g>
     </g>
     <g id="text_9">
      <!-- Width (px, log) -->
-     <g style="fill: #52514e" transform="translate(171.160078 250.508109) scale(0.1 -0.1)">
+     <g style="fill: #52514e" transform="translate(172.67375 252.532) scale(0.1 -0.1)">
       <defs>
-       <path id="Inter-Regular-1cc" d="M 1431 0 
-L 2125 0 
-L 2922 2950 
-C 3013 3288 3081 3603 3150 3984 
-C 3222 3575 3297 3247 3378 2950 
-L 4178 0 
-L 4869 0 
-L 6144 4656 
-L 5531 4656 
-L 4797 1800 
-C 4697 1406 4603 1003 4522 572 
-C 4434 1003 4341 1406 4238 1800 
-L 3491 4656 
-L 2816 4656 
-L 2063 1800 
-C 1956 1400 1866 991 1781 553 
-C 1697 991 1606 1400 1506 1800 
-L 769 4656 
-L 163 4656 
-L 1431 0 
+       <path id="PlusJakartaSans-Regular-36" d="M 1440 0 
+L 70 4768 
+L 589 4768 
+L 1773 499 
+L 1664 499 
+L 2880 4768 
+L 3424 4768 
+L 4634 499 
+L 4518 499 
+L 5709 4768 
+L 6227 4768 
+L 4858 0 
+L 4314 0 
+L 3091 4288 
+L 3206 4288 
+L 1984 0 
+L 1440 0 
 z
 " transform="scale(0.015625)"/>
-       <path id="Inter-Regular-2b2" d="M 494 0 
-L 1056 0 
-L 1056 3494 
-L 494 3494 
-L 494 0 
+       <path id="PlusJakartaSans-Regular-50" d="M 493 0 
+L 493 3430 
+L 973 3430 
+L 973 0 
+L 493 0 
 z
-M 778 4066 
-C 994 4066 1172 4231 1172 4438 
-C 1172 4644 994 4809 778 4809 
-C 566 4809 388 4644 388 4438 
-C 388 4231 566 4066 778 4066 
-z
-" transform="scale(0.015625)"/>
-       <path id="Inter-Regular-256" d="M 1803 -75 
-C 2469 -75 2703 347 2819 541 
-L 2881 541 
-L 2881 0 
-L 3425 0 
-L 3425 4656 
-L 2863 4656 
-L 2863 2934 
-L 2819 2934 
-C 2703 3119 2488 3538 1806 3538 
-C 934 3538 325 2844 325 1738 
-C 325 625 931 -75 1803 -75 
-z
-M 1888 428 
-C 1234 428 897 1009 897 1744 
-C 897 2469 1225 3034 1888 3034 
-C 2531 3034 2869 2516 2869 1744 
-C 2869 966 2522 428 1888 428 
+M 493 4064 
+L 493 4768 
+L 973 4768 
+L 973 4064 
+L 493 4064 
 z
 " transform="scale(0.015625)"/>
-       <path id="Inter-Regular-37b" d="M 1869 3494 
-L 1150 3494 
-L 1150 4325 
-L 588 4325 
-L 588 3494 
-L 63 3494 
-L 63 3013 
-L 588 3013 
-L 588 863 
-C 588 291 944 -44 1547 -44 
-C 1691 -44 1850 -22 1966 19 
-L 1850 494 
-C 1756 475 1634 456 1563 456 
-C 1266 456 1150 594 1150 906 
-L 1150 3013 
-L 1869 3013 
-L 1869 3494 
+       <path id="PlusJakartaSans-Regular-46" d="M 2042 -77 
+Q 1562 -77 1178 156 
+Q 794 390 573 796 
+Q 352 1203 352 1715 
+Q 352 2234 573 2637 
+Q 794 3040 1174 3273 
+Q 1555 3507 2042 3507 
+Q 2483 3507 2828 3315 
+Q 3174 3123 3373 2797 
+L 3296 2662 
+L 3296 4845 
+L 3776 4845 
+L 3776 0 
+L 3296 0 
+L 3296 768 
+L 3373 698 
+Q 3194 326 2838 124 
+Q 2483 -77 2042 -77 
+z
+M 2067 403 
+Q 2413 403 2691 576 
+Q 2970 749 3133 1046 
+Q 3296 1344 3296 1715 
+Q 3296 2086 3133 2384 
+Q 2970 2682 2691 2854 
+Q 2413 3027 2067 3027 
+Q 1728 3027 1453 2854 
+Q 1178 2682 1021 2387 
+Q 864 2093 864 1715 
+Q 864 1344 1021 1046 
+Q 1178 749 1450 576 
+Q 1722 403 2067 403 
 z
 " transform="scale(0.015625)"/>
-       <path id="Inter-Regular-29f" d="M 1056 2094 
-C 1056 2691 1434 3031 1938 3031 
-C 2425 3031 2725 2709 2725 2172 
-L 2725 0 
-L 3291 0 
-L 3291 2219 
-C 3291 3103 2813 3538 2106 3538 
-C 1650 3538 1284 3353 1056 2888 
-L 1056 4656 
-L 494 4656 
-L 494 0 
-L 1056 0 
-L 1056 2094 
+       <path id="PlusJakartaSans-Regular-6c" d="M 1805 -38 
+Q 1344 -38 1094 230 
+Q 845 499 845 998 
+L 845 2950 
+L 211 2950 
+L 211 3430 
+L 371 3430 
+Q 589 3430 717 3574 
+Q 845 3718 845 3936 
+L 845 4224 
+L 1325 4224 
+L 1325 3430 
+L 2080 3430 
+L 2080 2950 
+L 1325 2950 
+L 1325 998 
+Q 1325 826 1376 694 
+Q 1427 563 1552 486 
+Q 1677 410 1888 410 
+Q 1939 410 2009 416 
+Q 2080 422 2131 429 
+L 2131 0 
+Q 2054 -19 1958 -28 
+Q 1862 -38 1805 -38 
 z
 " transform="scale(0.015625)"/>
-       <path id="Inter-Regular-6eb" transform="scale(0.015625)"/>
-       <path id="Inter-Regular-59f" d="M 681 1897 
-C 681 984 956 31 1488 -872 
-L 2034 -872 
-C 1497 238 1253 1069 1253 1897 
-C 1253 2809 1550 3956 2034 4941 
-L 1488 4941 
-C 1019 4169 681 2913 681 1897 
+       <path id="PlusJakartaSans-Regular-4f" d="M 493 0 
+L 493 4845 
+L 973 4845 
+L 973 2765 
+L 864 2790 
+Q 992 3123 1283 3315 
+Q 1574 3507 1958 3507 
+Q 2323 3507 2614 3340 
+Q 2906 3174 3075 2883 
+Q 3245 2592 3245 2227 
+L 3245 0 
+L 2765 0 
+L 2765 2042 
+Q 2765 2355 2649 2572 
+Q 2534 2790 2332 2908 
+Q 2131 3027 1875 3027 
+Q 1619 3027 1414 2908 
+Q 1210 2790 1091 2569 
+Q 973 2349 973 2042 
+L 973 0 
+L 493 0 
 z
 " transform="scale(0.015625)"/>
-       <path id="Inter-Regular-34d" d="M 494 -1306 
-L 1056 -1306 
-L 1056 541 
-L 1100 541 
-C 1216 347 1450 -75 2116 -75 
-C 2988 -75 3594 625 3594 1738 
-C 3594 2844 2984 3538 2113 3538 
-C 1431 3538 1216 3119 1100 2934 
-L 1038 2934 
-L 1038 3494 
-L 494 3494 
-L 494 -1306 
-z
-M 2031 428 
-C 1397 428 1050 966 1050 1744 
-C 1050 2516 1388 3034 2031 3034 
-C 2694 3034 3022 2469 3022 1744 
-C 3022 1009 2684 428 2031 428 
+       <path id="PlusJakartaSans-Regular-b2" transform="scale(0.015625)"/>
+       <path id="PlusJakartaSans-Regular-cc" d="M 1344 -896 
+Q 838 -320 572 403 
+Q 307 1126 307 1939 
+Q 307 2758 572 3478 
+Q 838 4198 1344 4768 
+L 1760 4768 
+Q 1299 4128 1059 3405 
+Q 819 2682 819 1939 
+Q 819 1197 1059 473 
+Q 1299 -250 1760 -896 
+L 1344 -896 
 z
 " transform="scale(0.015625)"/>
-       <path id="Inter-Regular-3e3" d="M 203 0 
-L 853 0 
-L 1372 784 
-C 1528 1022 1634 1234 1741 1431 
-C 1856 1234 1972 1022 2125 784 
-L 2638 0 
-L 3291 0 
-L 2066 1763 
-L 3234 3494 
-L 2591 3494 
-L 2147 2816 
-C 1984 2569 1878 2344 1766 2134 
-C 1644 2344 1525 2569 1366 2816 
-L 931 3494 
-L 275 3494 
-L 1431 1794 
-L 203 0 
+       <path id="PlusJakartaSans-Regular-66" d="M 493 -1280 
+L 493 3430 
+L 973 3430 
+L 973 2662 
+L 896 2797 
+Q 1101 3123 1443 3315 
+Q 1786 3507 2227 3507 
+Q 2714 3507 3094 3273 
+Q 3475 3040 3696 2637 
+Q 3917 2234 3917 1715 
+Q 3917 1203 3696 796 
+Q 3475 390 3094 156 
+Q 2714 -77 2227 -77 
+Q 1786 -77 1430 124 
+Q 1075 326 896 698 
+L 973 768 
+L 973 -1280 
+L 493 -1280 
+z
+M 2202 403 
+Q 2547 403 2819 576 
+Q 3091 749 3248 1046 
+Q 3405 1344 3405 1715 
+Q 3405 2093 3248 2387 
+Q 3091 2682 2819 2854 
+Q 2547 3027 2202 3027 
+Q 1856 3027 1577 2854 
+Q 1299 2682 1136 2384 
+Q 973 2086 973 1715 
+Q 973 1344 1136 1046 
+Q 1299 749 1577 576 
+Q 1856 403 2202 403 
 z
 " transform="scale(0.015625)"/>
-       <path id="Inter-Regular-5df" d="M 400 -1122 
-L 831 -1122 
-L 1319 650 
-L 675 650 
-L 400 -1122 
+       <path id="PlusJakartaSans-Regular-74" d="M 70 0 
+L 1274 1715 
+L 77 3430 
+L 666 3430 
+L 1728 1888 
+L 1402 1888 
+L 2458 3430 
+L 3046 3430 
+L 1850 1715 
+L 3046 0 
+L 2458 0 
+L 1402 1542 
+L 1728 1542 
+L 666 0 
+L 70 0 
 z
 " transform="scale(0.015625)"/>
-       <path id="Inter-Regular-2e2" d="M 1056 4656 
-L 494 4656 
-L 494 0 
-L 1056 0 
-L 1056 4656 
+       <path id="PlusJakartaSans-Regular-b9" d="M 512 -832 
+L 512 -608 
+Q 704 -557 793 -409 
+Q 883 -262 883 0 
+L 640 0 
+L 640 704 
+L 1152 704 
+L 1152 166 
+Q 1152 -250 992 -502 
+Q 832 -755 512 -832 
 z
 " transform="scale(0.015625)"/>
-       <path id="Inter-Regular-318" d="M 1916 -75 
-C 2869 -75 3513 647 3513 1725 
-C 3513 2819 2869 3538 1916 3538 
-C 966 3538 325 2819 325 1725 
-C 325 647 966 -75 1916 -75 
-z
-M 1916 428 
-C 1219 428 897 1038 897 1725 
-C 897 2422 1219 3034 1916 3034 
-C 2622 3034 2944 2419 2944 1725 
-C 2944 1038 2622 428 1916 428 
+       <path id="PlusJakartaSans-Regular-5a" d="M 493 0 
+L 493 4845 
+L 973 4845 
+L 973 0 
+L 493 0 
 z
 " transform="scale(0.015625)"/>
-       <path id="Inter-Regular-293" d="M 1909 -1381 
-C 2759 -1381 3431 -994 3431 -91 
-L 3431 3494 
-L 2884 3494 
-L 2884 2934 
-L 2831 2934 
-C 2713 3122 2488 3538 1813 3538 
-C 941 3538 325 2844 325 1763 
-C 325 666 963 56 1800 56 
-C 2475 56 2697 441 2816 641 
-L 2869 641 
-L 2869 -59 
-C 2869 -634 2466 -891 1909 -891 
-C 1294 -891 1075 -578 928 -375 
-L 472 -669 
-C 688 -1053 1134 -1381 1909 -1381 
+       <path id="PlusJakartaSans-Regular-5e" d="M 2099 -77 
+Q 1613 -77 1216 156 
+Q 819 390 585 796 
+Q 352 1203 352 1722 
+Q 352 2234 582 2637 
+Q 813 3040 1206 3273 
+Q 1600 3507 2099 3507 
+Q 2598 3507 2992 3276 
+Q 3386 3046 3613 2643 
+Q 3840 2240 3840 1722 
+Q 3840 1197 3603 790 
+Q 3366 384 2972 153 
+Q 2579 -77 2099 -77 
 z
-M 1894 556 
-C 1238 556 897 1056 897 1775 
-C 897 2472 1228 3034 1894 3034 
-C 2538 3034 2875 2516 2875 1775 
-C 2875 1013 2528 556 1894 556 
+M 2099 403 
+Q 2445 403 2723 576 
+Q 3002 749 3165 1049 
+Q 3328 1350 3328 1722 
+Q 3328 2093 3165 2387 
+Q 3002 2682 2723 2854 
+Q 2445 3027 2099 3027 
+Q 1754 3027 1475 2854 
+Q 1197 2682 1030 2387 
+Q 864 2093 864 1722 
+Q 864 1350 1030 1049 
+Q 1197 749 1475 576 
+Q 1754 403 2099 403 
 z
 " transform="scale(0.015625)"/>
-       <path id="Inter-Regular-5a0" d="M 300 -872 
-L 847 -872 
-C 1369 16 1653 969 1653 1897 
-C 1653 2909 1316 4172 847 4941 
-L 300 4941 
-C 784 3956 1081 2809 1081 1897 
-C 1081 1094 853 269 300 -872 
+       <path id="PlusJakartaSans-Regular-4e" d="M 2118 -1408 
+Q 1766 -1408 1468 -1299 
+Q 1171 -1190 956 -1001 
+Q 742 -813 627 -563 
+L 1069 -326 
+Q 1171 -570 1433 -749 
+Q 1696 -928 2106 -928 
+Q 2419 -928 2681 -806 
+Q 2944 -685 3104 -448 
+Q 3264 -211 3264 134 
+L 3264 896 
+L 3341 826 
+Q 3162 454 2810 252 
+Q 2458 51 2042 51 
+Q 1562 51 1178 281 
+Q 794 512 573 905 
+Q 352 1299 352 1779 
+Q 352 2266 573 2656 
+Q 794 3046 1174 3276 
+Q 1555 3507 2042 3507 
+Q 2458 3507 2800 3315 
+Q 3142 3123 3341 2797 
+L 3264 2662 
+L 3264 3430 
+L 3744 3430 
+L 3744 134 
+Q 3744 -307 3536 -656 
+Q 3328 -1005 2960 -1206 
+Q 2592 -1408 2118 -1408 
+z
+M 2067 531 
+Q 2400 531 2669 700 
+Q 2938 870 3101 1155 
+Q 3264 1440 3264 1779 
+Q 3264 2118 3101 2403 
+Q 2938 2688 2669 2857 
+Q 2400 3027 2067 3027 
+Q 1728 3027 1453 2857 
+Q 1178 2688 1021 2406 
+Q 864 2125 864 1779 
+Q 864 1440 1021 1155 
+Q 1178 870 1450 700 
+Q 1722 531 2067 531 
+z
+" transform="scale(0.015625)"/>
+       <path id="PlusJakartaSans-Regular-cd" d="M 128 -896 
+Q 589 -250 829 473 
+Q 1069 1197 1069 1939 
+Q 1069 2682 829 3405 
+Q 589 4128 128 4768 
+L 544 4768 
+Q 1056 4198 1318 3478 
+Q 1581 2758 1581 1939 
+Q 1581 1126 1318 403 
+Q 1056 -320 544 -896 
+L 128 -896 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#Inter-Regular-1cc"/>
-      <use xlink:href="#Inter-Regular-2b2" transform="translate(98.53125 0)"/>
-      <use xlink:href="#Inter-Regular-256" transform="translate(122.75 0)"/>
-      <use xlink:href="#Inter-Regular-37b" transform="translate(185.453125 0)"/>
-      <use xlink:href="#Inter-Regular-29f" transform="translate(218.171875 0)"/>
-      <use xlink:href="#Inter-Regular-6eb" transform="translate(277.296875 0)"/>
-      <use xlink:href="#Inter-Regular-59f" transform="translate(305.421875 0)"/>
-      <use xlink:href="#Inter-Regular-34d" transform="translate(341.890625 0)"/>
-      <use xlink:href="#Inter-Regular-3e3" transform="translate(400.875 0)"/>
-      <use xlink:href="#Inter-Regular-5df" transform="translate(455.46875 0)"/>
-      <use xlink:href="#Inter-Regular-6eb" transform="translate(484.28125 0)"/>
-      <use xlink:href="#Inter-Regular-2e2" transform="translate(512.40625 0)"/>
-      <use xlink:href="#Inter-Regular-318" transform="translate(536.625 0)"/>
-      <use xlink:href="#Inter-Regular-293" transform="translate(596.59375 0)"/>
-      <use xlink:href="#Inter-Regular-5a0" transform="translate(657.921875 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-36"/>
+      <use xlink:href="#PlusJakartaSans-Regular-50" transform="translate(98.40625 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-46" transform="translate(121.3125 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-6c" transform="translate(188.015625 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-4f" transform="translate(226.8125 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-b2" transform="translate(284.109375 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-cc" transform="translate(301.109375 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-66" transform="translate(330.609375 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-74" transform="translate(395.3125 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-b9" transform="translate(444.015625 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-b2" transform="translate(471.015625 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-5a" transform="translate(488.015625 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-5e" transform="translate(510.921875 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-4e" transform="translate(576.421875 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-cd" transform="translate(642.625 0)"/>
      </g>
     </g>
    </g>
    <g id="matplotlib.axis_2">
     <g id="ytick_1">
      <g id="line2d_14">
-      <path d="M 60.799609 113.291061 
-L 350.959609 113.291061 
-" clip-path="url(#p36d643674d)" style="fill: none; stroke: #e1e0d9; stroke-width: 0.8; stroke-linecap: round"/>
+      <path d="M 61.2 114.122061 
+L 351.36 114.122061 
+" clip-path="url(#p5fc6c9d07a)" style="fill: none; stroke: #e1e0d9; stroke-width: 0.8; stroke-linecap: round"/>
      </g>
      <g id="line2d_15"/>
      <g id="text_10">
       <!-- $\mathdefault{10^{3}}$ -->
-      <g style="fill: #52514e" transform="translate(42.199609 118.134811) scale(0.1 -0.1)">
-       <use xlink:href="#Inter-Regular-540" transform="translate(0 0.085938)"/>
-       <use xlink:href="#Inter-Regular-53f" transform="translate(40.673828 0.085938)"/>
-       <use xlink:href="#Inter-Regular-543" transform="translate(104.716797 41.385937) scale(0.7)"/>
+      <g style="fill: #52514e" transform="translate(42 119.312061) scale(0.1 -0.1)">
+       <use xlink:href="#PlusJakartaSans-Regular-81" transform="translate(0 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-80" transform="translate(37.09996 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-83" transform="translate(111.256927 41.85) scale(0.7)"/>
       </g>
      </g>
     </g>
     <g id="ytick_2">
      <g id="line2d_16">
       <defs>
-       <path id="mb84debcf85" d="M 0 0 
+       <path id="m4538d38601" d="M 0 0 
 L -2 0 
 " style="stroke: #898781; stroke-width: 0.6"/>
       </defs>
       <g>
-       <use xlink:href="#mb84debcf85" x="60.799609" y="198.593749" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m4538d38601" x="61.2" y="199.424749" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
      <g id="text_11">
       <!-- $\mathdefault{2\times10^{2}}$ -->
-      <g style="fill: #52514e" transform="translate(23.699609 203.437499) scale(0.1 -0.1)">
-       <use xlink:href="#Inter-Regular-541" transform="translate(0 0.085938)"/>
-       <use xlink:href="#Inter-Regular-5f6" transform="translate(80.46875 0.085938)"/>
-       <use xlink:href="#Inter-Regular-540" transform="translate(166.113281 0.085938)"/>
-       <use xlink:href="#Inter-Regular-53f" transform="translate(206.787109 0.085938)"/>
-       <use xlink:href="#Inter-Regular-541" transform="translate(270.830078 41.385937) scale(0.7)"/>
+      <g style="fill: #52514e" transform="translate(24.2 204.614749) scale(0.1 -0.1)">
+       <use xlink:href="#PlusJakartaSans-Regular-82" transform="translate(0 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-f3" transform="translate(79.482361 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-81" transform="translate(159.564728 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-80" transform="translate(196.664688 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-82" transform="translate(270.821655 42.007812) scale(0.7)"/>
       </g>
      </g>
     </g>
     <g id="ytick_3">
      <g id="line2d_17">
       <g>
-       <use xlink:href="#mb84debcf85" x="60.799609" y="177.103474" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m4538d38601" x="61.2" y="177.934474" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
      <g id="text_12">
       <!-- $\mathdefault{3\times10^{2}}$ -->
-      <g style="fill: #52514e" transform="translate(23.599609 181.947224) scale(0.1 -0.1)">
-       <use xlink:href="#Inter-Regular-543" transform="translate(0 0.085938)"/>
-       <use xlink:href="#Inter-Regular-5f6" transform="translate(81.25 0.085938)"/>
-       <use xlink:href="#Inter-Regular-540" transform="translate(166.894531 0.085938)"/>
-       <use xlink:href="#Inter-Regular-53f" transform="translate(207.568359 0.085938)"/>
-       <use xlink:href="#Inter-Regular-541" transform="translate(271.611328 41.385937) scale(0.7)"/>
+      <g style="fill: #52514e" transform="translate(24.1 183.124474) scale(0.1 -0.1)">
+       <use xlink:href="#PlusJakartaSans-Regular-83" transform="translate(0 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-f3" transform="translate(80.38237 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-81" transform="translate(160.464737 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-80" transform="translate(197.564697 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-82" transform="translate(271.721664 42.007812) scale(0.7)"/>
       </g>
      </g>
     </g>
     <g id="ytick_4">
      <g id="line2d_18">
       <g>
-       <use xlink:href="#mb84debcf85" x="60.799609" y="161.855881" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m4538d38601" x="61.2" y="162.686881" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
      <g id="text_13">
       <!-- $\mathdefault{4\times10^{2}}$ -->
-      <g style="fill: #52514e" transform="translate(23.399609 166.699631) scale(0.1 -0.1)">
-       <use xlink:href="#Inter-Regular-544" transform="translate(0 0.085938)"/>
-       <use xlink:href="#Inter-Regular-5f6" transform="translate(84.082031 0.085938)"/>
-       <use xlink:href="#Inter-Regular-540" transform="translate(169.726562 0.085938)"/>
-       <use xlink:href="#Inter-Regular-53f" transform="translate(210.400391 0.085938)"/>
-       <use xlink:href="#Inter-Regular-541" transform="translate(274.443359 41.385937) scale(0.7)"/>
+      <g style="fill: #52514e" transform="translate(23.9 167.876881) scale(0.1 -0.1)">
+       <use xlink:href="#PlusJakartaSans-Regular-84" transform="translate(0 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-f3" transform="translate(82.482361 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-81" transform="translate(162.564728 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-80" transform="translate(199.664688 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-82" transform="translate(273.821655 42.007812) scale(0.7)"/>
       </g>
      </g>
     </g>
     <g id="ytick_5">
      <g id="line2d_19">
       <g>
-       <use xlink:href="#mb84debcf85" x="60.799609" y="150.028929" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m4538d38601" x="61.2" y="150.859929" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_6">
      <g id="line2d_20">
       <g>
-       <use xlink:href="#mb84debcf85" x="60.799609" y="140.365606" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m4538d38601" x="61.2" y="141.196606" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
      <g id="text_14">
       <!-- $\mathdefault{6\times10^{2}}$ -->
-      <g style="fill: #52514e" transform="translate(23.599609 145.209356) scale(0.1 -0.1)">
-       <use xlink:href="#Inter-Regular-547" transform="translate(0 0.085938)"/>
-       <use xlink:href="#Inter-Regular-5f6" transform="translate(81.494141 0.085938)"/>
-       <use xlink:href="#Inter-Regular-540" transform="translate(167.138672 0.085938)"/>
-       <use xlink:href="#Inter-Regular-53f" transform="translate(207.8125 0.085938)"/>
-       <use xlink:href="#Inter-Regular-541" transform="translate(271.855469 41.385937) scale(0.7)"/>
+      <g style="fill: #52514e" transform="translate(24.2 146.386606) scale(0.1 -0.1)">
+       <use xlink:href="#PlusJakartaSans-Regular-86" transform="translate(0 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-f3" transform="translate(79.182358 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-81" transform="translate(159.264725 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-80" transform="translate(196.364685 0.707813)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-82" transform="translate(270.521652 42.007812) scale(0.7)"/>
       </g>
      </g>
     </g>
     <g id="ytick_7">
      <g id="line2d_21">
       <g>
-       <use xlink:href="#mb84debcf85" x="60.799609" y="132.195382" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m4538d38601" x="61.2" y="133.026382" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_8">
      <g id="line2d_22">
       <g>
-       <use xlink:href="#mb84debcf85" x="60.799609" y="125.118013" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m4538d38601" x="61.2" y="125.949013" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_9">
      <g id="line2d_23">
       <g>
-       <use xlink:href="#mb84debcf85" x="60.799609" y="118.875331" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m4538d38601" x="61.2" y="119.706331" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
     </g>
     <g id="ytick_10">
      <g id="line2d_24">
       <g>
-       <use xlink:href="#mb84debcf85" x="60.799609" y="76.553193" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m4538d38601" x="61.2" y="77.384193" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
      <g id="text_15">
       <!-- $\mathdefault{2\times10^{3}}$ -->
-      <g style="fill: #52514e" transform="translate(23.699609 81.396943) scale(0.1 -0.1)">
-       <use xlink:href="#Inter-Regular-541" transform="translate(0 0.085938)"/>
-       <use xlink:href="#Inter-Regular-5f6" transform="translate(80.46875 0.085938)"/>
-       <use xlink:href="#Inter-Regular-540" transform="translate(166.113281 0.085938)"/>
-       <use xlink:href="#Inter-Regular-53f" transform="translate(206.787109 0.085938)"/>
-       <use xlink:href="#Inter-Regular-543" transform="translate(270.830078 41.385937) scale(0.7)"/>
+      <g style="fill: #52514e" transform="translate(24.1 82.574193) scale(0.1 -0.1)">
+       <use xlink:href="#PlusJakartaSans-Regular-82" transform="translate(0 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-f3" transform="translate(79.482361 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-81" transform="translate(159.564728 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-80" transform="translate(196.664688 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-83" transform="translate(270.821655 41.85) scale(0.7)"/>
       </g>
      </g>
     </g>
     <g id="ytick_11">
      <g id="line2d_25">
       <g>
-       <use xlink:href="#mb84debcf85" x="60.799609" y="55.062918" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m4538d38601" x="61.2" y="55.893918" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
      <g id="text_16">
       <!-- $\mathdefault{3\times10^{3}}$ -->
-      <g style="fill: #52514e" transform="translate(23.599609 59.906668) scale(0.1 -0.1)">
-       <use xlink:href="#Inter-Regular-543" transform="translate(0 0.085938)"/>
-       <use xlink:href="#Inter-Regular-5f6" transform="translate(81.25 0.085938)"/>
-       <use xlink:href="#Inter-Regular-540" transform="translate(166.894531 0.085938)"/>
-       <use xlink:href="#Inter-Regular-53f" transform="translate(207.568359 0.085938)"/>
-       <use xlink:href="#Inter-Regular-543" transform="translate(271.611328 41.385937) scale(0.7)"/>
+      <g style="fill: #52514e" transform="translate(24 61.083918) scale(0.1 -0.1)">
+       <use xlink:href="#PlusJakartaSans-Regular-83" transform="translate(0 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-f3" transform="translate(80.38237 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-81" transform="translate(160.464737 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-80" transform="translate(197.564697 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-83" transform="translate(271.721664 41.85) scale(0.7)"/>
       </g>
      </g>
     </g>
     <g id="ytick_12">
      <g id="line2d_26">
       <g>
-       <use xlink:href="#mb84debcf85" x="60.799609" y="39.815325" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
+       <use xlink:href="#m4538d38601" x="61.2" y="40.646325" style="fill: #898781; stroke: #898781; stroke-width: 0.6"/>
       </g>
      </g>
      <g id="text_17">
       <!-- $\mathdefault{4\times10^{3}}$ -->
-      <g style="fill: #52514e" transform="translate(23.299609 44.659075) scale(0.1 -0.1)">
-       <use xlink:href="#Inter-Regular-544" transform="translate(0 0.085938)"/>
-       <use xlink:href="#Inter-Regular-5f6" transform="translate(84.082031 0.085938)"/>
-       <use xlink:href="#Inter-Regular-540" transform="translate(169.726562 0.085938)"/>
-       <use xlink:href="#Inter-Regular-53f" transform="translate(210.400391 0.085938)"/>
-       <use xlink:href="#Inter-Regular-543" transform="translate(274.443359 41.385937) scale(0.7)"/>
+      <g style="fill: #52514e" transform="translate(23.8 45.836325) scale(0.1 -0.1)">
+       <use xlink:href="#PlusJakartaSans-Regular-84" transform="translate(0 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-f3" transform="translate(82.482361 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-81" transform="translate(162.564728 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-80" transform="translate(199.664688 0.55)"/>
+       <use xlink:href="#PlusJakartaSans-Regular-83" transform="translate(273.821655 41.85) scale(0.7)"/>
       </g>
      </g>
     </g>
     <g id="text_18">
      <!-- Height (px, log) -->
-     <g style="fill: #52514e" transform="translate(16.8875 161.427688) rotate(-90) scale(0.1 -0.1)">
+     <g style="fill: #52514e" transform="translate(17.58 161.319625) rotate(-90) scale(0.1 -0.1)">
       <defs>
-       <path id="Inter-Regular-a1" d="M 563 0 
-L 1156 0 
-L 1156 2119 
-L 3600 2119 
-L 3600 0 
-L 4194 0 
-L 4194 4656 
-L 3600 4656 
-L 3600 2644 
-L 1156 2644 
-L 1156 4656 
-L 563 4656 
+       <path id="PlusJakartaSans-Regular-16" d="M 563 0 
+L 563 4768 
+L 1075 4768 
+L 1075 2624 
+L 3635 2624 
+L 3635 4768 
+L 4147 4768 
+L 4147 0 
+L 3635 0 
+L 3635 2144 
+L 1075 2144 
+L 1075 0 
 L 563 0 
 z
 " transform="scale(0.015625)"/>
-       <path id="Inter-Regular-267" d="M 1963 -75 
-C 2678 -75 3200 284 3363 813 
-L 2819 963 
-C 2688 606 2378 425 1966 425 
-C 1347 425 922 825 894 1556 
-L 3419 1556 
-L 3419 1791 
-C 3419 3081 2638 3538 1897 3538 
-C 944 3538 325 2791 325 1719 
-C 325 644 950 -75 1963 -75 
-z
-M 897 2031 
-C 931 2566 1297 3038 1897 3038 
-C 2472 3038 2794 2625 2847 2031 
-L 897 2031 
+       <path id="PlusJakartaSans-Regular-48" d="M 2054 -77 
+Q 1574 -77 1187 156 
+Q 800 390 576 800 
+Q 352 1210 352 1728 
+Q 352 2246 569 2646 
+Q 787 3046 1161 3276 
+Q 1536 3507 2003 3507 
+Q 2374 3507 2665 3369 
+Q 2957 3232 3161 2998 
+Q 3366 2765 3475 2473 
+Q 3584 2182 3584 1875 
+Q 3584 1811 3577 1731 
+Q 3571 1651 3558 1568 
+L 659 1568 
+L 659 2016 
+L 3283 2016 
+L 3053 1824 
+Q 3110 2176 2972 2454 
+Q 2835 2733 2579 2896 
+Q 2323 3059 2003 3059 
+Q 1683 3059 1411 2892 
+Q 1139 2726 985 2428 
+Q 832 2131 864 1722 
+Q 832 1312 995 1008 
+Q 1158 704 1443 537 
+Q 1728 371 2054 371 
+Q 2432 371 2688 550 
+Q 2944 730 3104 998 
+L 3514 781 
+Q 3411 550 3200 355 
+Q 2989 160 2697 41 
+Q 2406 -77 2054 -77 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#Inter-Regular-a1"/>
-      <use xlink:href="#Inter-Regular-267" transform="translate(74.3125 0)"/>
-      <use xlink:href="#Inter-Regular-2b2" transform="translate(132.609375 0)"/>
-      <use xlink:href="#Inter-Regular-293" transform="translate(156.828125 0)"/>
-      <use xlink:href="#Inter-Regular-29f" transform="translate(218.15625 0)"/>
-      <use xlink:href="#Inter-Regular-37b" transform="translate(277.28125 0)"/>
-      <use xlink:href="#Inter-Regular-6eb" transform="translate(310 0)"/>
-      <use xlink:href="#Inter-Regular-59f" transform="translate(338.125 0)"/>
-      <use xlink:href="#Inter-Regular-34d" transform="translate(374.59375 0)"/>
-      <use xlink:href="#Inter-Regular-3e3" transform="translate(433.578125 0)"/>
-      <use xlink:href="#Inter-Regular-5df" transform="translate(488.171875 0)"/>
-      <use xlink:href="#Inter-Regular-6eb" transform="translate(516.984375 0)"/>
-      <use xlink:href="#Inter-Regular-2e2" transform="translate(545.109375 0)"/>
-      <use xlink:href="#Inter-Regular-318" transform="translate(569.328125 0)"/>
-      <use xlink:href="#Inter-Regular-293" transform="translate(629.296875 0)"/>
-      <use xlink:href="#Inter-Regular-5a0" transform="translate(690.625 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-16"/>
+      <use xlink:href="#PlusJakartaSans-Regular-48" transform="translate(73.59375 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-50" transform="translate(135.09375 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-4e" transform="translate(158 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-4f" transform="translate(224.203125 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-6c" transform="translate(281.5 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-b2" transform="translate(320.296875 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-cc" transform="translate(337.296875 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-66" transform="translate(366.796875 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-74" transform="translate(431.5 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-b9" transform="translate(480.203125 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-b2" transform="translate(507.203125 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-5a" transform="translate(524.203125 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-5e" transform="translate(547.109375 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-4e" transform="translate(612.609375 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-cd" transform="translate(678.8125 0)"/>
      </g>
     </g>
    </g>
    <g id="patch_3">
-    <path d="M 60.799609 219.321 
-L 60.799609 30.825 
+    <path d="M 61.2 220.152 
+L 61.2 31.656 
 " style="fill: none; stroke: #c3c2b7; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_4">
-    <path d="M 60.799609 219.321 
-L 350.959609 219.321 
+    <path d="M 61.2 220.152 
+L 351.36 220.152 
 " style="fill: none; stroke: #c3c2b7; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="PathCollection_1">
     <defs>
-     <path id="mfedc926e9c" d="M 0 3.162278 
+     <path id="mac74ce9a7a" d="M 0 3.162278 
 C 0.838646 3.162278 1.643056 2.82908 2.236068 2.236068 
 C 2.82908 1.643056 3.162278 0.838646 3.162278 0 
 C 3.162278 -0.838646 2.82908 -1.643056 2.236068 -2.236068 
@@ -801,49 +956,49 @@ C -1.643056 2.82908 -0.838646 3.162278 0 3.162278
 z
 " style="stroke: #fcfcfb; stroke-width: 1.5"/>
     </defs>
-    <g clip-path="url(#p36d643674d)">
-     <use xlink:href="#mfedc926e9c" x="274.485934" y="109.212008" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="274.485934" y="109.212008" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="274.485934" y="109.212008" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="215.362974" y="100.207097" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="313.232273" y="39.393" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="274.485934" y="109.212008" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="180.77826" y="152.192558" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="180.77826" y="152.192558" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="121.655301" y="188.930426" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="180.77826" y="152.192558" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="180.77826" y="168.631247" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="111.174582" y="204.770221" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="121.655301" y="188.930426" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="239.90122" y="130.702283" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="274.485934" y="109.212008" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="93.115211" y="137.277264" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="337.770518" y="54.640593" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="156.240015" y="167.440151" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="144.850268" y="118.875331" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="121.120525" y="210.753" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="196.329633" y="112.034049" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="196.329633" y="112.034049" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="209.000813" y="100.207097" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="196.329633" y="112.034049" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="196.329633" y="112.034049" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="147.843431" y="172.535923" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="274.485934" y="109.212008" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="121.655301" y="188.930426" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="274.485934" y="109.212008" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="274.485934" y="109.212008" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="138.965424" y="124.525075" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="170.448109" y="158.642683" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="274.485934" y="109.212008" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="156.240015" y="167.440151" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="73.9887" y="181.715211" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="103.615715" y="200.208134" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mfedc926e9c" x="121.655301" y="188.930426" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+    <g clip-path="url(#p5fc6c9d07a)">
+     <use xlink:href="#mac74ce9a7a" x="274.886324" y="110.043008" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="274.886324" y="110.043008" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="274.886324" y="110.043008" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="215.763365" y="101.038097" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="313.632664" y="40.224" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="274.886324" y="110.043008" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="181.178651" y="153.023558" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="181.178651" y="153.023558" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="122.055691" y="189.761426" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="181.178651" y="153.023558" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="181.178651" y="169.462247" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="111.574973" y="205.601221" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="122.055691" y="189.761426" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="240.30161" y="131.533283" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="274.886324" y="110.043008" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="93.515602" y="138.108264" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="338.170909" y="55.471593" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="156.640406" y="168.271151" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="145.250658" y="119.706331" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="121.520916" y="211.584" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="196.730023" y="112.865049" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="196.730023" y="112.865049" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="209.401204" y="101.038097" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="196.730023" y="112.865049" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="196.730023" y="112.865049" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="148.243822" y="173.366923" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="274.886324" y="110.043008" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="122.055691" y="189.761426" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="274.886324" y="110.043008" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="274.886324" y="110.043008" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="139.365815" y="125.356075" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="170.8485" y="159.473683" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="274.886324" y="110.043008" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="156.640406" y="168.271151" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="74.389091" y="182.546211" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="104.016105" y="201.039134" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mac74ce9a7a" x="122.055691" y="189.761426" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_2">
     <defs>
-     <path id="mc3eb4ac4d6" d="M 0 3.162278 
+     <path id="mb83cf81945" d="M 0 3.162278 
 C 0.838646 3.162278 1.643056 2.82908 2.236068 2.236068 
 C 2.82908 1.643056 3.162278 0.838646 3.162278 0 
 C 3.162278 -0.838646 2.82908 -1.643056 2.236068 -2.236068 
@@ -855,408 +1010,574 @@ C -1.643056 2.82908 -0.838646 3.162278 0 3.162278
 z
 " style="stroke: #fcfcfb; stroke-width: 1.5"/>
     </defs>
-    <g clip-path="url(#p36d643674d)">
-     <use xlink:href="#mc3eb4ac4d6" x="225.409443" y="78.716822" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mc3eb4ac4d6" x="156.240015" y="167.440151" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mc3eb4ac4d6" x="274.485934" y="109.212008" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
-     <use xlink:href="#mc3eb4ac4d6" x="274.485934" y="109.212008" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
+    <g clip-path="url(#p5fc6c9d07a)">
+     <use xlink:href="#mb83cf81945" x="225.809834" y="79.547822" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mb83cf81945" x="156.640406" y="168.271151" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mb83cf81945" x="274.886324" y="110.043008" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
+     <use xlink:href="#mb83cf81945" x="274.886324" y="110.043008" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="text_19">
     <!-- Image resolution varies 20x -->
-    <g style="fill: #0b0b0b" transform="translate(60.799609 18.825) scale(0.12 -0.12)">
+    <g style="fill: #0b0b0b" transform="translate(61.2 19.656) scale(0.12 -0.12)">
      <defs>
-      <path id="Inter-SemiBold-c5" d="M 1303 4656 
-L 469 4656 
-L 469 0 
-L 1303 0 
-L 1303 4656 
+      <path id="PlusJakartaSans-SemiBold-17" d="M 493 0 
+L 493 4768 
+L 1248 4768 
+L 1248 0 
+L 493 0 
 z
 " transform="scale(0.015625)"/>
-      <path id="Inter-SemiBold-300" d="M 431 0 
-L 1244 0 
-L 1244 2141 
-C 1244 2606 1538 2856 1894 2856 
-C 2238 2856 2484 2625 2484 2269 
-L 2484 0 
-L 3278 0 
-L 3278 2194 
-C 3278 2584 3519 2856 3913 2856 
-C 4247 2856 4516 2663 4516 2231 
-L 4516 0 
-L 5331 0 
-L 5331 2356 
-C 5331 3131 4850 3550 4222 3550 
-C 3731 3550 3294 3294 3106 2791 
-C 2956 3288 2659 3550 2209 3550 
-C 1794 3550 1400 3325 1219 2828 
-L 1194 3494 
-L 431 3494 
-L 431 0 
+      <path id="PlusJakartaSans-SemiBold-5b" d="M 422 0 
+L 422 3462 
+L 1114 3462 
+L 1114 2714 
+L 1024 2829 
+Q 1133 3181 1421 3360 
+Q 1709 3539 2080 3539 
+Q 2496 3539 2819 3318 
+Q 3142 3098 3251 2733 
+L 3046 2714 
+Q 3200 3130 3517 3334 
+Q 3834 3539 4243 3539 
+Q 4602 3539 4893 3372 
+Q 5184 3206 5357 2912 
+Q 5530 2618 5530 2240 
+L 5530 0 
+L 4806 0 
+L 4806 2042 
+Q 4806 2304 4713 2486 
+Q 4621 2669 4457 2768 
+Q 4294 2867 4077 2867 
+Q 3859 2867 3692 2768 
+Q 3526 2669 3430 2483 
+Q 3334 2298 3334 2042 
+L 3334 0 
+L 2618 0 
+L 2618 2042 
+Q 2618 2304 2525 2486 
+Q 2432 2669 2269 2768 
+Q 2106 2867 1882 2867 
+Q 1664 2867 1497 2768 
+Q 1331 2669 1238 2483 
+Q 1146 2298 1146 2042 
+L 1146 0 
+L 422 0 
 z
 " transform="scale(0.015625)"/>
-      <path id="Inter-SemiBold-1fc" d="M 1406 -72 
-C 1950 -72 2281 181 2434 481 
-L 2466 481 
-L 2466 0 
-L 3244 0 
-L 3244 2334 
-C 3244 3266 2475 3538 1819 3538 
-C 1119 3538 544 3241 338 2625 
-L 1091 2472 
-C 1175 2703 1416 2913 1822 2913 
-C 2219 2913 2431 2713 2431 2372 
-L 2431 2356 
-C 2431 2116 2175 2106 1569 2041 
-C 894 1969 238 1769 238 981 
-C 238 294 741 -72 1406 -72 
-z
-M 1616 531 
-C 1272 531 1025 688 1025 991 
-C 1025 1309 1300 1444 1666 1494 
-C 1875 1522 2328 1578 2438 1666 
-L 2438 1253 
-C 2438 866 2116 531 1616 531 
-z
-" transform="scale(0.015625)"/>
-      <path id="Inter-SemiBold-293" d="M 1938 -1381 
-C 2878 -1381 3572 -944 3572 -9 
-L 3572 3494 
-L 2775 3494 
-L 2775 2916 
-L 2731 2916 
-C 2606 3163 2341 3538 1722 3538 
-C 916 3538 278 2903 278 1756 
-C 278 619 913 53 1716 53 
-C 2319 53 2575 372 2700 625 
-L 2769 625 
-L 2769 -34 
-C 2769 -534 2438 -763 1934 -763 
-C 1425 -763 1209 -522 1100 -325 
-L 413 -572 
-C 588 -1034 1097 -1381 1938 -1381 
-z
-M 1944 694 
-C 1400 694 1109 1119 1109 1763 
-C 1109 2397 1394 2869 1944 2869 
-C 2481 2869 2772 2425 2772 1763 
-C 2772 1094 2475 694 1944 694 
+      <path id="PlusJakartaSans-SemiBold-3b" d="M 1459 -77 
+Q 1107 -77 841 48 
+Q 576 173 429 393 
+Q 282 614 282 915 
+Q 282 1197 406 1421 
+Q 531 1645 793 1798 
+Q 1056 1952 1453 2016 
+L 2656 2214 
+L 2656 1645 
+L 1594 1459 
+Q 1306 1408 1171 1277 
+Q 1037 1146 1037 941 
+Q 1037 742 1187 617 
+Q 1338 493 1574 493 
+Q 1869 493 2089 621 
+Q 2310 749 2432 963 
+Q 2554 1178 2554 1440 
+L 2554 2330 
+Q 2554 2586 2365 2749 
+Q 2176 2912 1862 2912 
+Q 1574 2912 1360 2761 
+Q 1146 2611 1043 2374 
+L 442 2675 
+Q 538 2931 755 3126 
+Q 973 3322 1264 3430 
+Q 1555 3539 1882 3539 
+Q 2291 3539 2608 3385 
+Q 2925 3232 3101 2960 
+Q 3277 2688 3277 2330 
+L 3277 0 
+L 2586 0 
+L 2586 627 
+L 2733 608 
+Q 2611 397 2422 243 
+Q 2234 90 1994 6 
+Q 1754 -77 1459 -77 
 z
 " transform="scale(0.015625)"/>
-      <path id="Inter-SemiBold-267" d="M 1975 -72 
-C 2753 -72 3297 300 3466 866 
-L 2719 1019 
-C 2609 722 2341 566 1984 566 
-C 1463 566 1109 897 1088 1519 
-L 3519 1519 
-L 3519 1775 
-C 3519 3000 2775 3538 1922 3538 
-C 922 3538 278 2800 278 1725 
-C 278 631 922 -72 1975 -72 
+      <path id="PlusJakartaSans-SemiBold-4e" d="M 2093 -1408 
+Q 1715 -1408 1395 -1286 
+Q 1075 -1165 844 -950 
+Q 614 -736 499 -448 
+L 1165 -173 
+Q 1254 -416 1494 -576 
+Q 1734 -736 2086 -736 
+Q 2362 -736 2579 -630 
+Q 2797 -525 2925 -323 
+Q 3053 -122 3053 160 
+L 3053 941 
+L 3181 794 
+Q 3002 461 2685 288 
+Q 2368 115 1971 115 
+Q 1491 115 1107 339 
+Q 723 563 502 953 
+Q 282 1344 282 1830 
+Q 282 2323 502 2707 
+Q 723 3091 1100 3315 
+Q 1478 3539 1965 3539 
+Q 2362 3539 2672 3369 
+Q 2982 3200 3181 2880 
+L 3085 2701 
+L 3085 3462 
+L 3770 3462 
+L 3770 160 
+Q 3770 -288 3555 -643 
+Q 3341 -998 2963 -1203 
+Q 2586 -1408 2093 -1408 
 z
-M 1091 2072 
-C 1128 2538 1428 2900 1925 2900 
-C 2409 2900 2681 2572 2728 2072 
-L 1091 2072 
-z
-" transform="scale(0.015625)"/>
-      <path id="Inter-SemiBold-6eb" transform="scale(0.015625)"/>
-      <path id="Inter-SemiBold-356" d="M 431 0 
-L 1244 0 
-L 1244 2056 
-C 1244 2500 1578 2813 2031 2813 
-C 2175 2813 2347 2791 2416 2772 
-L 2416 3519 
-C 2338 3531 2209 3541 2119 3541 
-C 1719 3541 1381 3313 1256 2909 
-L 1219 2909 
-L 1219 3494 
-L 431 3494 
-L 431 0 
-z
-" transform="scale(0.015625)"/>
-      <path id="Inter-SemiBold-369" d="M 1753 -72 
-C 2634 -72 3253 384 3253 1047 
-C 3253 1538 2938 1850 2275 1991 
-L 1681 2116 
-C 1325 2194 1184 2322 1184 2525 
-C 1184 2763 1447 2931 1791 2931 
-C 2166 2931 2366 2738 2447 2494 
-L 3172 2638 
-C 3031 3178 2572 3538 1781 3538 
-C 944 3538 372 3122 372 2475 
-C 372 1963 694 1641 1353 1497 
-L 1950 1369 
-C 2269 1300 2422 1172 2422 969 
-C 2422 731 2169 550 1769 550 
-C 1372 550 1128 716 1034 1063 
-L 275 919 
-C 397 284 950 -72 1753 -72 
+M 2054 787 
+Q 2342 787 2566 924 
+Q 2790 1062 2921 1296 
+Q 3053 1530 3053 1824 
+Q 3053 2118 2918 2355 
+Q 2784 2592 2560 2729 
+Q 2336 2867 2054 2867 
+Q 1760 2867 1529 2729 
+Q 1299 2592 1168 2358 
+Q 1037 2125 1037 1824 
+Q 1037 1536 1168 1299 
+Q 1299 1062 1529 924 
+Q 1760 787 2054 787 
 z
 " transform="scale(0.015625)"/>
-      <path id="Inter-SemiBold-318" d="M 1947 -72 
-C 2966 -72 3619 653 3619 1728 
-C 3619 2816 2966 3538 1947 3538 
-C 928 3538 278 2816 278 1728 
-C 278 653 928 -72 1947 -72 
-z
-M 1947 588 
-C 1381 588 1106 1094 1106 1731 
-C 1106 2375 1381 2878 1947 2878 
-C 2516 2878 2794 2375 2794 1731 
-C 2794 1094 2516 588 1947 588 
+      <path id="PlusJakartaSans-SemiBold-48" d="M 2048 -77 
+Q 1530 -77 1130 163 
+Q 730 403 506 816 
+Q 282 1229 282 1741 
+Q 282 2266 509 2669 
+Q 736 3072 1120 3305 
+Q 1504 3539 1990 3539 
+Q 2381 3539 2688 3404 
+Q 2995 3270 3206 3036 
+Q 3418 2803 3530 2502 
+Q 3642 2202 3642 1862 
+Q 3642 1779 3635 1689 
+Q 3629 1600 3610 1523 
+L 851 1523 
+L 851 2099 
+L 3200 2099 
+L 2854 1837 
+Q 2918 2150 2812 2396 
+Q 2707 2643 2492 2787 
+Q 2278 2931 1990 2931 
+Q 1702 2931 1478 2787 
+Q 1254 2643 1132 2377 
+Q 1011 2112 1037 1734 
+Q 1005 1382 1136 1120 
+Q 1267 858 1507 710 
+Q 1747 563 2054 563 
+Q 2368 563 2589 704 
+Q 2810 845 2938 1069 
+L 3526 781 
+Q 3424 538 3209 342 
+Q 2995 147 2697 35 
+Q 2400 -77 2048 -77 
 z
 " transform="scale(0.015625)"/>
-      <path id="Inter-SemiBold-2e2" d="M 1244 4656 
-L 431 4656 
-L 431 0 
-L 1244 0 
-L 1244 4656 
+      <path id="PlusJakartaSans-SemiBold-b2" transform="scale(0.015625)"/>
+      <path id="PlusJakartaSans-SemiBold-69" d="M 422 0 
+L 422 3462 
+L 1114 3462 
+L 1114 2765 
+L 1050 2867 
+Q 1165 3206 1421 3356 
+Q 1677 3507 2035 3507 
+L 2246 3507 
+L 2246 2848 
+L 1946 2848 
+Q 1587 2848 1366 2627 
+Q 1146 2406 1146 1997 
+L 1146 0 
+L 422 0 
 z
 " transform="scale(0.015625)"/>
-      <path id="Inter-SemiBold-395" d="M 1628 -44 
-C 2134 -44 2500 200 2709 700 
-L 2716 0 
+      <path id="PlusJakartaSans-SemiBold-6a" d="M 1702 -77 
+Q 1171 -77 771 185 
+Q 371 448 211 890 
+L 768 1152 
+Q 909 858 1155 685 
+Q 1402 512 1702 512 
+Q 1958 512 2118 627 
+Q 2278 742 2278 941 
+Q 2278 1069 2208 1149 
+Q 2138 1229 2032 1280 
+Q 1926 1331 1818 1357 
+L 1274 1510 
+Q 826 1638 605 1897 
+Q 384 2157 384 2502 
+Q 384 2816 544 3049 
+Q 704 3283 985 3411 
+Q 1267 3539 1619 3539 
+Q 2093 3539 2464 3305 
+Q 2835 3072 2989 2656 
+L 2432 2394 
+Q 2330 2643 2109 2790 
+Q 1888 2938 1613 2938 
+Q 1376 2938 1235 2826 
+Q 1094 2714 1094 2534 
+Q 1094 2413 1158 2333 
+Q 1222 2253 1324 2205 
+Q 1427 2157 1536 2125 
+L 2099 1958 
+Q 2528 1837 2758 1577 
+Q 2989 1318 2989 960 
+Q 2989 653 2825 419 
+Q 2662 186 2374 54 
+Q 2086 -77 1702 -77 
+z
+" transform="scale(0.015625)"/>
+      <path id="PlusJakartaSans-SemiBold-5e" d="M 2093 -77 
+Q 1594 -77 1181 160 
+Q 768 397 525 806 
+Q 282 1216 282 1734 
+Q 282 2259 525 2665 
+Q 768 3072 1177 3305 
+Q 1587 3539 2093 3539 
+Q 2605 3539 3011 3305 
+Q 3418 3072 3658 2665 
+Q 3898 2259 3898 1734 
+Q 3898 1210 3654 800 
+Q 3411 390 3001 156 
+Q 2592 -77 2093 -77 
+z
+M 2093 595 
+Q 2400 595 2637 742 
+Q 2874 890 3011 1149 
+Q 3149 1408 3149 1734 
+Q 3149 2061 3011 2317 
+Q 2874 2573 2637 2720 
+Q 2400 2867 2093 2867 
+Q 1792 2867 1552 2720 
+Q 1312 2573 1174 2317 
+Q 1037 2061 1037 1734 
+Q 1037 1408 1174 1149 
+Q 1312 890 1552 742 
+Q 1792 595 2093 595 
+z
+" transform="scale(0.015625)"/>
+      <path id="PlusJakartaSans-SemiBold-5a" d="M 422 0 
+L 422 4845 
+L 1146 4845 
+L 1146 0 
+L 422 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="PlusJakartaSans-SemiBold-6d" d="M 1658 -77 
+Q 1267 -77 972 99 
+Q 678 275 515 592 
+Q 352 909 352 1325 
+L 352 3462 
+L 1075 3462 
+L 1075 1389 
+Q 1075 1152 1171 973 
+Q 1267 794 1440 694 
+Q 1613 595 1837 595 
+Q 2067 595 2240 697 
+Q 2413 800 2512 985 
+Q 2611 1171 2611 1421 
+L 2611 3462 
+L 3328 3462 
+L 3328 0 
+L 2643 0 
+L 2643 678 
+L 2720 589 
+Q 2598 269 2316 96 
+Q 2035 -77 1658 -77 
+z
+" transform="scale(0.015625)"/>
+      <path id="PlusJakartaSans-SemiBold-6c" d="M 1920 -38 
+Q 1376 -38 1075 269 
+Q 774 576 774 1133 
+L 774 2810 
+L 166 2810 
+L 166 3462 
+L 262 3462 
+Q 506 3462 640 3603 
+Q 774 3744 774 3987 
+L 774 4256 
+L 1498 4256 
+L 1498 3462 
+L 2285 3462 
+L 2285 2810 
+L 1498 2810 
+L 1498 1165 
+Q 1498 986 1555 861 
+Q 1613 736 1741 669 
+Q 1869 602 2074 602 
+Q 2125 602 2189 608 
+Q 2253 614 2310 621 
+L 2310 0 
+Q 2221 -13 2112 -25 
+Q 2003 -38 1920 -38 
+z
+" transform="scale(0.015625)"/>
+      <path id="PlusJakartaSans-SemiBold-50" d="M 422 0 
+L 422 3462 
+L 1146 3462 
+L 1146 0 
+L 422 0 
+z
+M 422 3936 
+L 422 4768 
+L 1146 4768 
+L 1146 3936 
+L 422 3936 
+z
+" transform="scale(0.015625)"/>
+      <path id="PlusJakartaSans-SemiBold-5c" d="M 422 0 
+L 422 3462 
+L 1114 3462 
+L 1114 2784 
+L 1030 2874 
+Q 1158 3200 1440 3369 
+Q 1722 3539 2093 3539 
+Q 2477 3539 2771 3372 
+Q 3066 3206 3232 2912 
+Q 3398 2618 3398 2234 
+L 3398 0 
+L 2682 0 
+L 2682 2042 
+Q 2682 2304 2586 2486 
+Q 2490 2669 2314 2768 
+Q 2138 2867 1914 2867 
+Q 1690 2867 1514 2768 
+Q 1338 2669 1242 2483 
+Q 1146 2298 1146 2042 
+L 1146 0 
+L 422 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="PlusJakartaSans-SemiBold-72" d="M 1427 0 
+L 70 3462 
+L 858 3462 
+L 1901 640 
+L 1613 640 
+L 2656 3462 
+L 3450 3462 
+L 2086 0 
+L 1427 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="PlusJakartaSans-SemiBold-82" d="M 320 0 
+L 320 544 
+L 1626 1939 
+Q 2010 2349 2230 2601 
+Q 2451 2854 2550 3046 
+Q 2650 3238 2650 3450 
+Q 2650 3795 2438 3984 
+Q 2227 4173 1894 4173 
+Q 1549 4173 1299 3977 
+Q 1050 3782 954 3411 
+L 288 3603 
+Q 365 3981 595 4259 
+Q 826 4538 1162 4691 
+Q 1498 4845 1888 4845 
+Q 2342 4845 2681 4675 
+Q 3021 4506 3209 4205 
+Q 3398 3904 3398 3507 
+Q 3398 3245 3299 2998 
+Q 3200 2752 2995 2480 
+Q 2790 2208 2470 1869 
+L 1318 640 
+L 3488 640 
 L 3488 0 
-L 3488 3494 
-L 2672 3494 
-L 2672 1447 
-C 2672 941 2359 647 1928 647 
-C 1503 647 1244 928 1244 1397 
-L 1244 3494 
-L 431 3494 
-L 431 1272 
-C 431 431 909 -44 1628 -44 
+L 320 0 
 z
 " transform="scale(0.015625)"/>
-      <path id="Inter-SemiBold-37b" d="M 2047 3494 
-L 1372 3494 
-L 1372 4325 
-L 559 4325 
-L 559 3494 
-L 63 3494 
-L 63 2856 
-L 559 2856 
-L 559 916 
-C 559 297 931 -47 1600 -47 
-C 1772 -47 1966 -25 2144 28 
-L 2016 656 
-C 1938 638 1794 616 1719 616 
-C 1472 616 1372 731 1372 984 
-L 1372 2856 
-L 2047 2856 
-L 2047 3494 
+      <path id="PlusJakartaSans-SemiBold-80" d="M 2298 -77 
+Q 1728 -77 1299 233 
+Q 870 544 630 1097 
+Q 390 1651 390 2387 
+Q 390 3130 630 3680 
+Q 870 4230 1296 4537 
+Q 1722 4845 2291 4845 
+Q 2861 4845 3286 4537 
+Q 3712 4230 3952 3676 
+Q 4192 3123 4192 2387 
+Q 4192 1651 3955 1097 
+Q 3718 544 3292 233 
+Q 2867 -77 2298 -77 
+z
+M 2298 614 
+Q 2650 614 2906 832 
+Q 3162 1050 3302 1446 
+Q 3443 1843 3443 2387 
+Q 3443 2931 3302 3328 
+Q 3162 3725 2906 3942 
+Q 2650 4160 2291 4160 
+Q 1939 4160 1683 3942 
+Q 1427 3725 1286 3328 
+Q 1146 2931 1146 2387 
+Q 1146 1850 1286 1450 
+Q 1427 1050 1686 832 
+Q 1946 614 2298 614 
 z
 " transform="scale(0.015625)"/>
-      <path id="Inter-SemiBold-2b2" d="M 431 0 
-L 1244 0 
-L 1244 3494 
-L 431 3494 
-L 431 0 
-z
-M 838 3988 
-C 1097 3988 1313 4188 1313 4434 
-C 1313 4681 1097 4878 838 4878 
-C 578 4878 366 4681 366 4434 
-C 366 4188 578 3988 838 3988 
-z
-" transform="scale(0.015625)"/>
-      <path id="Inter-SemiBold-307" d="M 1244 2047 
-C 1244 2553 1556 2847 1991 2847 
-C 2416 2847 2672 2566 2672 2097 
-L 2672 0 
-L 3484 0 
-L 3484 2222 
-C 3484 3063 3009 3538 2291 3538 
-C 1778 3538 1416 3288 1209 2797 
-L 1200 3494 
-L 431 3494 
-L 431 0 
-L 1244 0 
-L 1244 2047 
-z
-" transform="scale(0.015625)"/>
-      <path id="Inter-SemiBold-3d6" d="M 1422 0 
-L 2331 0 
-L 3638 3494 
-L 2775 3494 
-L 2141 1594 
-C 2038 1284 1963 972 1888 656 
-C 1809 975 1731 1284 1628 1594 
-L 991 3494 
-L 122 3494 
-L 1422 0 
-z
-" transform="scale(0.015625)"/>
-      <path id="Inter-SemiBold-541" d="M 419 0 
-L 3603 0 
-L 3603 697 
-L 1575 697 
-L 1575 731 
-L 2384 1556 
-C 3294 2434 3534 2853 3534 3369 
-C 3534 4147 2903 4719 1969 4719 
-C 1047 4719 394 4144 394 3263 
-L 1191 3263 
-C 1191 3741 1491 4038 1959 4038 
-C 2400 4038 2731 3766 2731 3328 
-C 2731 2934 2488 2653 2034 2191 
-L 419 600 
-L 419 0 
-z
-" transform="scale(0.015625)"/>
-      <path id="Inter-SemiBold-53f" d="M 2113 -63 
-C 3244 -63 3900 813 3900 2325 
-C 3900 3831 3238 4719 2113 4719 
-C 984 4719 322 3834 322 2325 
-C 322 813 981 -63 2113 -63 
-z
-M 2113 638 
-C 1500 638 1163 1250 1163 2325 
-C 1163 3400 1503 4022 2113 4022 
-C 2719 4022 3059 3403 3059 2325 
-C 3059 1250 2719 638 2113 638 
-z
-" transform="scale(0.015625)"/>
-      <path id="Inter-SemiBold-3e3" d="M 156 0 
-L 1034 0 
-L 1466 700 
-C 1603 931 1706 1153 1809 1366 
-C 1919 1153 2028 931 2166 700 
-L 2597 0 
-L 3484 0 
-L 2325 1775 
-L 3431 3494 
-L 2556 3494 
-L 2188 2900 
-C 2047 2666 1938 2434 1831 2219 
-C 1722 2434 1613 2663 1475 2900 
-L 1119 3494 
-L 225 3494 
-L 1313 1794 
-L 156 0 
+      <path id="PlusJakartaSans-SemiBold-f3" d="M 1056 0 
+L 608 454 
+L 1606 1453 
+L 608 2445 
+L 1062 2899 
+L 2054 1907 
+L 3046 2899 
+L 3501 2445 
+L 2509 1453 
+L 3507 454 
+L 3053 0 
+L 2054 998 
+L 1056 0 
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#Inter-SemiBold-c5"/>
-     <use xlink:href="#Inter-SemiBold-300" transform="translate(27.6875 0)"/>
-     <use xlink:href="#Inter-SemiBold-1fc" transform="translate(117.734375 0)"/>
-     <use xlink:href="#Inter-SemiBold-293" transform="translate(175.15625 0)"/>
-     <use xlink:href="#Inter-SemiBold-267" transform="translate(237.703125 0)"/>
-     <use xlink:href="#Inter-SemiBold-6eb" transform="translate(296.828125 0)"/>
-     <use xlink:href="#Inter-SemiBold-356" transform="translate(322.03125 0)"/>
-     <use xlink:href="#Inter-SemiBold-267" transform="translate(359.53125 0)"/>
-     <use xlink:href="#Inter-SemiBold-369" transform="translate(418.65625 0)"/>
-     <use xlink:href="#Inter-SemiBold-318" transform="translate(473.59375 0)"/>
-     <use xlink:href="#Inter-SemiBold-2e2" transform="translate(534.484375 0)"/>
-     <use xlink:href="#Inter-SemiBold-395" transform="translate(560.65625 0)"/>
-     <use xlink:href="#Inter-SemiBold-37b" transform="translate(621.890625 0)"/>
-     <use xlink:href="#Inter-SemiBold-2b2" transform="translate(657.1875 0)"/>
-     <use xlink:href="#Inter-SemiBold-318" transform="translate(683.359375 0)"/>
-     <use xlink:href="#Inter-SemiBold-307" transform="translate(744.25 0)"/>
-     <use xlink:href="#Inter-SemiBold-6eb" transform="translate(805.4375 0)"/>
-     <use xlink:href="#Inter-SemiBold-3d6" transform="translate(830.640625 0)"/>
-     <use xlink:href="#Inter-SemiBold-1fc" transform="translate(888.5 0)"/>
-     <use xlink:href="#Inter-SemiBold-356" transform="translate(945.921875 0)"/>
-     <use xlink:href="#Inter-SemiBold-2b2" transform="translate(986.609375 0)"/>
-     <use xlink:href="#Inter-SemiBold-267" transform="translate(1012.78125 0)"/>
-     <use xlink:href="#Inter-SemiBold-369" transform="translate(1071.90625 0)"/>
-     <use xlink:href="#Inter-SemiBold-6eb" transform="translate(1126.84375 0)"/>
-     <use xlink:href="#Inter-SemiBold-541" transform="translate(1152.046875 0)"/>
-     <use xlink:href="#Inter-SemiBold-53f" transform="translate(1214.359375 0)"/>
-     <use xlink:href="#Inter-SemiBold-3e3" transform="translate(1280.328125 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-17"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-5b" transform="translate(27.203125 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-3b" transform="translate(119.109375 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-4e" transform="translate(176.90625 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-48" transform="translate(242.40625 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-b2" transform="translate(303.703125 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-69" transform="translate(321.203125 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-48" transform="translate(357.40625 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-6a" transform="translate(418.703125 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-5e" transform="translate(469.90625 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-5a" transform="translate(535.203125 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-6d" transform="translate(559.703125 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-6c" transform="translate(618.296875 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-50" transform="translate(658.796875 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-5e" transform="translate(683.296875 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-5c" transform="translate(748.59375 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-b2" transform="translate(807.1875 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-72" transform="translate(824.6875 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-3b" transform="translate(877.6875 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-69" transform="translate(935.484375 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-50" transform="translate(971.6875 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-48" transform="translate(996.1875 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-6a" transform="translate(1057.484375 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-b2" transform="translate(1108.6875 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-82" transform="translate(1126.1875 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-80" transform="translate(1185.984375 0)"/>
+     <use xlink:href="#PlusJakartaSans-SemiBold-f3" transform="translate(1257.578125 0)"/>
     </g>
    </g>
    <g id="legend_1">
     <g id="PathCollection_3">
      <g>
-      <use xlink:href="#mfedc926e9c" x="77.899609" y="45.28125" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
+      <use xlink:href="#mac74ce9a7a" x="78.3" y="46.7355" style="fill: #2a78d6; stroke: #fcfcfb; stroke-width: 1.5"/>
      </g>
     </g>
     <g id="text_20">
      <!-- annotated -->
-     <g style="fill: #52514e" transform="translate(94.099609 47.64375) scale(0.09 -0.09)">
+     <g style="fill: #52514e" transform="translate(94.5 49.098) scale(0.09 -0.09)">
       <defs>
-       <path id="Inter-Regular-1fc" d="M 1472 -81 
-C 2063 -81 2391 228 2509 475 
-L 2547 475 
-L 2547 0 
-L 3100 0 
-L 3100 2303 
-C 3100 3394 2259 3538 1791 3538 
-C 1250 3538 650 3344 381 2709 
-L 922 2531 
-C 1031 2775 1303 3044 1806 3044 
-C 2291 3044 2538 2794 2538 2359 
-L 2538 2341 
-C 2538 2081 2263 2100 1641 2022 
-C 994 1941 281 1794 281 994 
-C 281 306 809 -81 1472 -81 
-z
-M 1569 416 
-C 1150 416 847 603 847 966 
-C 847 1363 1206 1494 1616 1547 
-C 1831 1575 2444 1638 2538 1747 
-L 2538 1263 
-C 2538 834 2191 416 1569 416 
+       <path id="PlusJakartaSans-Regular-3b" d="M 1485 -77 
+Q 1158 -77 902 48 
+Q 646 173 499 390 
+Q 352 608 352 890 
+Q 352 1158 467 1379 
+Q 582 1600 825 1753 
+Q 1069 1907 1446 1971 
+L 2790 2195 
+L 2790 1760 
+L 1562 1555 
+Q 1190 1491 1027 1318 
+Q 864 1146 864 909 
+Q 864 678 1046 518 
+Q 1229 358 1517 358 
+Q 1869 358 2131 508 
+Q 2394 659 2541 915 
+Q 2688 1171 2688 1485 
+L 2688 2355 
+Q 2688 2662 2464 2854 
+Q 2240 3046 1882 3046 
+Q 1568 3046 1331 2889 
+Q 1094 2733 979 2483 
+L 544 2720 
+Q 640 2938 848 3117 
+Q 1056 3296 1325 3401 
+Q 1594 3507 1882 3507 
+Q 2259 3507 2550 3360 
+Q 2842 3213 3005 2953 
+Q 3168 2694 3168 2355 
+L 3168 0 
+L 2688 0 
+L 2688 685 
+L 2758 614 
+Q 2669 422 2480 265 
+Q 2291 109 2038 16 
+Q 1786 -77 1485 -77 
 z
 " transform="scale(0.015625)"/>
-       <path id="Inter-Regular-307" d="M 1056 2094 
-C 1056 2691 1434 3031 1938 3031 
-C 2425 3031 2725 2709 2725 2172 
-L 2725 0 
-L 3288 0 
-L 3288 2219 
-C 3288 3103 2813 3538 2106 3538 
-C 1638 3538 1263 3341 1038 2847 
-L 1034 3494 
-L 494 3494 
-L 494 0 
-L 1056 0 
-L 1056 2094 
+       <path id="PlusJakartaSans-Regular-5c" d="M 493 0 
+L 493 3430 
+L 973 3430 
+L 973 2765 
+L 864 2790 
+Q 992 3123 1283 3315 
+Q 1574 3507 1958 3507 
+Q 2323 3507 2614 3340 
+Q 2906 3174 3075 2883 
+Q 3245 2592 3245 2227 
+L 3245 0 
+L 2765 0 
+L 2765 2042 
+Q 2765 2355 2653 2572 
+Q 2541 2790 2339 2908 
+Q 2138 3027 1875 3027 
+Q 1613 3027 1408 2908 
+Q 1203 2790 1088 2569 
+Q 973 2349 973 2042 
+L 973 0 
+L 493 0 
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#Inter-Regular-1fc"/>
-      <use xlink:href="#Inter-Regular-307" transform="translate(56.15625 0)"/>
-      <use xlink:href="#Inter-Regular-307" transform="translate(115.234375 0)"/>
-      <use xlink:href="#Inter-Regular-318" transform="translate(174.3125 0)"/>
-      <use xlink:href="#Inter-Regular-37b" transform="translate(234.28125 0)"/>
-      <use xlink:href="#Inter-Regular-1fc" transform="translate(267.484375 0)"/>
-      <use xlink:href="#Inter-Regular-37b" transform="translate(323.640625 0)"/>
-      <use xlink:href="#Inter-Regular-267" transform="translate(355.390625 0)"/>
-      <use xlink:href="#Inter-Regular-256" transform="translate(413.6875 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-3b"/>
+      <use xlink:href="#PlusJakartaSans-Regular-5c" transform="translate(57.203125 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-5c" transform="translate(114.5 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-5e" transform="translate(171.796875 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-6c" transform="translate(236.296875 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-3b" transform="translate(274.09375 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-6c" transform="translate(330.296875 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-48" transform="translate(367.09375 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-46" transform="translate(428.59375 0)"/>
      </g>
     </g>
     <g id="PathCollection_4">
      <g>
-      <use xlink:href="#mc3eb4ac4d6" x="77.899609" y="60.670898" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
+      <use xlink:href="#mb83cf81945" x="78.3" y="62.5755" style="fill: #eb6834; stroke: #fcfcfb; stroke-width: 1.5"/>
      </g>
     </g>
     <g id="text_21">
      <!-- no annotation -->
-     <g style="fill: #52514e" transform="translate(94.099609 63.033398) scale(0.09 -0.09)">
-      <use xlink:href="#Inter-Regular-307"/>
-      <use xlink:href="#Inter-Regular-318" transform="translate(59.078125 0)"/>
-      <use xlink:href="#Inter-Regular-6eb" transform="translate(119.046875 0)"/>
-      <use xlink:href="#Inter-Regular-1fc" transform="translate(147.171875 0)"/>
-      <use xlink:href="#Inter-Regular-307" transform="translate(203.328125 0)"/>
-      <use xlink:href="#Inter-Regular-307" transform="translate(262.40625 0)"/>
-      <use xlink:href="#Inter-Regular-318" transform="translate(321.484375 0)"/>
-      <use xlink:href="#Inter-Regular-37b" transform="translate(381.453125 0)"/>
-      <use xlink:href="#Inter-Regular-1fc" transform="translate(414.65625 0)"/>
-      <use xlink:href="#Inter-Regular-37b" transform="translate(470.8125 0)"/>
-      <use xlink:href="#Inter-Regular-2b2" transform="translate(503.53125 0)"/>
-      <use xlink:href="#Inter-Regular-318" transform="translate(527.75 0)"/>
-      <use xlink:href="#Inter-Regular-307" transform="translate(587.71875 0)"/>
+     <g style="fill: #52514e" transform="translate(94.5 64.938) scale(0.09 -0.09)">
+      <use xlink:href="#PlusJakartaSans-Regular-5c"/>
+      <use xlink:href="#PlusJakartaSans-Regular-5e" transform="translate(57.296875 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-b2" transform="translate(122.796875 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-3b" transform="translate(139.796875 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-5c" transform="translate(197 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-5c" transform="translate(254.296875 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-5e" transform="translate(311.59375 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-6c" transform="translate(376.09375 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-3b" transform="translate(413.890625 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-6c" transform="translate(470.09375 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-50" transform="translate(508.890625 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-5e" transform="translate(531.796875 0)"/>
+      <use xlink:href="#PlusJakartaSans-Regular-5c" transform="translate(597.296875 0)"/>
      </g>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p36d643674d">
-   <rect x="60.799609" y="30.825" width="290.16" height="188.496"/>
+  <clipPath id="p5fc6c9d07a">
+   <rect x="61.2" y="31.656" width="290.16" height="188.496"/>
   </clipPath>
  </defs>
 </svg>

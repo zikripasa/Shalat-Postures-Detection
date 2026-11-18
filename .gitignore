@@ -54,3 +54,9 @@ Thumbs.db
 
 # Demo video and other renders built from dataset images (not redistributed)
 artifacts/demo/
+
+# Report build intermediates
+portfolio/report/build/
+
+# Deck builder dependencies
+portfolio/presentation/node_modules/

@@ -1,0 +1,8 @@
+{
+  "author": "[Your name]",
+  "role": "[Programme / role you are applying for]",
+  "contact": "[Email or portfolio link]",
+  "repository": "[Repository link]",
+  "version_label": "Version 1.0",
+  "_note": "Edit these fields, then run: python portfolio/report/build_report.py"
+}

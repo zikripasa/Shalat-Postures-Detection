@@ -65,10 +65,28 @@ BLUE_RAMP = ["#f4f8fe", "#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "
 SEQ_BLUE = LinearSegmentedColormap.from_list("salat_blue", BLUE_RAMP)
 
 
+_FONTS_REGISTERED = False
+
+
+def _register_brand_fonts() -> None:
+    """Register Plus Jakarta Sans (OFL, shipped in portfolio/assets/fonts) for charts."""
+    global _FONTS_REGISTERED
+    if _FONTS_REGISTERED:
+        return
+    from matplotlib import font_manager
+
+    from salat_vision.config import find_project_root
+
+    for ttf in (find_project_root() / "portfolio" / "assets" / "fonts").glob("*.ttf"):
+        font_manager.fontManager.addfont(str(ttf))
+    _FONTS_REGISTERED = True
+
+
 def apply_style() -> None:
-    """Matplotlib rcParams for the project's chart look."""
+    """Matplotlib rcParams for the project's chart look (brand UI sans, Inter as fallback)."""
+    _register_brand_fonts()
     plt.rcParams.update({
-        "font.family": ["Inter", "DejaVu Sans"],
+        "font.family": ["Plus Jakarta Sans", "Inter", "DejaVu Sans"],
         "font.size": 10,
         "axes.facecolor": SURFACE,
         "figure.facecolor": SURFACE,
