@@ -1,0 +1,1 @@
+"""Salat Vision FastAPI backend."""

@@ -1,0 +1,86 @@
+@import "tailwindcss";
+@import "@fontsource/plus-jakarta-sans/400.css";
+@import "@fontsource/plus-jakarta-sans/500.css";
+@import "@fontsource/plus-jakarta-sans/600.css";
+@import "@fontsource/plus-jakarta-sans/700.css";
+@import "@fontsource/plus-jakarta-sans/800.css";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* brand */
+  --color-night: #0e1b33;
+  --color-night-2: #1b2b4b;
+  --color-limestone: #f3f5f4;
+  --color-paper: #fcfcfb;
+  --color-faience: #0f766e;
+  --color-faience-2: #0b5f59;
+  --color-faience-soft: #e3f1ef;
+  --color-brass: #b8892c;
+  --color-slate: #4a5565;
+  --color-muted: #6b7280;
+  --color-hairline: #dfe3e1;
+  --color-grid: #e1e0d9;
+
+  /* status (never used for data series) */
+  --color-good: #0ca30c;
+  --color-warning: #fab219;
+  --color-critical: #d03b3b;
+
+  /* data: phase colours (validated categorical palette) */
+  --color-ph-berdiri: #eda100;
+  --color-ph-rukuk: #1baf7a;
+  --color-ph-iktidal: #eb6834;
+  --color-ph-sujud: #2a78d6;
+  --color-ph-duduk: #008300;
+  --color-ph-tasyahud: #e87ba4;
+  --color-ph-uncertain: #cfccc2;
+}
+
+@layer base {
+  html {
+    background: var(--color-limestone);
+    color: var(--color-night);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    min-height: 100vh;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-faience);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* one orchestrated moment: the hero posture sequence draws itself once */
+@keyframes draw-stroke {
+  from {
+    stroke-dashoffset: var(--len, 400);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.draw-once path,
+.draw-once line,
+.draw-once circle {
+  stroke-dasharray: var(--len, 400);
+  animation: draw-stroke 1.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}

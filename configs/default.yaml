@@ -1,0 +1,111 @@
+# Salat Vision — central configuration.
+# Relative paths are resolved against the project root. Any value can be overridden
+# with environment variables (see src/salat_vision/config.py) — e.g. SALAT_DATASET_DIR.
+
+project:
+  name: salat-vision
+  seed: 42
+
+paths:
+  # Optional: path to Salat-Postures-Dataset-main.zip. When set (or found by discovery),
+  # `python scripts/extract_dataset.py` extracts it safely into raw_dir.
+  dataset_zip: null
+  raw_dir: data/raw
+  dataset_dir: data/raw/Salat-Postures-Dataset-main
+  processed_dir: data/processed
+  splits_dir: data/splits
+  models_dir: models
+  pretrained_dir: models/pretrained
+  checkpoints_dir: models/checkpoints
+  artifacts_dir: artifacts
+
+dataset:
+  image_extensions: [".jpg", ".jpeg", ".png", ".mpo"]
+  annotation_extension: ".xml"
+  # Bounding-box crop padding (fraction of box size on each side) used for every
+  # crop-based model, at training *and* inference time.
+  crop_padding: 0.15
+  min_box_side_px: 16
+
+splits:
+  # Repeated stratified *group* k-fold: images that are near-duplicates or that come
+  # from the same capture session never cross the train/test boundary.
+  n_splits: 5
+  n_repeats: 3
+  inner_val_fraction: 0.2
+  # Perceptual-hash Hamming distance under which two images are treated as near-duplicates.
+  phash_near_duplicate_distance: 18
+  # Manually reviewed session groups (see the file for the review notes).
+  session_groups_file: configs/session_groups.yaml
+
+models_remote:
+  # Third-party pretrained models (downloaded by scripts/download_models.py; Apache-2.0).
+  # 'full' was selected over 'lite'/'heavy' on measured detection rate and latency
+  # (see artifacts/metrics/pose_variant_benchmark.json).
+  pose_landmarker:
+    file: pose_landmarker_full.task
+    url: https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/latest/pose_landmarker_full.task
+  person_detector:
+    file: efficientdet_lite0.tflite
+    url: https://storage.googleapis.com/mediapipe-models/object_detector/efficientdet_lite0/float32/latest/efficientdet_lite0.tflite
+
+pose:
+  min_pose_detection_confidence: 0.3
+  min_pose_presence_confidence: 0.3
+  min_tracking_confidence: 0.3
+  # Landmarks with visibility below this are treated as missing in the features.
+  min_landmark_visibility: 0.35
+
+detector:
+  score_threshold: 0.30
+  max_results: 5
+
+cnn:
+  backbones: [mobilenet_v3_large, resnet18]
+  image_size: 224
+  batch_size: 16
+  epochs: 30
+  lr_head: 1.0e-3
+  lr_backbone: 1.0e-4
+  weight_decay: 1.0e-4
+  patience: 8
+  label_smoothing: 0.05
+  num_workers: 0
+
+inference:
+  # Frames analysed per second of video (the rest are skipped).
+  sample_fps: 5.0
+  max_video_seconds: 600
+  # A frame/segment whose (smoothed) top score is below this is reported as "uncertain".
+  uncertainty_threshold: 0.55
+  annotate_video: true
+
+temporal:
+  # Grammar-constrained HMM (Viterbi) over 7 hidden states / 6 prayer phases.
+  # Per-frame switch probability = 1 - exp(-dt / mean_phase_seconds).
+  mean_phase_seconds: 3.0
+  # Probability mass per second for jumps that break the prayer order (robustness).
+  off_grammar_per_second: 0.02
+  # Exponent applied to frame probabilities before decoding (<1 = softer).
+  emission_power: 1.0
+  # Baselines only: moving-average window and minimum segment duration.
+  smoothing_seconds: 1.0
+  min_segment_seconds: 0.6
+  decoder: hmm
+
+api:
+  max_image_mb: 10
+  max_video_mb: 150
+  allowed_origins: ["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:4173", "http://127.0.0.1:4173"]
+  job_ttl_minutes: 30
+  max_concurrent_jobs: 2
+
+final_model:
+  # Pipeline selected from the cross-validated comparison
+  # (artifacts/metrics/model_comparison.csv); rationale in docs/model_card.md.
+  version: "1.0.0"
+  bundle_name: salat_vision_v1
+  cv_model_key: fusion_pose_cnn
+  pose_classifier: pose_logreg
+  image_backbone: mobilenet_v3_large
+  fusion_w_pose: 0.5
