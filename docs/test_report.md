@@ -13,7 +13,7 @@ actually executed; nothing is reported as passing because the code merely exists
 | Python — HMM decoding, segment contiguity, uncertainty flags, edit/F1 metrics | `pytest tests/test_temporal.py` | 8 passed |
 | Python — real bundle: checksums, tamper detection, image + video inference | `pytest tests/test_inference.py` | 5 passed |
 | Python — FastAPI: 503 without model, 400/413/415 validation, job lifecycle, reports, annotated video, CORS | `pytest tests/test_api.py` | 11 passed |
-| **Python total** | `pytest -q` | **55 passed** (75 s) |
+| **Python total** | `pytest -q` | **55 passed** (10 s on an idle machine; 75 s in an earlier run under load) |
 | Frontend unit (Vitest + Testing Library): format helpers, PhaseTimeline, pages with a real API fixture, API errors | `npm test` | **12 passed** |
 | Frontend type-check (strict) | `npm run typecheck` | passed |
 | Frontend production build | `npm run build` | passed (initial JS 302 kB / 96 kB gzip; charts lazy-loaded) |

@@ -2,7 +2,7 @@
   "name": "Salat Vision posture model",
   "version": "1.0.0",
   "package_version": "0.1.0",
-  "created_utc": "2026-11-18T16:31:18+00:00",
+  "created_utc": "2026-11-19T03:41:56+00:00",
   "classes": [
     "qiyam",
     "ruku",
@@ -273,21 +273,21 @@
     {
       "role": "pose_landmarker",
       "name": "pose_landmarker_full.task",
-      "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/latest/pose_landmarker_full.task",
-      "sha256": "4eaa5eb7a98365221087693fcc286334cf0858e2eb6e15b506aa4a7ecdcec4ad",
+      "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+      "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1",
       "license": "Apache-2.0 (Google MediaPipe)"
     },
     {
       "role": "person_detector",
       "name": "efficientdet_lite0.tflite",
-      "url": "https://storage.googleapis.com/mediapipe-models/object_detector/efficientdet_lite0/float32/latest/efficientdet_lite0.tflite",
+      "url": "https://storage.googleapis.com/mediapipe-models/object_detector/efficientdet_lite0/float32/1/efficientdet_lite0.tflite",
       "sha256": "40338edf5ec70d43e318b0a716a84d4564cd1802759a7a07170c7e43796dbf58",
       "license": "Apache-2.0 (Google MediaPipe)"
     }
   ],
   "environment": {
     "python": "3.12.3",
-    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+    "platform": "Linux-6.18.44-fc-v653-x86_64-with-glibc2.39",
     "machine": "x86_64",
     "torch": "2.15.0+cpu",
     "onnxruntime": "1.32.0",
