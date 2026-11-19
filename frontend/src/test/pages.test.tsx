@@ -47,7 +47,7 @@ describe("pages", () => {
   it("results page renders the real analysis: timeline, table and stats", async () => {
     vi.stubGlobal("fetch", mockFetch({ "/jobs/fixture-demo": fixture, "/model-info": modelInfo, "/health": { status: "ok", model_loaded: true, model_version: "1.0.0" } }));
     renderAt("/hasil/fixture-demo");
-    await screen.findByRole("heading", { name: "Hasil analisis" });
+    await screen.findByRole("heading", { name: "Hasil analisis" }, { timeout: 20000 });
     const timeline = screen.getByRole("list", { name: "Linimasa fase shalat" });
     expect(timeline.querySelectorAll("button")).toHaveLength(fixture.result.segments.length);
     expect(screen.getByText("Siklus rakaat teramati")).toBeInTheDocument();
@@ -58,7 +58,7 @@ describe("pages", () => {
   it("results page explains an expired job", async () => {
     vi.stubGlobal("fetch", mockFetch({ "/model-info": modelInfo, "/health": { status: "ok", model_loaded: true } }));
     renderAt("/hasil/unknown");
-    expect(await screen.findByText(/kedaluwarsa/)).toBeInTheDocument();
+    expect(await screen.findByText(/kedaluwarsa/, undefined, { timeout: 20000 })).toBeInTheDocument();
   });
 
   it("home page shows the six phases and live model status", async () => {

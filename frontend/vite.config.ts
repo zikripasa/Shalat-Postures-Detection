@@ -14,5 +14,7 @@ export default defineConfig({
     setupFiles: ["./src/test/setup.ts"],
     include: ["src/**/*.test.{ts,tsx}"],
     css: false,
+    // lazy-loaded chart pages pull in Recharts; the first (cold-cache) transform can exceed 5 s
+    testTimeout: 30000,
   },
 });

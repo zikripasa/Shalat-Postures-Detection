@@ -23,6 +23,14 @@ behind an Indonesian-language React web app.
 | Speed | **84 ms per frame** (11.9 frames/s) on a 4-vCPU Xeon, no GPU; ONNX embedder 2.3× faster than PyTorch |
 | Tests | 55 Python tests, 12 frontend unit tests, 5 Playwright end-to-end tests against the real backend — all passing |
 
+## Portfolio deliverables
+
+* `portfolio/report/Salat_Vision_Technical_Report.pdf` — 12-page technical report built from the saved artefacts.
+* `portfolio/presentation/Salat_Vision_Portfolio_Deck.pptx` — 14-slide editable deck (native charts, tables, shapes).
+* `portfolio/assets/` — figures, screenshots, diagram sources (SVG + Mermaid), chart source data (CSV/JSON).
+* Canva: PDFs and figures were uploaded to Canva and two AI-generated drafts were audited — see
+  [portfolio/README.md](portfolio/README.md#canva) for links, what is accurate, and the recommended import path.
+
 ## What is in the box
 
 ```
