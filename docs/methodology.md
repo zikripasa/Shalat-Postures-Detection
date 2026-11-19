@@ -29,6 +29,14 @@ Nothing claims to *see* iktidal or tasyahud; their names are inferred from conte
   inclination (world coordinates, y down), 2-D torso inclination and knee angle, head/shoulder/wrist/knee/ankle heights
   relative to the hips (normalised by the landmark-box diagonal), horizontal spreads, landmark-box aspect, upper/lower
   visibility, and the person-box aspect. Landmarks with visibility < 0.35 are missing; imputation adds indicators.
+  The model files are downloaded from version-pinned URLs and verified against the bundle's SHA-256.
+* **Why not YOLO Pose** (the brief asked for it only if appropriate): it was considered and not used. This is a design
+  decision, not a measured comparison. (1) The widely used Ultralytics YOLO-Pose code and weights are AGPL-3.0. Serving
+  them in this web app would put the whole service under AGPL or require a commercial licence, while the project is MIT
+  and its models are Apache-2.0/BSD. (2) MediaPipe already runs at about 34 ms per crop on CPU, and person detection is
+  handled by EfficientDet-Lite0. (3) The real weakness is pose detection in prostration (67% found). With 12 annotated
+  prostrations, a comparison between pose estimators could not separate them reliably. Comparing pose estimators on
+  the full dataset is future work.
 * **Image:** ImageNet MobileNetV3-Large (960-d) and ResNet18 (512-d) pooled features of the **letterboxed** crop
   (aspect ratio preserved — box shape is a posture cue). Training embeddings are doubled with horizontal flips.
 
