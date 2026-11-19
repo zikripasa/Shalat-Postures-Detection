@@ -9,6 +9,7 @@ trained on these images, so results on this clip are NOT an accuracy estimate.
 Outputs (git-ignored, regenerate locally):
   artifacts/demo/demo_sequence.mp4
   artifacts/demo/demo_sequence.json   ground-truth phase timeline of the clip
+  artifacts/demo/stills/still_<t>.jpg single face-blurred frames (photo mode, end-to-end test)
 """
 
 from __future__ import annotations
@@ -38,6 +39,7 @@ PLAN = [
 ]
 W, H, FPS, FADE = 1280, 720, 25, 0.4
 BG = (14, 27, 51)
+STILLS_AT = (6.5, 11.5)  # seconds into the clip (Rukuk, first Sujud), saved as JPEG frames
 
 
 def fit(img: np.ndarray) -> np.ndarray:
@@ -75,7 +77,10 @@ def main() -> int:
     writer = imageio_ffmpeg.write_frames(str(path), (W, H), fps=FPS, codec="libx264", pix_fmt_out="yuv420p",
                                          macro_block_size=2, output_params=["-preset", "medium", "-crf", "23", "-movflags", "+faststart"])
     writer.send(None)
-    timeline, t = [], 0.0
+    stills_dir = out_dir / "stills"
+    stills_dir.mkdir(exist_ok=True)
+    want = {int(round(s * FPS)): s for s in STILLS_AT}
+    timeline, t, frame_no = [], 0.0, 0
     fade_n = int(FADE * FPS)
     for k, ((phase, image_id, sec), still) in enumerate(zip(PLAN, stills)):
         n = int(round(sec * FPS))
@@ -85,12 +90,17 @@ def main() -> int:
                 a = (i + 1) / (fade_n + 1)
                 frame = cv2.addWeighted(still, a, stills[k - 1], 1 - a, 0)
             writer.send(np.ascontiguousarray(frame))
+            if frame_no in want:
+                cv2.imwrite(str(stills_dir / f"still_{want[frame_no]}.jpg"), cv2.cvtColor(frame, cv2.COLOR_RGB2BGR),
+                            [cv2.IMWRITE_JPEG_QUALITY, 92])
+            frame_no += 1
         timeline.append({"phase": phase, "image_id": image_id, "start": round(t, 3), "end": round(t + n / FPS, 3)})
         t += n / FPS
     writer.close()
     meta = {"description": __doc__.strip(), "fps": FPS, "size": [W, H], "duration": round(t, 3), "timeline": timeline}
     (out_dir / "demo_sequence.json").write_text(json.dumps(meta, indent=2), encoding="utf-8")
     print(f"{path.relative_to(cfg.root)}: {t:.1f}s, {path.stat().st_size / 1e6:.1f} MB")
+    print(f"{stills_dir.relative_to(cfg.root)}: {', '.join(sorted(f.name for f in stills_dir.glob('still_*.jpg')))}")
     return 0
 
 

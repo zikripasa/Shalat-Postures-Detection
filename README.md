@@ -86,7 +86,7 @@ python scripts/run_experiments.py        # 11 models × 15 folds (~12 min on 4 C
 python scripts/train_final.py            # selected pipeline on all data → models/salat_vision_v1 (bit-for-bit reproducible)
 python scripts/benchmark.py              # CPU latency + pose-model variants
 python scripts/benchmark_temporal.py --select   # decoder selection (validation seed) + benchmark (test seed)
-python scripts/make_demo_video.py        # synthetic, face-blurred demo clip (git-ignored)
+python scripts/make_demo_video.py        # synthetic, face-blurred demo clip + stills (git-ignored)
 python scripts/make_figures.py           # all evaluation figures + portfolio assets with source data
 python scripts/build_notebooks.py --execute
 ```
@@ -126,6 +126,7 @@ and deleted after analysis; results expire after 30 minutes. Without a model bun
 
 ```bash
 pytest -q                                   # 55 tests (unit, real-model inference, API incl. job lifecycle)
+python scripts/make_demo_video.py           # demo clip + stills: 2 of the 5 e2e tests skip without them
 cd frontend && npm test                     # 12 Vitest tests
 VITE_API_BASE_URL=http://127.0.0.1:8000 npm run build && npm run e2e   # 5 Playwright tests vs. the real backend
 ```
