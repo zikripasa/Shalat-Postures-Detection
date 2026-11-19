@@ -32,6 +32,22 @@ actually executed; nothing is reported as passing because the code merely exists
 | PPTX deck | skill validator (schema, relationships, charts) + LibreOffice render + visual review of all 14 slides | all validations passed; issues found in review were fixed |
 | Docker Compose | `docker compose config` | valid |
 
+## Fresh-checkout validation of the package
+
+`dist/salat-vision.zip` (built by `scripts/package_project.sh` from the committed tree) was unpacked into an empty
+folder and set up as the README describes. All project code, configuration and the model bundle came from the unpacked
+package; only the Python virtual environment (already-installed dependencies) and the provided dataset archive were
+reused. The package tested was built from the final code commit; the next commit only adds this section.
+
+| Step | Result |
+|---|---|
+| `scripts/extract_dataset.py --zip …` | 82 files extracted, archive safety checks passed |
+| `scripts/download_models.py` | MediaPipe models (version-pinned URLs) and torchvision weights downloaded; the two models the bundle uses match its recorded SHA-256 |
+| `pytest -q` | 55 passed |
+| `scripts/make_demo_video.py` | demo clip (42.9 s) and two face-blurred stills written |
+| `npm ci` · `npm run typecheck` · `npm test` · `npm run build` | 157 packages installed · passed · 12 passed · built |
+| `npm run e2e` | 5 passed, 0 skipped (backend started from the unpacked tree) |
+
 ## Not executed / blocked
 
 | Item | Reason |
@@ -47,3 +63,8 @@ actually executed; nothing is reported as passing because the code merely exists
 * Two timelines on the results page shared one accessible name — found by a unit test, given distinct names.
 * Download links lost descriptive accessible names after a layout change — found by a unit test, restored with `aria-label`.
 * A lazy-loaded page could exceed the default test timeout on a cold transform cache — timeouts raised for that route.
+* The photo end-to-end test uploaded a still image that no committed script produced, so it was skipped in a fresh
+  checkout — found by the fresh-checkout run; `scripts/make_demo_video.py` now writes the stills.
+* Model downloads used MediaPipe's floating `latest` URLs although the bundle verifies third-party checksums, so a
+  re-published file could stop the API from loading. Downloads are now pinned to versioned URLs (re-exporting with the
+  pinned file reproduced the bundle bit-for-bit), and the download script verifies files against the bundle.
