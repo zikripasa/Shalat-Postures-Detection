@@ -1,0 +1,338 @@
+{
+  "dataset_dir": "data/raw/Salat-Postures-Dataset-main",
+  "kind": "image dataset with Pascal VOC bounding boxes (object-detection format); no videos, no sequences",
+  "n_image_files": 41,
+  "n_readable_images": 41,
+  "n_unreadable_images": 0,
+  "n_annotation_files": 39,
+  "n_images_with_annotation": 37,
+  "n_images_without_annotation": 4,
+  "images_without_annotation": [
+    "ck2oqgwn04qu60757lizr6lif",
+    "qiam(24)",
+    "sujud31",
+    "sujud32"
+  ],
+  "n_orphan_annotations": 2,
+  "orphan_annotations": [
+    {
+      "xml_file": "Sample-images-with-annotations/ck2oqg3o222pb0721niv1tjox.xml",
+      "filename_field": "ck2oqg3o222pb0721niv1tjox.jpeg",
+      "xml_size": "170x250",
+      "labels": "julus",
+      "n_objects": 1
+    },
+    {
+      "xml_file": "Sample-images-with-annotations/qiam(23).xml",
+      "filename_field": "qiam (23).jpg",
+      "xml_size": "480x360",
+      "labels": "qiyam",
+      "n_objects": 1
+    }
+  ],
+  "n_labeled_images": 37,
+  "n_labeled_instances": 40,
+  "n_invalid_instances": 0,
+  "raw_label_spellings": {
+    "qiyam": 12,
+    "sujud": 12,
+    "sitting": 8,
+    "ruku": 6,
+    "julus": 2
+  },
+  "classes": [
+    "qiyam",
+    "ruku",
+    "sujud",
+    "julus"
+  ],
+  "instances_per_class": {
+    "qiyam": 12,
+    "ruku": 6,
+    "sujud": 12,
+    "julus": 10
+  },
+  "images_per_class": {
+    "qiyam": 10,
+    "ruku": 6,
+    "sujud": 11,
+    "julus": 10
+  },
+  "independent_groups_per_class": {
+    "qiyam": 10,
+    "ruku": 6,
+    "sujud": 11,
+    "julus": 4
+  },
+  "imbalance_ratio_max_min": 2.0,
+  "multi_person_images": [
+    {
+      "image_id": "ck2opyry31w790721ewbyuxzl",
+      "n_objects": 3,
+      "labels": "qiyam"
+    },
+    {
+      "image_id": "ck2orroq12ir90721yy30ttmr",
+      "n_objects": 2,
+      "labels": "sujud"
+    }
+  ],
+  "mixed_label_images": 0,
+  "polygon_annotations": 1,
+  "file_types": {
+    ".jpg": 20,
+    ".jpeg": 17,
+    ".png": 4
+  },
+  "exif_rotated_images": 0,
+  "xml_size_mismatches": 0,
+  "exact_duplicate_files": 0,
+  "width_px": {
+    "min": 183,
+    "median": 768.0,
+    "max": 4032
+  },
+  "height_px": {
+    "min": 159,
+    "median": 900.0,
+    "max": 4032
+  },
+  "box_rel_area": {
+    "min": 0.03799768518518518,
+    "median": 0.3192855420524692,
+    "max": 0.8066037735849056
+  },
+  "box_aspect_hw_median_by_class": {
+    "qiyam": 2.96,
+    "ruku": 1.09,
+    "sujud": 0.69,
+    "julus": 1.25
+  },
+  "source_kinds": {
+    "web (Labelbox export)": 19,
+    "named series (sujud)": 6,
+    "named series (qiam)": 4,
+    "named series (ruku)": 4,
+    "numbered photo": 3,
+    "named series (sittingmo)": 3,
+    "messaging app photo": 1,
+    "phone camera photo": 1
+  },
+  "source_by_class": {
+    "messaging app photo": {
+      "qiyam": 0,
+      "ruku": 0,
+      "sujud": 0,
+      "julus": 1
+    },
+    "named series (qiam)": {
+      "qiyam": 3,
+      "ruku": 0,
+      "sujud": 0,
+      "julus": 0
+    },
+    "named series (ruku)": {
+      "qiyam": 0,
+      "ruku": 4,
+      "sujud": 0,
+      "julus": 0
+    },
+    "named series (sittingmo)": {
+      "qiyam": 0,
+      "ruku": 0,
+      "sujud": 0,
+      "julus": 3
+    },
+    "named series (sujud)": {
+      "qiyam": 0,
+      "ruku": 0,
+      "sujud": 4,
+      "julus": 0
+    },
+    "numbered photo": {
+      "qiyam": 0,
+      "ruku": 0,
+      "sujud": 0,
+      "julus": 3
+    },
+    "phone camera photo": {
+      "qiyam": 0,
+      "ruku": 0,
+      "sujud": 0,
+      "julus": 1
+    },
+    "web (Labelbox export)": {
+      "qiyam": 9,
+      "ruku": 2,
+      "sujud": 8,
+      "julus": 2
+    }
+  },
+  "leakage": {
+    "n_groups_labeled": 29,
+    "n_multi_instance_groups": 5,
+    "largest_group_instances": 6,
+    "group_links": [
+      {
+        "image_a": "6",
+        "image_b": "7",
+        "reason": "pHash distance 12 <= 18"
+      },
+      {
+        "image_a": "SittingMo58",
+        "image_b": "ck2or3u694ynn0757ptzgbv8t",
+        "reason": "pHash distance 16 <= 18"
+      },
+      {
+        "image_a": "SittingMo85",
+        "image_b": "ck2or3u694ynn0757ptzgbv8t",
+        "reason": "pHash distance 18 <= 18"
+      },
+      {
+        "image_a": "ck2qcfa2rkho8083878ojzlm5",
+        "image_b": "qiam(24)",
+        "reason": "pHash distance 0 <= 18"
+      },
+      {
+        "image_a": "23",
+        "image_b": "6",
+        "reason": "manual session group 'lab_room_blue_mat'"
+      },
+      {
+        "image_a": "6",
+        "image_b": "7",
+        "reason": "manual session group 'lab_room_blue_mat'"
+      },
+      {
+        "image_a": "7",
+        "image_b": "SittingMO56",
+        "reason": "manual session group 'lab_room_blue_mat'"
+      },
+      {
+        "image_a": "SittingMO56",
+        "image_b": "IMG_1454",
+        "reason": "manual session group 'lab_room_blue_mat'"
+      },
+      {
+        "image_a": "IMG_1454",
+        "image_b": "ruku61",
+        "reason": "manual session group 'lab_room_blue_mat'"
+      },
+      {
+        "image_a": "ruku61",
+        "image_b": "sujud31",
+        "reason": "manual session group 'lab_room_blue_mat'"
+      },
+      {
+        "image_a": "sujud31",
+        "image_b": "sujud32",
+        "reason": "manual session group 'lab_room_blue_mat'"
+      },
+      {
+        "image_a": "sujud32",
+        "image_b": "ck2oqgwn04qu60757lizr6lif",
+        "reason": "manual session group 'lab_room_blue_mat'"
+      },
+      {
+        "image_a": "SittingMo58",
+        "image_b": "SittingMo85",
+        "reason": "manual session group 'video_black_shirt_arabic_captions'"
+      },
+      {
+        "image_a": "SittingMo85",
+        "image_b": "ck2or3u694ynn0757ptzgbv8t",
+        "reason": "manual session group 'video_black_shirt_arabic_captions'"
+      },
+      {
+        "image_a": "qiam(262)",
+        "image_b": "sujud77",
+        "reason": "manual session group 'video_maghreb_recited_aloud'"
+      },
+      {
+        "image_a": "ck2qcfa2rkho8083878ojzlm5",
+        "image_b": "qiam(24)",
+        "reason": "manual session group 'video_mosque_white_thobe'"
+      }
+    ],
+    "session_groups_reviewed": {
+      "lab_room_blue_mat": [
+        "23",
+        "6",
+        "7",
+        "SittingMO56",
+        "IMG_1454",
+        "ruku61",
+        "sujud31",
+        "sujud32",
+        "ck2oqgwn04qu60757lizr6lif"
+      ],
+      "video_black_shirt_arabic_captions": [
+        "SittingMo58",
+        "SittingMo85",
+        "ck2or3u694ynn0757ptzgbv8t"
+      ],
+      "video_maghreb_recited_aloud": [
+        "qiam(262)",
+        "sujud77"
+      ],
+      "video_mosque_white_thobe": [
+        "ck2qcfa2rkho8083878ojzlm5",
+        "qiam(24)"
+      ]
+    }
+  },
+  "target_phases_requested": [
+    "Standing (qiyam)",
+    "Bowing (rukuk)",
+    "Standing after bowing (iktidal)",
+    "Prostration (sujud)",
+    "Sitting between prostrations",
+    "Testimony sitting (tasyahud)"
+  ],
+  "phase_support": {
+    "Standing (qiyam)": "annotated (qiyam)",
+    "Bowing (rukuk)": "annotated (ruku)",
+    "Prostration (sujud)": "annotated (sujud / Sujud)",
+    "Standing after bowing (iktidal)": "NOT annotated \u2014 visually identical to standing; resolved from temporal context only",
+    "Sitting between prostrations": "NOT annotated separately \u2014 annotated as generic sitting (sitting / julus); resolved from temporal context only",
+    "Testimony sitting (tasyahud)": "NOT annotated separately \u2014 annotated as generic sitting (sitting / julus); resolved from temporal context only"
+  },
+  "issues": [
+    {
+      "file": "Sample-images-with-annotations/ck2oqgwn04qu60757lizr6lif.jpeg",
+      "issue": "image without annotation",
+      "detail": "excluded from supervised training"
+    },
+    {
+      "file": "Sample-images-with-annotations/qiam(24).jpg",
+      "issue": "image without annotation",
+      "detail": "excluded from supervised training"
+    },
+    {
+      "file": "Sample-images-with-annotations/sujud31.jpg",
+      "issue": "image without annotation",
+      "detail": "excluded from supervised training"
+    },
+    {
+      "file": "Sample-images-with-annotations/sujud32.jpg",
+      "issue": "image without annotation",
+      "detail": "excluded from supervised training"
+    },
+    {
+      "file": "ck2oqg3o222pb0721niv1tjox.xml",
+      "issue": "annotation without image",
+      "detail": "<filename>=ck2oqg3o222pb0721niv1tjox.jpeg; not paired (no evidence links it to another image)"
+    },
+    {
+      "file": "qiam(23).xml",
+      "issue": "annotation without image",
+      "detail": "<filename>=qiam (23).jpg; not paired (no evidence links it to another image)"
+    }
+  ],
+  "provenance": {
+    "source": "riotu-lab/Salat-Postures-Dataset (GitHub) \u2014 'Sample-images-with-annotations' folder only",
+    "full_dataset": "1,904 images / 2,156 instances per the dataset README, hosted on Kaggle (riotulab/salat-postures); not available in this environment",
+    "citation": "Koubaa, A. et al. (2020). Activity Monitoring of Islamic Prayer (Salat) Postures using Deep Learning. 6th Conference on Data Science and Machine Learning Applications (CDMA), pp. 106-111. IEEE. arXiv:1911.04102",
+    "license": "No license file is included in the archive; reuse terms could not be verified. Images are used here for research/education only and are not redistributed."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "hardware": {
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "logical_cores": 4,
+    "python": "3.12.3",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39"
+  },
+  "input": "40 annotated person crops (15% padding)",
+  "variants": {
+    "lite": {
+      "latency": {
+        "n": 40,
+        "mean_ms": 29.56,
+        "median_ms": 29.21,
+        "p95_ms": 39.65,
+        "min_ms": 12.82
+      },
+      "detection_rate": 0.8,
+      "detection_rate_by_class": {
+        "qiyam": 0.8333,
+        "ruku": 0.6667,
+        "sujud": 0.6667,
+        "julus": 1.0
+      },
+      "size_mb": 5.8
+    },
+    "full": {
+      "latency": {
+        "n": 40,
+        "mean_ms": 33.57,
+        "median_ms": 34.16,
+        "p95_ms": 45.4,
+        "min_ms": 10.7
+      },
+      "detection_rate": 0.85,
+      "detection_rate_by_class": {
+        "qiyam": 0.9167,
+        "ruku": 0.8333,
+        "sujud": 0.6667,
+        "julus": 1.0
+      },
+      "size_mb": 9.4
+    },
+    "heavy": {
+      "latency": {
+        "n": 40,
+        "mean_ms": 69.41,
+        "median_ms": 75.86,
+        "p95_ms": 95.03,
+        "min_ms": 11.44
+      },
+      "detection_rate": 0.825,
+      "detection_rate_by_class": {
+        "qiyam": 0.9167,
+        "ruku": 0.6667,
+        "sujud": 0.6667,
+        "julus": 1.0
+      },
+      "size_mb": 30.7
+    }
+  },
+  "selected": "pose_landmarker_full.task"
+}

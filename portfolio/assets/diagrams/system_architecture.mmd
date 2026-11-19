@@ -1,0 +1,28 @@
+%% Salat Vision — system architecture (editable Mermaid source; rendered version: system_architecture.svg/png)
+flowchart LR
+  subgraph D[1. Data]
+    D1[Dataset archive<br/>41 images, 39 VOC XML] --> D2[Safe extraction<br/>traversal / symlink / zip-bomb guards]
+    D2 --> D3[Audit + leakage groups<br/>pHash + reviewed sessions = 29 groups]
+    D3 --> D4[Stratified group 5-fold x3]
+  end
+  subgraph E[2. Experiments]
+    E1[Feature cache<br/>MediaPipe pose features, CNN embeddings] --> E2[11 models, one protocol<br/>nested CV, bootstrap CIs]
+    E2 --> E3[Selected: pose + CNN fusion<br/>macro-F1 0.80 crops / 0.68 images]
+  end
+  subgraph B[3. Model bundle]
+    B1[Final training on all data] --> B2[ONNX embedder + sklearn heads<br/>manifest with SHA-256]
+    B3[Third-party: Pose Landmarker, EfficientDet-Lite0]
+  end
+  subgraph S[4. Serving - FastAPI]
+    S1[REST API<br/>/health /model-info /predict/* /jobs/*] --> S2[Inference engine<br/>detector, pose, ONNX, fusion, HMM]
+    S2 --> S3[Jobs and privacy<br/>progress, cleanup, TTL]
+  end
+  subgraph C[5. Client - React]
+    C1[Web app<br/>React, TS, Vite, Tailwind] --> C2[Beranda / Analisis / Hasil / Model]
+    C2 --> C3[Timeline, segments, charts, MP4, JSON/CSV]
+  end
+  D4 --> E1
+  E3 --> B1
+  B2 --> S2
+  B3 --> S2
+  S1 <--> C1

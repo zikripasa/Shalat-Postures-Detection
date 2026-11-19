@@ -1,0 +1,64 @@
+{
+  "hardware": {
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "logical_cores": 4,
+    "python": "3.12.3",
+    "platform": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39"
+  },
+  "input": "37 dataset images, longest side capped at 1280 px, 3 passes after warm-up",
+  "stages": {
+    "localize": {
+      "n": 111,
+      "mean_ms": 42.04,
+      "median_ms": 36.63,
+      "p95_ms": 70.94,
+      "min_ms": 29.22
+    },
+    "pose": {
+      "n": 111,
+      "mean_ms": 32.28,
+      "median_ms": 34.91,
+      "p95_ms": 42.84,
+      "min_ms": 10.35
+    },
+    "pose_classifier": {
+      "n": 111,
+      "mean_ms": 1.18,
+      "median_ms": 1.31,
+      "p95_ms": 1.85,
+      "min_ms": 0.0
+    },
+    "image_model": {
+      "n": 111,
+      "mean_ms": 8.2,
+      "median_ms": 8.04,
+      "p95_ms": 10.17,
+      "min_ms": 5.92
+    },
+    "total": {
+      "n": 111,
+      "mean_ms": 83.76,
+      "median_ms": 81.0,
+      "p95_ms": 113.26,
+      "min_ms": 53.91
+    }
+  },
+  "embedder": {
+    "onnxruntime_ms": {
+      "n": 120,
+      "mean_ms": 7.47,
+      "median_ms": 6.01,
+      "p95_ms": 19.37,
+      "min_ms": 4.63
+    },
+    "pytorch_ms": {
+      "n": 120,
+      "mean_ms": 17.03,
+      "median_ms": 15.55,
+      "p95_ms": 30.65,
+      "min_ms": 11.89
+    }
+  },
+  "throughput_fps": 11.94,
+  "note": "Single-process CPU inference, no GPU. The video pipeline analyses frames sampled at inference.sample_fps."
+}

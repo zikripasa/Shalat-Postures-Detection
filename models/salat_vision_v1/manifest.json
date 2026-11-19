@@ -1,0 +1,310 @@
+{
+  "name": "Salat Vision posture model",
+  "version": "1.0.0",
+  "package_version": "0.1.0",
+  "created_utc": "2026-11-19T03:41:56+00:00",
+  "classes": [
+    "qiyam",
+    "ruku",
+    "sujud",
+    "julus"
+  ],
+  "class_labels_id": {
+    "qiyam": "Berdiri",
+    "ruku": "Rukuk",
+    "sujud": "Sujud",
+    "julus": "Duduk"
+  },
+  "phases": [
+    "berdiri",
+    "rukuk",
+    "iktidal",
+    "sujud",
+    "duduk_antara_sujud",
+    "tasyahud"
+  ],
+  "phase_labels_id": {
+    "berdiri": "Berdiri (Qiyam)",
+    "rukuk": "Rukuk",
+    "iktidal": "Iktidal",
+    "sujud": "Sujud",
+    "duduk_antara_sujud": "Duduk di Antara Dua Sujud",
+    "tasyahud": "Tasyahud"
+  },
+  "pipeline": {
+    "crop_padding": 0.15,
+    "localization": [
+      "person_detector (EfficientDet-Lite0, COCO person)",
+      "pose-landmark box",
+      "full frame"
+    ],
+    "pose_estimator": {
+      "min_detection_confidence": 0.3,
+      "min_presence_confidence": 0.3
+    },
+    "person_detector": {
+      "score_threshold": 0.3,
+      "max_results": 5
+    },
+    "pose_features": [
+      "pose_detected",
+      "torso_incl_3d",
+      "hip_angle_3d",
+      "knee_angle_3d",
+      "thigh_incl_3d",
+      "shank_incl_3d",
+      "torso_incl_2d",
+      "knee_angle_2d",
+      "head_rel_y",
+      "shoulder_rel_y",
+      "wrist_rel_y",
+      "knee_rel_y",
+      "ankle_rel_y",
+      "head_rel_dx",
+      "shoulder_rel_dx",
+      "lm_box_log_aspect",
+      "vis_upper",
+      "vis_lower",
+      "box_log_aspect"
+    ],
+    "min_landmark_visibility": 0.35,
+    "pose_classifier": "pose_classifier.joblib",
+    "image_model": {
+      "embedder": "cnn_embedder_mobilenet_v3_large.onnx",
+      "classifier": "image_classifier.joblib",
+      "backbone": "mobilenet_v3_large",
+      "embedding_dim": 960,
+      "input_size": 224,
+      "normalization": {
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "resize": "aspect-preserving letterbox, fill (124,116,104)",
+      "threads": 2
+    },
+    "fusion": {
+      "rule": "weighted mean of class probabilities; image model alone when no pose is found",
+      "w_pose": 0.5
+    },
+    "uncertainty_threshold": 0.55
+  },
+  "training": {
+    "pose_classifier": {
+      "type": "pose_logreg",
+      "best_params": {
+        "clf__C": 10.0
+      },
+      "n_train": 40
+    },
+    "image_classifier": {
+      "type": "logistic regression on frozen mobilenet_v3_large embedding",
+      "best_params": {
+        "clf__C": 0.01
+      },
+      "n_train": 40,
+      "train_augmentation": "horizontal flip (x2)",
+      "onnx": {
+        "dim": 960,
+        "exporter": "torchscript",
+        "opset": 17
+      },
+      "onnx_parity": {
+        "max_abs_diff": 1.7523765563964844e-05,
+        "min_cosine": 0.9999998807907104,
+        "n": 40
+      }
+    },
+    "dataset": {
+      "instances": 40,
+      "images": 37,
+      "groups": 29,
+      "per_class": {
+        "qiyam": 12,
+        "ruku": 6,
+        "sujud": 12,
+        "julus": 10
+      },
+      "source": "Salat-Postures-Dataset (GitHub sample folder)"
+    }
+  },
+  "cv_metrics": {
+    "model_key": "fusion_pose_cnn",
+    "protocol": "3x repeated stratified group 5-fold CV",
+    "crop": {
+      "macro_f1_mean": 0.7950997150997151,
+      "macro_f1_std": 0.023892553917015537,
+      "macro_f1_ci95": [
+        0.6844078009404477,
+        0.9000016711229946
+      ],
+      "accuracy_mean": 0.8333333333333334,
+      "accuracy_ci95": [
+        0.7169385482180293,
+        0.9550058122638765
+      ]
+    },
+    "image": {
+      "macro_f1_mean": 0.6785414098488985,
+      "macro_f1_std": 0.024032091453792898,
+      "macro_f1_ci95": [
+        0.5320413877586447,
+        0.8613484022746921
+      ],
+      "accuracy_mean": 0.7207207207207208,
+      "accuracy_ci95": [
+        0.5602836879432624,
+        0.9310344827586207
+      ]
+    },
+    "per_class_crop": {
+      "qiyam": {
+        "precision": 0.8780487804878049,
+        "recall": 1.0,
+        "f1": 0.935064935064935,
+        "support": 36
+      },
+      "ruku": {
+        "precision": 0.8333333333333334,
+        "recall": 0.5555555555555556,
+        "f1": 0.6666666666666666,
+        "support": 18
+      },
+      "sujud": {
+        "precision": 0.8372093023255814,
+        "recall": 1.0,
+        "f1": 0.9113924050632911,
+        "support": 36
+      },
+      "julus": {
+        "precision": 0.75,
+        "recall": 0.6,
+        "f1": 0.6666666666666666,
+        "support": 30
+      }
+    },
+    "confusion_matrix_crop": [
+      [
+        36,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        10,
+        2,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        36,
+        0,
+        0
+      ],
+      [
+        5,
+        2,
+        5,
+        18,
+        0
+      ]
+    ],
+    "confusion_matrix_image": [
+      [
+        30,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        7,
+        3,
+        7,
+        0
+      ],
+      [
+        1,
+        0,
+        30,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        13,
+        13,
+        0
+      ]
+    ],
+    "ece_crop": 0.1832332092841777
+  },
+  "files": [
+    {
+      "name": "cnn_embedder_mobilenet_v3_large.onnx",
+      "bytes": 11870693,
+      "sha256": "e48a550aabd1ddef66b38b38fec5b00b141e5139796ac9f92b5d1d65db2a0fba"
+    },
+    {
+      "name": "image_classifier.joblib",
+      "bytes": 39817,
+      "sha256": "1dbb13ae42026159e054bc64ac4a42d9b5451b422747b8dd64785f227a920a7a"
+    },
+    {
+      "name": "pose_classifier.joblib",
+      "bytes": 3545,
+      "sha256": "0ec4181b50b3be1755a9829e716b9ff7c834178fd9dc22c3f8af7df7f3aaa0c7"
+    }
+  ],
+  "third_party": [
+    {
+      "role": "pose_landmarker",
+      "name": "pose_landmarker_full.task",
+      "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+      "sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1",
+      "license": "Apache-2.0 (Google MediaPipe)"
+    },
+    {
+      "role": "person_detector",
+      "name": "efficientdet_lite0.tflite",
+      "url": "https://storage.googleapis.com/mediapipe-models/object_detector/efficientdet_lite0/float32/1/efficientdet_lite0.tflite",
+      "sha256": "40338edf5ec70d43e318b0a716a84d4564cd1802759a7a07170c7e43796dbf58",
+      "license": "Apache-2.0 (Google MediaPipe)"
+    }
+  ],
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-6.18.44-fc-v653-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "torch": "2.15.0+cpu",
+    "onnxruntime": "1.32.0",
+    "mediapipe": "1.2.3",
+    "scikit_learn": "1.9.1",
+    "numpy": "2.5.5"
+  },
+  "intended_use": "Research/education demo: recognising visible prayer postures in images and short videos.",
+  "out_of_scope": [
+    "Judging whether a prayer is religiously valid",
+    "Identity recognition",
+    "Surveillance"
+  ],
+  "limitations": [
+    "Trained on 40 annotated people (29 independent groups); estimates are high-variance.",
+    "Iktidal, sitting between prostrations and tasyahud are inferred from posture order, not seen directly.",
+    "Pose detection fails more often in prostration (heads down, folded bodies).",
+    "Not validated on real continuous prayer videos."
+  ]
+}

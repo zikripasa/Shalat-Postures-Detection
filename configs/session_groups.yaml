@@ -1,0 +1,31 @@
+# Manually reviewed capture-session groups — used ONLY to prevent train/test leakage.
+#
+# Every image in the provided sample was inspected visually (annotated contact sheet in
+# artifacts/figures/dataset_sample_grid.png). Images listed in the same group share a
+# recording session or source video (same person + same room, or the same video overlay).
+# Group-aware splitting keeps each group entirely on one side of every train/test split.
+#
+# These groups are combined (union-find) with automatic perceptual-hash near-duplicate
+# links (Hamming distance <= splits.phash_near_duplicate_distance). Images not listed here
+# and not linked by pHash form their own singleton group.
+#
+# Nothing in this file changes or adds class labels.
+
+groups:
+  lab_room_blue_mat:
+    note: >-
+      Same room (light wooden floor, blue patterned prayer mat, white shelving), same
+      participant; several camera positions (top-down, oblique, side). Includes three
+      images that have no annotation file (sujud31, sujud32, ck2oqgwn...).
+    members: ["23", "6", "7", "SittingMO56", "IMG_1454", "ruku61", "sujud31", "sujud32", "ck2oqgwn04qu60757lizr6lif"]
+  video_black_shirt_arabic_captions:
+    note: >-
+      Frames of one online video (man in black shirt, Arabic caption bar). One copy entered
+      the dataset through the Labelbox web export (pHash distance 16-18 to the others).
+    members: ["SittingMo58", "SittingMo85", "ck2or3u694ynn0757ptzgbv8t"]
+  video_maghreb_recited_aloud:
+    note: Frames of one instructional video ('MAGHREB Recited Aloud' overlay, same person) — different postures.
+    members: ["qiam(262)", "sujud77"]
+  video_mosque_white_thobe:
+    note: The same video frame stored twice under two names (pHash distance 0); qiam(24) has no annotation.
+    members: ["ck2qcfa2rkho8083878ojzlm5", "qiam(24)"]

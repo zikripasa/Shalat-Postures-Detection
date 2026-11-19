@@ -1,0 +1,303 @@
+{
+  "description": "Semi-synthetic benchmark of the temporal decoders.\n\nNo labelled prayer *videos* exist in the dataset, so sequences are simulated:\n\n* Structure: 2-, 3- or 4-rakaat prayers (first tasyahud after rakaat 2 when n >= 3),\n  phase durations drawn from plausible ranges, 0.4 s motion blends between postures and\n  frames without a detected person (isolated drops + one burst per sequence).\n* Emissions: real **out-of-fold** class probabilities of the selected model on held-out\n  people (artifacts/metrics/oof_predictions.csv), so recognition errors are the model's\n  real errors. Two noise models:\n  - ``segment`` (conservative): one held-out prediction per segment, small per-frame\n    jitter \u2014 errors persist across the segment as they would for one person in one pose.\n  - ``iid`` (optimistic): a fresh held-out prediction for every frame.\n\nWrites artifacts/metrics/temporal_benchmark.json (test seed 0) and, with ``--select``,\nartifacts/metrics/temporal_decoder_selection.json (validation seed 1000).",
+  "model_key": "fusion_pose_cnn",
+  "sample_fps": 5.0,
+  "pool_sizes": {
+    "qiyam": 36,
+    "ruku": 18,
+    "sujud": 36,
+    "julus": 30
+  },
+  "temporal_config": {
+    "mean_phase_seconds": 2.0,
+    "off_grammar_per_second": 0.02,
+    "emission_power": 1.0,
+    "min_prob": 0.001,
+    "uncertainty_threshold": 0.55,
+    "min_segment_seconds": 0.6,
+    "smoothing_seconds": 1.0
+  },
+  "results": {
+    "segment": {
+      "raw": {
+        "phase_acc": {
+          "mean": 0.7042,
+          "sd": 0.0957
+        },
+        "visual_acc": {
+          "mean": 0.7944,
+          "sd": 0.0809
+        },
+        "edit": {
+          "mean": 23.7736,
+          "sd": 8.8944
+        },
+        "f1_10": {
+          "mean": 31.1529,
+          "sd": 11.3021
+        },
+        "f1_25": {
+          "mean": 28.2632,
+          "sd": 11.2153
+        },
+        "f1_50": {
+          "mean": 25.6325,
+          "sd": 10.7595
+        },
+        "seg_ratio": {
+          "mean": 4.3156,
+          "sd": 1.54
+        },
+        "decode_ms": {
+          "mean": 1.4633,
+          "sd": 0.5404
+        }
+      },
+      "smoothing": {
+        "phase_acc": {
+          "mean": 0.7548,
+          "sd": 0.1093
+        },
+        "visual_acc": {
+          "mean": 0.8075,
+          "sd": 0.0922
+        },
+        "edit": {
+          "mean": 68.3233,
+          "sd": 13.4848
+        },
+        "f1_10": {
+          "mean": 72.4715,
+          "sd": 12.1201
+        },
+        "f1_25": {
+          "mean": 71.2137,
+          "sd": 12.4944
+        },
+        "f1_50": {
+          "mean": 66.3757,
+          "sd": 14.1074
+        },
+        "seg_ratio": {
+          "mean": 1.1025,
+          "sd": 0.1895
+        },
+        "decode_ms": {
+          "mean": 4.772,
+          "sd": 1.8413
+        }
+      },
+      "hmm": {
+        "phase_acc": {
+          "mean": 0.6783,
+          "sd": 0.1433
+        },
+        "visual_acc": {
+          "mean": 0.8232,
+          "sd": 0.0941
+        },
+        "edit": {
+          "mean": 76.0333,
+          "sd": 12.7976
+        },
+        "f1_10": {
+          "mean": 77.9336,
+          "sd": 11.9943
+        },
+        "f1_25": {
+          "mean": 74.5428,
+          "sd": 13.6669
+        },
+        "f1_50": {
+          "mean": 66.6758,
+          "sd": 16.9559
+        },
+        "seg_ratio": {
+          "mean": 0.8249,
+          "sd": 0.1242
+        },
+        "decode_ms": {
+          "mean": 17.566,
+          "sd": 5.0525
+        }
+      },
+      "hmm_local": {
+        "phase_acc": {
+          "mean": 0.7922,
+          "sd": 0.1044
+        },
+        "visual_acc": {
+          "mean": 0.8232,
+          "sd": 0.0941
+        },
+        "edit": {
+          "mean": 75.6846,
+          "sd": 12.8573
+        },
+        "f1_10": {
+          "mean": 80.7977,
+          "sd": 11.036
+        },
+        "f1_25": {
+          "mean": 79.0824,
+          "sd": 11.3269
+        },
+        "f1_50": {
+          "mean": 71.0107,
+          "sd": 14.5159
+        },
+        "seg_ratio": {
+          "mean": 0.8249,
+          "sd": 0.1242
+        },
+        "decode_ms": {
+          "mean": 17.5559,
+          "sd": 5.0753
+        }
+      },
+      "n_sequences": 300,
+      "mean_frames": 532.0666666666667
+    },
+    "iid": {
+      "raw": {
+        "phase_acc": {
+          "mean": 0.715,
+          "sd": 0.0368
+        },
+        "visual_acc": {
+          "mean": 0.8065,
+          "sd": 0.0224
+        },
+        "edit": {
+          "mean": 14.7613,
+          "sd": 2.1314
+        },
+        "f1_10": {
+          "mean": 21.5053,
+          "sd": 3.6489
+        },
+        "f1_25": {
+          "mean": 16.939,
+          "sd": 3.0757
+        },
+        "f1_50": {
+          "mean": 14.7423,
+          "sd": 2.4901
+        },
+        "seg_ratio": {
+          "mean": 6.5714,
+          "sd": 0.939
+        },
+        "decode_ms": {
+          "mean": 1.9677,
+          "sd": 0.7152
+        }
+      },
+      "smoothing": {
+        "phase_acc": {
+          "mean": 0.8666,
+          "sd": 0.062
+        },
+        "visual_acc": {
+          "mean": 0.9172,
+          "sd": 0.0199
+        },
+        "edit": {
+          "mean": 80.8637,
+          "sd": 9.6727
+        },
+        "f1_10": {
+          "mean": 86.8501,
+          "sd": 7.2598
+        },
+        "f1_25": {
+          "mean": 86.0289,
+          "sd": 7.7448
+        },
+        "f1_50": {
+          "mean": 80.5834,
+          "sd": 9.8968
+        },
+        "seg_ratio": {
+          "mean": 1.1707,
+          "sd": 0.115
+        },
+        "decode_ms": {
+          "mean": 4.7749,
+          "sd": 1.522
+        }
+      },
+      "hmm": {
+        "phase_acc": {
+          "mean": 0.9176,
+          "sd": 0.0686
+        },
+        "visual_acc": {
+          "mean": 0.9434,
+          "sd": 0.013
+        },
+        "edit": {
+          "mean": 98.1885,
+          "sd": 4.1622
+        },
+        "f1_10": {
+          "mean": 97.9829,
+          "sd": 4.6486
+        },
+        "f1_25": {
+          "mean": 97.545,
+          "sd": 5.0004
+        },
+        "f1_50": {
+          "mean": 95.4176,
+          "sd": 7.143
+        },
+        "seg_ratio": {
+          "mean": 0.983,
+          "sd": 0.0417
+        },
+        "decode_ms": {
+          "mean": 17.3839,
+          "sd": 5.2791
+        }
+      },
+      "hmm_local": {
+        "phase_acc": {
+          "mean": 0.942,
+          "sd": 0.0181
+        },
+        "visual_acc": {
+          "mean": 0.9434,
+          "sd": 0.013
+        },
+        "edit": {
+          "mean": 98.1885,
+          "sd": 4.1622
+        },
+        "f1_10": {
+          "mean": 98.841,
+          "sd": 2.7609
+        },
+        "f1_25": {
+          "mean": 98.4031,
+          "sd": 3.2461
+        },
+        "f1_50": {
+          "mean": 96.2757,
+          "sd": 5.474
+        },
+        "seg_ratio": {
+          "mean": 0.983,
+          "sd": 0.0417
+        },
+        "decode_ms": {
+          "mean": 17.5862,
+          "sd": 5.3037
+        }
+      },
+      "n_sequences": 300,
+      "mean_frames": 534.6833333333333
+    }
+  },
+  "configured_decoder": "hmm_local"
+}

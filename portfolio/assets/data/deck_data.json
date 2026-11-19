@@ -1,0 +1,632 @@
+{
+ "selected": "fusion_pose_cnn",
+ "models": [
+  {
+   "key": "fusion_pose_cnn",
+   "name": "Fusion (selected)",
+   "crop": 0.795,
+   "crop_lo": 0.684,
+   "crop_hi": 0.9,
+   "image": 0.679,
+   "sd": 0.024
+  },
+  {
+   "key": "pose_logreg",
+   "name": "Pose + logistic reg.",
+   "crop": 0.74,
+   "crop_lo": 0.627,
+   "crop_hi": 0.869,
+   "image": 0.655,
+   "sd": 0.04
+  },
+  {
+   "key": "pose_mlp",
+   "name": "Pose + MLP",
+   "crop": 0.706,
+   "crop_lo": 0.598,
+   "crop_hi": 0.83,
+   "image": 0.619,
+   "sd": 0.053
+  },
+  {
+   "key": "cnn_ft_mobilenet_v3_large",
+   "name": "MobileNetV3 fine-tuned",
+   "crop": 0.649,
+   "crop_lo": 0.514,
+   "crop_hi": 0.76,
+   "image": 0.599,
+   "sd": 0.075
+  },
+  {
+   "key": "cnn_probe_mobilenet_v3_large",
+   "name": "MobileNetV3 frozen probe",
+   "crop": 0.63,
+   "crop_lo": 0.465,
+   "crop_hi": 0.748,
+   "image": 0.66,
+   "sd": 0.036
+  },
+  {
+   "key": "pose_random_forest",
+   "name": "Pose + random forest",
+   "crop": 0.629,
+   "crop_lo": 0.511,
+   "crop_hi": 0.752,
+   "image": 0.561,
+   "sd": 0.069
+  },
+  {
+   "key": "pose_svm_rbf",
+   "name": "Pose + RBF SVM",
+   "crop": 0.616,
+   "crop_lo": 0.518,
+   "crop_hi": 0.716,
+   "image": 0.549,
+   "sd": 0.078
+  },
+  {
+   "key": "cnn_ft_resnet18",
+   "name": "ResNet18 fine-tuned",
+   "crop": 0.579,
+   "crop_lo": 0.483,
+   "crop_hi": 0.7,
+   "image": 0.556,
+   "sd": 0.122
+  },
+  {
+   "key": "pose_rules",
+   "name": "Pose rules (no training)",
+   "crop": 0.553,
+   "crop_lo": 0.381,
+   "crop_hi": 0.715,
+   "image": 0.461,
+   "sd": 0.0
+  },
+  {
+   "key": "cnn_probe_resnet18",
+   "name": "ResNet18 frozen probe",
+   "crop": 0.553,
+   "crop_lo": 0.413,
+   "crop_hi": 0.734,
+   "image": 0.531,
+   "sd": 0.054
+  },
+  {
+   "key": "baseline_majority",
+   "name": "Majority baseline",
+   "crop": 0.14,
+   "crop_lo": 0.082,
+   "crop_hi": 0.2,
+   "image": 0.143,
+   "sd": 0.009
+  }
+ ],
+ "selected_metrics": {
+  "crop_f1": 0.7950997150997151,
+  "crop_ci": [
+   0.6844078009404477,
+   0.9000016711229946
+  ],
+  "image_f1": 0.6785414098488985,
+  "image_ci": [
+   0.5320413877586447,
+   0.8613484022746921
+  ],
+  "crop_acc": 0.8333333333333334,
+  "ece": 0.1832332092841777
+ },
+ "per_class": {
+  "qiyam": {
+   "precision": 0.8780487804878049,
+   "recall": 1.0,
+   "f1": 0.935064935064935,
+   "support": 36
+  },
+  "ruku": {
+   "precision": 0.8333333333333334,
+   "recall": 0.5555555555555556,
+   "f1": 0.6666666666666666,
+   "support": 18
+  },
+  "sujud": {
+   "precision": 0.8372093023255814,
+   "recall": 1.0,
+   "f1": 0.9113924050632911,
+   "support": 36
+  },
+  "julus": {
+   "precision": 0.75,
+   "recall": 0.6,
+   "f1": 0.6666666666666666,
+   "support": 30
+  }
+ },
+ "confusion_crop": [
+  [
+   36,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   10,
+   2,
+   6
+  ],
+  [
+   0,
+   0,
+   36,
+   0
+  ],
+  [
+   5,
+   2,
+   5,
+   18
+  ]
+ ],
+ "confusion_image": [
+  [
+   30,
+   0,
+   0,
+   0
+  ],
+  [
+   1,
+   7,
+   3,
+   7
+  ],
+  [
+   1,
+   0,
+   30,
+   2
+  ],
+  [
+   2,
+   2,
+   13,
+   13
+  ]
+ ],
+ "dataset": {
+  "images": 41,
+  "instances": 40,
+  "groups": 29,
+  "per_class": {
+   "qiyam": 12,
+   "ruku": 6,
+   "sujud": 12,
+   "julus": 10
+  },
+  "groups_per_class": {
+   "qiyam": 10,
+   "ruku": 6,
+   "sujud": 11,
+   "julus": 4
+  },
+  "no_annotation": 4,
+  "orphans": 2
+ },
+ "runtime": {
+  "localize": 42.04,
+  "pose": 32.28,
+  "pose_classifier": 1.18,
+  "image_model": 8.2,
+  "total": 83.76,
+  "fps": 11.94,
+  "ort": 7.47,
+  "torch": 17.03,
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+  "cores": 4
+ },
+ "pose_variants": {
+  "lite": {
+   "rate": 0.8,
+   "ms": 29.56,
+   "sujud": 0.6667
+  },
+  "full": {
+   "rate": 0.85,
+   "ms": 33.57,
+   "sujud": 0.6667
+  },
+  "heavy": {
+   "rate": 0.825,
+   "ms": 69.41,
+   "sujud": 0.6667
+  }
+ },
+ "temporal": {
+  "segment": {
+   "raw": {
+    "phase_acc": 0.7042,
+    "edit": 23.7736,
+    "f1_50": 25.6325,
+    "seg_ratio": 4.3156
+   },
+   "smoothing": {
+    "phase_acc": 0.7548,
+    "edit": 68.3233,
+    "f1_50": 66.3757,
+    "seg_ratio": 1.1025
+   },
+   "hmm": {
+    "phase_acc": 0.6783,
+    "edit": 76.0333,
+    "f1_50": 66.6758,
+    "seg_ratio": 0.8249
+   },
+   "hmm_local": {
+    "phase_acc": 0.7922,
+    "edit": 75.6846,
+    "f1_50": 71.0107,
+    "seg_ratio": 0.8249
+   }
+  },
+  "iid": {
+   "raw": {
+    "phase_acc": 0.715,
+    "edit": 14.7613,
+    "f1_50": 14.7423,
+    "seg_ratio": 6.5714
+   },
+   "smoothing": {
+    "phase_acc": 0.8666,
+    "edit": 80.8637,
+    "f1_50": 80.5834,
+    "seg_ratio": 1.1707
+   },
+   "hmm": {
+    "phase_acc": 0.9176,
+    "edit": 98.1885,
+    "f1_50": 95.4176,
+    "seg_ratio": 0.983
+   },
+   "hmm_local": {
+    "phase_acc": 0.942,
+    "edit": 98.1885,
+    "f1_50": 96.2757,
+    "seg_ratio": 0.983
+   }
+  }
+ },
+ "demo": {
+  "duration": 43.0,
+  "plan": [
+   {
+    "phase": "berdiri",
+    "image_id": "ck2upgs2ttpwm07575jjfctev",
+    "start": 0.0,
+    "end": 5.0
+   },
+   {
+    "phase": "rukuk",
+    "image_id": "ck2ygl8aj78s5072595cehoma",
+    "start": 5.0,
+    "end": 8.0
+   },
+   {
+    "phase": "iktidal",
+    "image_id": "qiam(94)",
+    "start": 8.0,
+    "end": 10.48
+   },
+   {
+    "phase": "sujud",
+    "image_id": "ck2osjowcmuaf07252lbqno9g",
+    "start": 10.48,
+    "end": 13.48
+   },
+   {
+    "phase": "duduk_antara_sujud",
+    "image_id": "IMG-20191019-WA0062",
+    "start": 13.48,
+    "end": 15.96
+   },
+   {
+    "phase": "sujud",
+    "image_id": "ck34yexrazmie0757n3kns0l8",
+    "start": 15.96,
+    "end": 18.96
+   },
+   {
+    "phase": "berdiri",
+    "image_id": "ck35sqichhe0n0757m66gwoty",
+    "start": 18.96,
+    "end": 22.96
+   },
+   {
+    "phase": "rukuk",
+    "image_id": "ruku109",
+    "start": 22.96,
+    "end": 25.96
+   },
+   {
+    "phase": "iktidal",
+    "image_id": "ck2uf5w5a6jk307257lnccvnf",
+    "start": 25.96,
+    "end": 28.44
+   },
+   {
+    "phase": "sujud",
+    "image_id": "ck2orc96s0em40944v7k1rpc5",
+    "start": 28.44,
+    "end": 31.44
+   },
+   {
+    "phase": "duduk_antara_sujud",
+    "image_id": "SittingMO56",
+    "start": 31.44,
+    "end": 33.92
+   },
+   {
+    "phase": "sujud",
+    "image_id": "ck2oufih0wy2m0794frm9jrhd",
+    "start": 33.92,
+    "end": 36.92
+   },
+   {
+    "phase": "tasyahud",
+    "image_id": "ck2or3u694ynn0757ptzgbv8t",
+    "start": 36.92,
+    "end": 42.92
+   }
+  ],
+  "raw": [
+   {
+    "start": 0.0,
+    "end": 5.0,
+    "phase": "berdiri",
+    "uncertain": false
+   },
+   {
+    "start": 5.0,
+    "end": 5.2,
+    "phase": "sujud",
+    "uncertain": true
+   },
+   {
+    "start": 5.2,
+    "end": 8.2,
+    "phase": "rukuk",
+    "uncertain": false
+   },
+   {
+    "start": 8.2,
+    "end": 10.6,
+    "phase": "iktidal",
+    "uncertain": false
+   },
+   {
+    "start": 10.6,
+    "end": 10.8,
+    "phase": "tasyahud",
+    "uncertain": false
+   },
+   {
+    "start": 10.8,
+    "end": 13.6,
+    "phase": "sujud",
+    "uncertain": false
+   },
+   {
+    "start": 13.6,
+    "end": 16.2,
+    "phase": "duduk_antara_sujud",
+    "uncertain": false
+   },
+   {
+    "start": 16.2,
+    "end": 19.2,
+    "phase": "sujud",
+    "uncertain": false
+   },
+   {
+    "start": 19.2,
+    "end": 23.2,
+    "phase": "berdiri",
+    "uncertain": false
+   },
+   {
+    "start": 23.2,
+    "end": 24.2,
+    "phase": "rukuk",
+    "uncertain": false
+   },
+   {
+    "start": 24.2,
+    "end": 24.4,
+    "phase": "sujud",
+    "uncertain": true
+   },
+   {
+    "start": 24.4,
+    "end": 26.0,
+    "phase": "rukuk",
+    "uncertain": false
+   },
+   {
+    "start": 26.0,
+    "end": 26.2,
+    "phase": "sujud",
+    "uncertain": true
+   },
+   {
+    "start": 26.2,
+    "end": 26.6,
+    "phase": "berdiri",
+    "uncertain": false
+   },
+   {
+    "start": 26.6,
+    "end": 26.8,
+    "phase": "tasyahud",
+    "uncertain": false
+   },
+   {
+    "start": 26.8,
+    "end": 27.2,
+    "phase": "berdiri",
+    "uncertain": false
+   },
+   {
+    "start": 27.2,
+    "end": 28.4,
+    "phase": "tasyahud",
+    "uncertain": false
+   },
+   {
+    "start": 28.4,
+    "end": 28.6,
+    "phase": "berdiri",
+    "uncertain": false
+   },
+   {
+    "start": 28.6,
+    "end": 31.6,
+    "phase": "sujud",
+    "uncertain": false
+   },
+   {
+    "start": 31.6,
+    "end": 34.2,
+    "phase": "duduk_antara_sujud",
+    "uncertain": false
+   },
+   {
+    "start": 34.2,
+    "end": 37.2,
+    "phase": "sujud",
+    "uncertain": false
+   },
+   {
+    "start": 37.2,
+    "end": 40.0,
+    "phase": "duduk_antara_sujud",
+    "uncertain": true
+   },
+   {
+    "start": 40.0,
+    "end": 40.2,
+    "phase": "sujud",
+    "uncertain": true
+   },
+   {
+    "start": 40.2,
+    "end": 43.0,
+    "phase": "rukuk",
+    "uncertain": true
+   }
+  ],
+  "decoded": [
+   {
+    "start": 0.0,
+    "end": 5.0,
+    "phase": "berdiri",
+    "uncertain": false,
+    "confidence": 0.7301
+   },
+   {
+    "start": 5.0,
+    "end": 8.2,
+    "phase": "rukuk",
+    "uncertain": false,
+    "confidence": 0.6886
+   },
+   {
+    "start": 8.2,
+    "end": 10.6,
+    "phase": "iktidal",
+    "uncertain": false,
+    "confidence": 0.8544
+   },
+   {
+    "start": 10.6,
+    "end": 13.6,
+    "phase": "sujud",
+    "uncertain": false,
+    "confidence": 0.8505
+   },
+   {
+    "start": 13.6,
+    "end": 16.2,
+    "phase": "duduk_antara_sujud",
+    "uncertain": false,
+    "confidence": 0.8486
+   },
+   {
+    "start": 16.2,
+    "end": 19.2,
+    "phase": "sujud",
+    "uncertain": false,
+    "confidence": 0.9526
+   },
+   {
+    "start": 19.2,
+    "end": 23.2,
+    "phase": "berdiri",
+    "uncertain": false,
+    "confidence": 0.813
+   },
+   {
+    "start": 23.2,
+    "end": 26.2,
+    "phase": "rukuk",
+    "uncertain": false,
+    "confidence": 0.7727
+   },
+   {
+    "start": 26.2,
+    "end": 28.6,
+    "phase": "iktidal",
+    "uncertain": true,
+    "confidence": 0.4436
+   },
+   {
+    "start": 28.6,
+    "end": 31.6,
+    "phase": "sujud",
+    "uncertain": false,
+    "confidence": 0.96
+   },
+   {
+    "start": 31.6,
+    "end": 34.2,
+    "phase": "duduk_antara_sujud",
+    "uncertain": false,
+    "confidence": 0.9042
+   },
+   {
+    "start": 34.2,
+    "end": 37.2,
+    "phase": "sujud",
+    "uncertain": false,
+    "confidence": 0.9435
+   },
+   {
+    "start": 37.2,
+    "end": 42.92,
+    "phase": "tasyahud",
+    "uncertain": true,
+    "confidence": 0.4234
+   }
+  ],
+  "fps": 10.48
+ },
+ "localization": {
+  "detector": 30,
+  "pose": 5,
+  "full": 2,
+  "iou50": 0.918918918918919
+ },
+ "tests": {
+  "python": 55,
+  "frontend_unit": 12,
+  "e2e": 5
+ }
+}

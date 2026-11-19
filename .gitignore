@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+
+# Raw / processed data (people's images: do not redistribute; re-extract with scripts/extract_dataset.py)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Downloaded third-party model weights (re-download with scripts/download_models.py)
+models/pretrained/*
+!models/pretrained/.gitkeep
+models/checkpoints/
+
+# Large / temporary run outputs
+artifacts/predictions/*.mp4
+artifacts/tmp/
+tmp/
+*.log
+
+# Packaging output
+dist/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+frontend/test-results/
+frontend/playwright-report/
+frontend/.vite/
+
+# Environment / secrets
+.env
+.env.local
+*.local
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Demo video and other renders built from dataset images (not redistributed)
+artifacts/demo/
+
+# Report build intermediates
+portfolio/report/build/
+
+# Deck builder dependencies
+portfolio/presentation/node_modules/

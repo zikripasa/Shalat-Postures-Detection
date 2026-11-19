@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="640" viewBox="0 0 1600 640" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif">
+  <title>Salat Vision — inference pipeline</title>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#0E1B33"/>
+    </marker>
+    <style>
+      .box { fill: #FFFFFF; stroke: #0E1B33; stroke-width: 1.5; }
+      .pose { fill: #FFFFFF; stroke: #0F766E; stroke-width: 2; }
+      .cnn { fill: #FFFFFF; stroke: #2A78D6; stroke-width: 2; }
+      .key { fill: #E3F1EF; stroke: #0F766E; stroke-width: 2; }
+      .t { font-size: 15.5px; font-weight: 700; fill: #0E1B33; }
+      .s { font-size: 13px; fill: #4A5565; }
+      .lane { font-size: 14px; font-weight: 700; fill: #B8892C; }
+      .f { stroke: #0E1B33; stroke-width: 2; fill: none; marker-end: url(#a); }
+    </style>
+  </defs>
+  <rect width="1600" height="640" fill="#FCFCFB"/>
+  <text x="40" y="52" font-size="26" font-weight="800" fill="#0E1B33">Inference pipeline</text>
+  <text x="40" y="80" font-size="15" fill="#4A5565">Per frame (sampled at 5 fps by FFmpeg), then over the whole sequence. Mean 84 ms per frame on a 4-vCPU server.</text>
+
+  <text class="lane" x="40" y="128">Per frame</text>
+  <line x1="40" y1="138" x2="1560" y2="138" stroke="#E7DCC3" stroke-width="1.5"/>
+
+  <rect class="box" x="40" y="160" width="170" height="96" rx="10"/>
+  <text class="t" x="56" y="188">Video frame</text>
+  <text class="s" x="56" y="211">MP4, MOV, WebM</text>
+  <text class="s" x="56" y="231">decoded at 5 fps</text>
+
+  <rect class="box" x="250" y="160" width="230" height="96" rx="10"/>
+  <text class="t" x="266" y="188">Find the person</text>
+  <text class="s" x="266" y="211">EfficientDet-Lite0 (COCO)</text>
+  <text class="s" x="266" y="231">fallback: pose box, full frame</text>
+
+  <rect class="box" x="520" y="160" width="170" height="96" rx="10"/>
+  <text class="t" x="536" y="188">Crop</text>
+  <text class="s" x="536" y="211">box + 15% padding</text>
+  <text class="s" x="536" y="231">as in training</text>
+
+  <rect class="pose" x="740" y="150" width="200" height="72" rx="10"/>
+  <text class="t" x="756" y="178">MediaPipe Pose</text>
+  <text class="s" x="756" y="200">33 landmarks, 3-D world</text>
+  <rect class="pose" x="970" y="150" width="200" height="72" rx="10"/>
+  <text class="t" x="986" y="178">19 pose features</text>
+  <text class="s" x="986" y="200">angles, heights, visibility</text>
+  <rect class="pose" x="1200" y="150" width="160" height="72" rx="10"/>
+  <text class="t" x="1216" y="178">Logistic reg.</text>
+  <text class="s" x="1216" y="200">4 posture scores</text>
+
+  <rect class="cnn" x="740" y="250" width="200" height="72" rx="10"/>
+  <text class="t" x="756" y="278">MobileNetV3-Large</text>
+  <text class="s" x="756" y="300">frozen, ONNX Runtime</text>
+  <rect class="cnn" x="970" y="250" width="200" height="72" rx="10"/>
+  <text class="t" x="986" y="278">960-d embedding</text>
+  <text class="s" x="986" y="300">letterboxed 224 px</text>
+  <rect class="cnn" x="1200" y="250" width="160" height="72" rx="10"/>
+  <text class="t" x="1216" y="278">Logistic reg.</text>
+  <text class="s" x="1216" y="300">4 posture scores</text>
+
+  <rect class="key" x="1400" y="190" width="160" height="96" rx="10"/>
+  <text class="t" x="1416" y="218">Late fusion</text>
+  <text class="s" x="1416" y="241">mean of both;</text>
+  <text class="s" x="1416" y="261">image only if no pose</text>
+
+  <path class="f" d="M210 208 H248"/><path class="f" d="M480 208 H518"/>
+  <path class="f" d="M690 208 C 715 208, 715 186, 738 186"/>
+  <path class="f" d="M690 208 C 715 208, 715 286, 738 286"/>
+  <path class="f" d="M940 186 H968"/><path class="f" d="M1170 186 H1198"/>
+  <path class="f" d="M940 286 H968"/><path class="f" d="M1170 286 H1198"/>
+  <path class="f" d="M1360 186 C 1380 186, 1380 222, 1398 222"/>
+  <path class="f" d="M1360 286 C 1380 286, 1380 254, 1398 254"/>
+
+  <text class="lane" x="40" y="390">Over the sequence</text>
+  <line x1="40" y1="400" x2="1560" y2="400" stroke="#E7DCC3" stroke-width="1.5"/>
+
+  <rect class="box" x="40" y="425" width="250" height="110" rx="10"/>
+  <text class="t" x="56" y="453">Posture scores over time</text>
+  <text class="s" x="56" y="476">4 classes per frame;</text>
+  <text class="s" x="56" y="496">frames without a person</text>
+  <text class="s" x="56" y="516">are uninformative</text>
+
+  <rect class="key" x="330" y="425" width="300" height="110" rx="10"/>
+  <text class="t" x="346" y="453">HMM Viterbi segmentation</text>
+  <text class="s" x="346" y="476">7 states following the prayer order,</text>
+  <text class="s" x="346" y="496">time-aware switching prior (2 s),</text>
+  <text class="s" x="346" y="516">small off-grammar probability</text>
+
+  <rect class="key" x="670" y="425" width="290" height="110" rx="10"/>
+  <text class="t" x="686" y="453">Local context naming</text>
+  <text class="s" x="686" y="476">standing after bowing = Iktidal;</text>
+  <text class="s" x="686" y="496">sitting between prostrations vs.</text>
+  <text class="s" x="686" y="516">after the second = Tasyahud</text>
+
+  <rect class="box" x="1000" y="425" width="260" height="110" rx="10"/>
+  <text class="t" x="1016" y="453">Segments + uncertainty</text>
+  <text class="s" x="1016" y="476">start, end, duration, phase</text>
+  <text class="s" x="1016" y="496">mean score; flagged uncertain</text>
+  <text class="s" x="1016" y="516">below 0.55 or no person</text>
+
+  <rect class="box" x="1300" y="425" width="260" height="110" rx="10"/>
+  <text class="t" x="1316" y="453">Outputs</text>
+  <text class="s" x="1316" y="476">timeline, durations, cycles</text>
+  <text class="s" x="1316" y="496">annotated H.264 video</text>
+  <text class="s" x="1316" y="516">JSON / CSV report</text>
+
+  <path class="f" d="M1480 286 C 1480 360, 165 340, 165 423"/>
+  <path class="f" d="M290 480 H328"/><path class="f" d="M630 480 H668"/>
+  <path class="f" d="M960 480 H998"/><path class="f" d="M1260 480 H1298"/>
+
+  <g transform="translate(40 575)">
+    <rect x="0" y="0" width="150" height="22" rx="4" fill="#EDA100"/><text x="10" y="16" font-size="12.5" font-weight="700" fill="#0B0B0B">Berdiri</text>
+    <rect x="152" y="0" width="110" height="22" rx="4" fill="#1BAF7A"/><text x="162" y="16" font-size="12.5" font-weight="700" fill="#0B0B0B">Rukuk</text>
+    <rect x="264" y="0" width="110" height="22" rx="4" fill="#EB6834"/><text x="274" y="16" font-size="12.5" font-weight="700" fill="#0B0B0B">Iktidal</text>
+    <rect x="376" y="0" width="110" height="22" rx="4" fill="#2A78D6"/><text x="386" y="16" font-size="12.5" font-weight="700" fill="#FFFFFF">Sujud</text>
+    <rect x="488" y="0" width="210" height="22" rx="4" fill="#008300"/><text x="498" y="16" font-size="12.5" font-weight="700" fill="#FFFFFF">Duduk di antara dua sujud</text>
+    <rect x="700" y="0" width="110" height="22" rx="4" fill="#2A78D6"/><text x="710" y="16" font-size="12.5" font-weight="700" fill="#FFFFFF">Sujud</text>
+    <rect x="812" y="0" width="200" height="22" rx="4" fill="#E87BA4"/><text x="822" y="16" font-size="12.5" font-weight="700" fill="#0B0B0B">Tasyahud</text>
+    <text x="1030" y="16" font-size="13" fill="#4A5565">one rakaat, as decoded (phase colours are CVD-validated)</text>
+  </g>
+</svg>

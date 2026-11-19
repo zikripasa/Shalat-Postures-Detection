@@ -1,0 +1,28 @@
+{
+  "path": "f24126d6-Salat-Postures-Dataset-main.zip",
+  "n_entries": 84,
+  "n_files": 82,
+  "n_dirs": 2,
+  "compressed_bytes": 11723200,
+  "uncompressed_bytes": 11847447,
+  "extensions": {
+    ".jpeg": 17,
+    ".jpg": 20,
+    ".md": 1,
+    ".png": 4,
+    ".txt": 1,
+    ".xml": 39
+  },
+  "top_level": [
+    "Salat-Postures-Dataset-main"
+  ],
+  "common_prefix": "Salat-Postures-Dataset-main/",
+  "suspicious_paths": [],
+  "symlinks": [],
+  "duplicate_names": [],
+  "high_ratio_entries": [],
+  "skipped_non_data": [],
+  "is_safe": true,
+  "extracted_to": "data/raw/Salat-Postures-Dataset-main",
+  "files_on_disk": 82
+}

@@ -1,0 +1,8 @@
+{
+  "name": "salat-vision-deck",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Builds Salat_Vision_Portfolio_Deck.pptx from the project's real metrics",
+  "scripts": { "build": "node build_deck.cjs" },
+  "dependencies": { "pptxgenjs": "^4.0.1" }
+}

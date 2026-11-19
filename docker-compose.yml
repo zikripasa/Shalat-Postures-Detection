@@ -1,0 +1,26 @@
+# Local stack: API on http://localhost:8000, web app on http://localhost:8080
+#   docker compose up --build
+services:
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      SALAT_API_ALLOWED_ORIGINS: "http://localhost:8080,http://127.0.0.1:8080"
+      SALAT_API_MAX_VIDEO_MB: "150"
+    tmpfs:
+      - /tmp  # uploads and annotated videos never touch persistent storage
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: http://localhost:8000
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+    restart: unless-stopped
